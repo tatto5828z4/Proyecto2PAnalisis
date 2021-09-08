@@ -1,0 +1,10 @@
+J:\uni\navtest\NavegadorPrototipo\NavegadorPrototipo\bin\Debug\NavegadorPrototipo.dll
+J:\uni\navtest\NavegadorPrototipo\NavegadorPrototipo\bin\Debug\NavegadorPrototipo.pdb
+J:\uni\navtest\NavegadorPrototipo\NavegadorPrototipo\obj\Debug\navVista.csproj.AssemblyReference.cache
+J:\uni\navtest\NavegadorPrototipo\NavegadorPrototipo\obj\Debug\NavegadorPrototipo.navegador.resources
+J:\uni\navtest\NavegadorPrototipo\NavegadorPrototipo\obj\Debug\NavegadorPrototipo.Properties.Resources.resources
+J:\uni\navtest\NavegadorPrototipo\NavegadorPrototipo\obj\Debug\navVista.csproj.GenerateResource.cache
+J:\uni\navtest\NavegadorPrototipo\NavegadorPrototipo\obj\Debug\navVista.csproj.CoreCompileInputs.cache
+J:\uni\navtest\NavegadorPrototipo\NavegadorPrototipo\obj\Debug\NavegadorPrototipo.dll
+J:\uni\navtest\NavegadorPrototipo\NavegadorPrototipo\obj\Debug\NavegadorPrototipo.pdb
+J:\uni\navtest\NavegadorPrototipo\NavegadorPrototipo\obj\Debug\NavegadorPrototipo.pruebas.resources

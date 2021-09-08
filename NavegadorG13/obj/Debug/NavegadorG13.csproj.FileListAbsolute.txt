@@ -1,0 +1,14 @@
+C:\Users\jorgi\source\repos\NavegadorG13\bin\Debug\NavegadorG13.exe.config
+C:\Users\jorgi\source\repos\NavegadorG13\bin\Debug\NavegadorG13.exe
+C:\Users\jorgi\source\repos\NavegadorG13\bin\Debug\NavegadorG13.pdb
+C:\Users\jorgi\source\repos\NavegadorG13\bin\Debug\NavegadorPrototipo.dll
+C:\Users\jorgi\source\repos\NavegadorG13\bin\Debug\NavegadorPrototipo.pdb
+C:\Users\jorgi\source\repos\NavegadorG13\obj\Debug\NavegadorG13.csprojAssemblyReference.cache
+C:\Users\jorgi\source\repos\NavegadorG13\obj\Debug\NavegadorG13.Form1.resources
+C:\Users\jorgi\source\repos\NavegadorG13\obj\Debug\NavegadorG13.Properties.Resources.resources
+C:\Users\jorgi\source\repos\NavegadorG13\obj\Debug\NavegadorG13.csproj.GenerateResource.cache
+C:\Users\jorgi\source\repos\NavegadorG13\obj\Debug\NavegadorG13.csproj.CoreCompileInputs.cache
+C:\Users\jorgi\source\repos\NavegadorG13\obj\Debug\NavegadorG13.csproj.CopyComplete
+C:\Users\jorgi\source\repos\NavegadorG13\obj\Debug\NavegadorG13.exe
+C:\Users\jorgi\source\repos\NavegadorG13\obj\Debug\NavegadorG13.pdb
+C:\Users\jorgi\source\repos\NavegadorG13\obj\Debug\NavegadorG13.Form2.resources

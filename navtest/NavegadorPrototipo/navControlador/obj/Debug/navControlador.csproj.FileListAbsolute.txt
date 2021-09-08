@@ -1,0 +1,6 @@
+J:\uni\navtest\NavegadorPrototipo\navControlador\bin\Debug\navControlador.dll
+J:\uni\navtest\NavegadorPrototipo\navControlador\bin\Debug\navControlador.pdb
+J:\uni\navtest\NavegadorPrototipo\navControlador\obj\Debug\navControlador.csproj.AssemblyReference.cache
+J:\uni\navtest\NavegadorPrototipo\navControlador\obj\Debug\navControlador.csproj.CoreCompileInputs.cache
+J:\uni\navtest\NavegadorPrototipo\navControlador\obj\Debug\navControlador.dll
+J:\uni\navtest\NavegadorPrototipo\navControlador\obj\Debug\navControlador.pdb
