@@ -15,6 +15,13 @@ namespace NavegadorG13
         public Form2()
         {
             InitializeComponent();
+            TextBox[] alias = { txtID, txtNombre };
+            navegador1.funAsignarAlias(alias);
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

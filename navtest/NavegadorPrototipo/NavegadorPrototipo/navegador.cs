@@ -63,5 +63,30 @@ namespace NavegadorPrototipo
             //Salir
             toolTipNavegador.SetToolTip(this.btnSalir, "Cierra la ventana actual");
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+        }
+
+        public void funAsignarAlias(TextBox[] alias)
+        {
+            string[] arreglo;
+            int cantidad = 0;
+
+            foreach (TextBox dato in alias)
+            {
+                cantidad++;
+            }
+
+            arreglo = new string[cantidad];
+            int i = 0;
+
+            foreach (TextBox dato in alias)
+            {
+                arreglo[i] = dato.Tag.ToString();
+                MessageBox.Show("Lo que tiene es: " + arreglo[i]);
+                i++;
+            }
+        }
     }
 }
