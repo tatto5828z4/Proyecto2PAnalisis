@@ -34,8 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="NavegadorPrototipo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\NavegadorPrototipo.dll</HintPath>
+      <HintPath>..\navtest\NavegadorPrototipo\NavegadorPrototipo\bin\Debug\NavegadorPrototipo.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
