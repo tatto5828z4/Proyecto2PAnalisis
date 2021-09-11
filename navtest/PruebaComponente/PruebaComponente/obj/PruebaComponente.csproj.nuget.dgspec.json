@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "J:\\uni\\navtest\\PruebaComponente\\PruebaComponente\\PruebaComponente.csproj": {}
+    "J:\\uni\\Analisi2PNuevo\\navtest\\PruebaComponente\\PruebaComponente\\PruebaComponente.csproj": {}
   },
   "projects": {
-    "J:\\uni\\navtest\\PruebaComponente\\PruebaComponente\\PruebaComponente.csproj": {
+    "J:\\uni\\Analisi2PNuevo\\navtest\\PruebaComponente\\PruebaComponente\\PruebaComponente.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "J:\\uni\\navtest\\PruebaComponente\\PruebaComponente\\PruebaComponente.csproj",
+        "projectUniqueName": "J:\\uni\\Analisi2PNuevo\\navtest\\PruebaComponente\\PruebaComponente\\PruebaComponente.csproj",
         "projectName": "PruebaComponente",
-        "projectPath": "J:\\uni\\navtest\\PruebaComponente\\PruebaComponente\\PruebaComponente.csproj",
+        "projectPath": "J:\\uni\\Analisi2PNuevo\\navtest\\PruebaComponente\\PruebaComponente\\PruebaComponente.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "J:\\uni\\navtest\\PruebaComponente\\PruebaComponente\\obj\\",
+        "outputPath": "J:\\uni\\Analisi2PNuevo\\navtest\\PruebaComponente\\PruebaComponente\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -28,20 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new NavegadorPrototipo.navegador();
             this.txtID = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblID = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
+            this.navegador1 = new NavegadorPrototipo.navegador();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.navegador1.Location = new System.Drawing.Point(0, 1);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(981, 85);
-            this.navegador1.TabIndex = 0;
             // 
             // txtID
             // 
@@ -77,17 +69,25 @@
             this.lblNombre.TabIndex = 4;
             this.lblNombre.Text = "Nombre";
             // 
+            // navegador1
+            // 
+            this.navegador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
+            this.navegador1.Location = new System.Drawing.Point(0, 2);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(981, 85);
+            this.navegador1.TabIndex = 5;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(199)))), ((int)(((byte)(153)))));
             this.ClientSize = new System.Drawing.Size(980, 450);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtID);
-            this.Controls.Add(this.navegador1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
             this.Text = "Form2";
@@ -98,11 +98,10 @@
         }
 
         #endregion
-
-        private NavegadorPrototipo.navegador navegador1;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label lblNombre;
+        private NavegadorPrototipo.navegador navegador1;
     }
 }
