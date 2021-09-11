@@ -45,10 +45,11 @@ namespace navModelo
     {
         public static MySqlConnection conexion()
         {
-            String servidor = "34.132.76.83";
+            //actualizar los datos segun el usuario de su servidor local
+            String servidor = "localhost";//"34.132.76.83";
             String bd = "pruebas";
             String usuario = "root";
-            String password = "root";
+            String password = "123456";//"root";
 
             String cadenaConexion = "Database=" + bd + "; Data Source=" + servidor + "; User Id= " + usuario +
             "; Password=" + password + ";";
