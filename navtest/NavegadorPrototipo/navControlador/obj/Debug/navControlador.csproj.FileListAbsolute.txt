@@ -32,3 +32,17 @@ C:\Users\Langas\Documents\navegador_proyecto\navtest\NavegadorPrototipo\navContr
 C:\Users\Langas\Documents\navegador_proyecto\navtest\NavegadorPrototipo\navControlador\obj\Debug\navControlador.csproj.CopyComplete
 C:\Users\Langas\Documents\navegador_proyecto\navtest\NavegadorPrototipo\navControlador\obj\Debug\navControlador.dll
 C:\Users\Langas\Documents\navegador_proyecto\navtest\NavegadorPrototipo\navControlador\obj\Debug\navControlador.pdb
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navControlador\bin\Debug\navControlador.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navControlador\bin\Debug\navControlador.pdb
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navControlador\bin\Debug\navModelo.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navControlador\bin\Debug\MySql.Data.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navControlador\bin\Debug\Google.Protobuf.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navControlador\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navControlador\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navControlador\bin\Debug\Renci.SshNet.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navControlador\bin\Debug\navModelo.pdb
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navControlador\obj\Debug\navControlador.csprojAssemblyReference.cache
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navControlador\obj\Debug\navControlador.csproj.CoreCompileInputs.cache
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navControlador\obj\Debug\navControlador.csproj.CopyComplete
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navControlador\obj\Debug\navControlador.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navControlador\obj\Debug\navControlador.pdb

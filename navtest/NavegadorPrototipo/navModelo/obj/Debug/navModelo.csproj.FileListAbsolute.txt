@@ -31,3 +31,14 @@ C:\Users\Langas\Documents\navegador_proyecto\navtest\NavegadorPrototipo\navModel
 C:\Users\Langas\Documents\navegador_proyecto\navtest\NavegadorPrototipo\navModelo\obj\Debug\navModelo.dll
 C:\Users\Langas\Documents\navegador_proyecto\navtest\NavegadorPrototipo\navModelo\obj\Debug\navModelo.pdb
 C:\Users\Langas\Documents\navegador_proyecto\navtest\NavegadorPrototipo\navModelo\obj\Debug\navModelo.csproj.AssemblyReference.cache
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navModelo\bin\Debug\navModelo.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navModelo\bin\Debug\navModelo.pdb
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navModelo\bin\Debug\Google.Protobuf.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navModelo\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navModelo\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navModelo\bin\Debug\Renci.SshNet.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navModelo\obj\Debug\navModelo.csprojAssemblyReference.cache
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navModelo\obj\Debug\navModelo.csproj.CoreCompileInputs.cache
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navModelo\obj\Debug\navModelo.csproj.CopyComplete
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navModelo\obj\Debug\navModelo.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\navtest\NavegadorPrototipo\navModelo\obj\Debug\navModelo.pdb

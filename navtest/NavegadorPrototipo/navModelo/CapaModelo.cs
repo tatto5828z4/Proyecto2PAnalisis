@@ -12,6 +12,7 @@ namespace navModelo
     public class CapaModelo
     {
         //Conexiontwo conexion = new Conexiontwo();
+        
         public string funAsignarAlias(TextBox[] alias, string tabla,string BD)
         {
             /* Inicio para busqueda de tabla en BD */
@@ -134,11 +135,15 @@ namespace navModelo
 
             }
             /* Final de busqueda de columnas en la BD */
-
-
             return errores;
-
         }
+
+        public void FunSalida(Form menu)
+        {
+            MessageBox.Show("si se puede abrir el form " + menu + "exitosamente");
+        }
+
+
     }
 
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace NavegadorG13
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
         }
@@ -30,7 +30,7 @@ namespace NavegadorG13
         private void productoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panel1.Visible = false;
-            Form2 Prod = new Form2();
+            Frm2 Prod = new Frm2();
             Prod.MdiParent = this;
             Prod.Show();
         }

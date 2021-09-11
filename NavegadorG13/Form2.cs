@@ -10,19 +10,28 @@ using System.Windows.Forms;
 
 namespace NavegadorG13
 {
-    public partial class Form2 : Form
+    public partial class Frm2 : Form
     {
-        public Form2()
+        public Frm2()
         {
             InitializeComponent();
+            txtFecha.Visible = false;
+            txtEstatus.Visible = false;
+            txtCodigoMarca.Visible = false;
             TextBox[] alias = { txtID, txtCodigoMarca, txtNombre, txtFecha, txtDescripcion, txtStock, txtPrecio, txtEstatus};
             navegador1.funAsignarAliasVista(alias,"producto","pruebas");
-            //navegador1.funAsignarSalida(this);
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            String dt="";
+            dt = dtProducto.Value.ToString();
+            txtFecha.Text = dt;
         }
     }
 }

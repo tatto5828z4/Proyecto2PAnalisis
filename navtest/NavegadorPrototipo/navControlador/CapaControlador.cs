@@ -18,19 +18,6 @@ namespace navControlador
             errores = modelo.funAsignarAlias(alias, tabla, BD);
 
             MessageBox.Show(errores);
-
-        }
-
-        public void funAsignarSalida(Form menu)
-        {
-            if (String.IsNullOrEmpty(errores))
-            {
-                menu.Visible = true;
-            }
-            else
-            {
-                menu.Visible = false;
-            }
         }
     }
 }

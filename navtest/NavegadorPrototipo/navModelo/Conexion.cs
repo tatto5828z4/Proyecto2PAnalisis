@@ -47,8 +47,8 @@ namespace navModelo
         {
             String servidor = "34.132.76.83";
             String bd = "pruebas";
-            String usuario = "josue";
-            String password = "josue";
+            String usuario = "root";
+            String password = "root";
 
             String cadenaConexion = "Database=" + bd + "; Data Source=" + servidor + "; User Id= " + usuario +
             "; Password=" + password + ";";

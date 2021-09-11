@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NavegadorPrototipo">
+    <Reference Include="NavegadorPrototipo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\navtest\NavegadorPrototipo\NavegadorPrototipo\bin\Debug\NavegadorPrototipo.dll</HintPath>
     </Reference>
     <Reference Include="System" />

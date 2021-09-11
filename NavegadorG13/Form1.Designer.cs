@@ -1,6 +1,6 @@
 ﻿namespace NavegadorG13
 {
-    partial class Form1
+    partial class Form2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cierreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,7 +43,6 @@
             this.salirDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.navegador1 = new NavegadorPrototipo.navegador();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -154,14 +153,6 @@
             this.panel1.Size = new System.Drawing.Size(458, 335);
             this.panel1.TabIndex = 2;
             // 
-            // navegador1
-            // 
-            this.navegador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.navegador1.Location = new System.Drawing.Point(0, 0);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(981, 85);
-            this.navegador1.TabIndex = 4;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,7 +161,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(984, 478);
-            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
@@ -201,7 +191,6 @@
         private System.Windows.Forms.ToolStripMenuItem productoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirDelSistemaToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
-        private NavegadorPrototipo.navegador navegador1;
     }
 }
 

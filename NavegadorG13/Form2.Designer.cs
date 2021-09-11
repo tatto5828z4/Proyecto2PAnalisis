@@ -1,6 +1,6 @@
 ﻿namespace NavegadorG13
 {
-    partial class Form2
+    partial class Frm2
     {
         /// <summary>
         /// Required designer variable.
@@ -44,16 +44,17 @@
             this.txtCodigoMarca = new System.Windows.Forms.TextBox();
             this.txtFecha = new System.Windows.Forms.TextBox();
             this.cbxCodMarca = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtProducto = new System.Windows.Forms.DateTimePicker();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.txtEstatus = new System.Windows.Forms.TextBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.navegador1 = new NavegadorPrototipo.navegador();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(46, 152);
+            this.txtID.Location = new System.Drawing.Point(14, 148);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(100, 20);
             this.txtID.TabIndex = 1;
@@ -61,7 +62,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(46, 265);
+            this.txtNombre.Location = new System.Drawing.Point(14, 261);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 2;
@@ -70,7 +71,7 @@
             // lblCP
             // 
             this.lblCP.AutoSize = true;
-            this.lblCP.Location = new System.Drawing.Point(46, 133);
+            this.lblCP.Location = new System.Drawing.Point(14, 129);
             this.lblCP.Name = "lblCP";
             this.lblCP.Size = new System.Drawing.Size(86, 13);
             this.lblCP.TabIndex = 3;
@@ -79,7 +80,7 @@
             // lblCM
             // 
             this.lblCM.AutoSize = true;
-            this.lblCM.Location = new System.Drawing.Point(46, 196);
+            this.lblCM.Location = new System.Drawing.Point(14, 192);
             this.lblCM.Name = "lblCM";
             this.lblCM.Size = new System.Drawing.Size(90, 13);
             this.lblCM.TabIndex = 4;
@@ -88,7 +89,7 @@
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(43, 335);
+            this.lblDescripcion.Location = new System.Drawing.Point(11, 331);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(109, 13);
             this.lblDescripcion.TabIndex = 6;
@@ -97,7 +98,7 @@
             // lblFechaP
             // 
             this.lblFechaP.AutoSize = true;
-            this.lblFechaP.Location = new System.Drawing.Point(43, 290);
+            this.lblFechaP.Location = new System.Drawing.Point(11, 286);
             this.lblFechaP.Name = "lblFechaP";
             this.lblFechaP.Size = new System.Drawing.Size(83, 13);
             this.lblFechaP.TabIndex = 7;
@@ -106,7 +107,7 @@
             // lblNP
             // 
             this.lblNP.AutoSize = true;
-            this.lblNP.Location = new System.Drawing.Point(43, 249);
+            this.lblNP.Location = new System.Drawing.Point(11, 245);
             this.lblNP.Name = "lblNP";
             this.lblNP.Size = new System.Drawing.Size(90, 13);
             this.lblNP.TabIndex = 8;
@@ -141,7 +142,7 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(46, 351);
+            this.txtDescripcion.Location = new System.Drawing.Point(14, 347);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(100, 20);
             this.txtDescripcion.TabIndex = 12;
@@ -165,7 +166,7 @@
             // 
             // txtCodigoMarca
             // 
-            this.txtCodigoMarca.Location = new System.Drawing.Point(175, 212);
+            this.txtCodigoMarca.Location = new System.Drawing.Point(150, 207);
             this.txtCodigoMarca.Name = "txtCodigoMarca";
             this.txtCodigoMarca.Size = new System.Drawing.Size(27, 20);
             this.txtCodigoMarca.TabIndex = 16;
@@ -173,28 +174,28 @@
             // 
             // txtFecha
             // 
-            this.txtFecha.Location = new System.Drawing.Point(179, 306);
+            this.txtFecha.Location = new System.Drawing.Point(146, 301);
             this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(27, 20);
+            this.txtFecha.Size = new System.Drawing.Size(118, 20);
             this.txtFecha.TabIndex = 17;
             this.txtFecha.Tag = "fecha";
             // 
             // cbxCodMarca
             // 
             this.cbxCodMarca.FormattingEnabled = true;
-            this.cbxCodMarca.Location = new System.Drawing.Point(46, 212);
+            this.cbxCodMarca.Location = new System.Drawing.Point(14, 208);
             this.cbxCodMarca.Name = "cbxCodMarca";
             this.cbxCodMarca.Size = new System.Drawing.Size(121, 21);
             this.cbxCodMarca.TabIndex = 18;
             // 
-            // dateTimePicker1
+            // dtProducto
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(46, 306);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(121, 20);
-            this.dateTimePicker1.TabIndex = 19;
-            this.dateTimePicker1.Value = new System.DateTime(2021, 9, 11, 0, 0, 0, 0);
+            this.dtProducto.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtProducto.Location = new System.Drawing.Point(14, 302);
+            this.dtProducto.Name = "dtProducto";
+            this.dtProducto.Size = new System.Drawing.Size(121, 20);
+            this.dtProducto.TabIndex = 19;
+            this.dtProducto.Value = new System.DateTime(2021, 9, 11, 0, 0, 0, 0);
             // 
             // radioButton1
             // 
@@ -234,17 +235,28 @@
             this.navegador1.Size = new System.Drawing.Size(981, 85);
             this.navegador1.TabIndex = 23;
             // 
-            // Form2
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(263, 351);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(85, 23);
+            this.btnGuardar.TabIndex = 25;
+            this.btnGuardar.Text = "PruebaFecha";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // Frm2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(199)))), ((int)(((byte)(153)))));
             this.ClientSize = new System.Drawing.Size(980, 450);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.navegador1);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.txtEstatus);
             this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtProducto);
             this.Controls.Add(this.cbxCodMarca);
             this.Controls.Add(this.txtFecha);
             this.Controls.Add(this.txtCodigoMarca);
@@ -262,7 +274,7 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtID);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form2";
+            this.Name = "Frm2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -288,10 +300,11 @@
         private System.Windows.Forms.TextBox txtCodigoMarca;
         private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.ComboBox cbxCodMarca;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtProducto;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.TextBox txtEstatus;
         private System.Windows.Forms.RadioButton radioButton2;
         private NavegadorPrototipo.navegador navegador1;
+        private System.Windows.Forms.Button btnGuardar;
     }
 }
