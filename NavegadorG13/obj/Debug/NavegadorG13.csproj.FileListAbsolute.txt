@@ -24,3 +24,15 @@ C:\Users\Langas\Documents\navegador_proyecto\NavegadorG13\obj\Debug\NavegadorG13
 C:\Users\Langas\Documents\navegador_proyecto\NavegadorG13\obj\Debug\NavegadorG13.csproj.CopyComplete
 C:\Users\Langas\Documents\navegador_proyecto\NavegadorG13\obj\Debug\NavegadorG13.exe
 C:\Users\Langas\Documents\navegador_proyecto\NavegadorG13\obj\Debug\NavegadorG13.pdb
+J:\uni\Analisi2PNuevo\NavegadorG13\bin\Debug\NavegadorG13.exe.config
+J:\uni\Analisi2PNuevo\NavegadorG13\bin\Debug\NavegadorG13.exe
+J:\uni\Analisi2PNuevo\NavegadorG13\bin\Debug\NavegadorG13.pdb
+J:\uni\Analisi2PNuevo\NavegadorG13\obj\Debug\NavegadorG13.csproj.AssemblyReference.cache
+J:\uni\Analisi2PNuevo\NavegadorG13\obj\Debug\NavegadorG13.Form1.resources
+J:\uni\Analisi2PNuevo\NavegadorG13\obj\Debug\NavegadorG13.Form2.resources
+J:\uni\Analisi2PNuevo\NavegadorG13\obj\Debug\NavegadorG13.Properties.Resources.resources
+J:\uni\Analisi2PNuevo\NavegadorG13\obj\Debug\NavegadorG13.csproj.GenerateResource.cache
+J:\uni\Analisi2PNuevo\NavegadorG13\obj\Debug\NavegadorG13.csproj.CoreCompileInputs.cache
+J:\uni\Analisi2PNuevo\NavegadorG13\obj\Debug\NavegadorG13.csproj.CopyComplete
+J:\uni\Analisi2PNuevo\NavegadorG13\obj\Debug\NavegadorG13.exe
+J:\uni\Analisi2PNuevo\NavegadorG13\obj\Debug\NavegadorG13.pdb
