@@ -10,3 +10,9 @@ C:\Users\Langas\Documents\navegador_proyecto\navtest\NavegadorPrototipo\navModel
 C:\Users\Langas\Documents\navegador_proyecto\navtest\NavegadorPrototipo\navModelo\obj\Debug\navModelo.csproj.CoreCompileInputs.cache
 C:\Users\Langas\Documents\navegador_proyecto\navtest\NavegadorPrototipo\navModelo\obj\Debug\navModelo.dll
 C:\Users\Langas\Documents\navegador_proyecto\navtest\NavegadorPrototipo\navModelo\obj\Debug\navModelo.pdb
+J:\uni\Analisi2PNuevo\navtest\NavegadorPrototipo\navModelo\bin\Debug\navModelo.dll
+J:\uni\Analisi2PNuevo\navtest\NavegadorPrototipo\navModelo\bin\Debug\navModelo.pdb
+J:\uni\Analisi2PNuevo\navtest\NavegadorPrototipo\navModelo\obj\Debug\navModelo.csproj.AssemblyReference.cache
+J:\uni\Analisi2PNuevo\navtest\NavegadorPrototipo\navModelo\obj\Debug\navModelo.csproj.CoreCompileInputs.cache
+J:\uni\Analisi2PNuevo\navtest\NavegadorPrototipo\navModelo\obj\Debug\navModelo.dll
+J:\uni\Analisi2PNuevo\navtest\NavegadorPrototipo\navModelo\obj\Debug\navModelo.pdb
