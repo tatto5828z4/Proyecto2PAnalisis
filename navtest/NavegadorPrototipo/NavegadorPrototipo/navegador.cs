@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using navControlador;
 
 namespace NavegadorPrototipo
 {
     public partial class navegador : UserControl
     {
+        CapaControlador controlar = new CapaControlador();
         public navegador()
         {
             InitializeComponent();
@@ -71,10 +73,18 @@ namespace NavegadorPrototipo
             pruebaRecogerDatos();
         }
 
-        public void funAsignarAlias(TextBox[] alias)
+        public void funAsignarAliasVista(TextBox[] alias, string tabla, string BD)
+        {
+            controlar.funAsignarAliasContro(alias, tabla, BD);
+        }
+
+        
+        /* Esta funcion serive para comprobar si existen las tablas en la BD y las columnas */
+        /*public string funAsignarAlias(TextBox[] alias,string tabla)
         {
             string[] arreglo;
             int cantidad = 0;
+            string error = "";
 
             foreach (TextBox dato in alias)
             {
@@ -90,7 +100,9 @@ namespace NavegadorPrototipo
                 MessageBox.Show("Lo que tiene es: " + arreglo[i]);
                 i++;
             }
-        }
+
+            return error;
+        }*/
 
         private void desactivarBotones(int tipo)
         {
