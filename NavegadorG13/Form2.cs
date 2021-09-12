@@ -24,7 +24,12 @@ namespace NavegadorG13
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            
+            List<Control> controles = new List<Control>();
+            for (int i =0;i<this.Controls.Count;i++)
+            {
+                controles.Add(this.Controls[i]);
+            }
+            navegador1.pruebasAsignar(controles);
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

@@ -36,3 +36,12 @@ J:\uni\Analisi2PNuevo\navtest\PruebaComponente\PruebaComponente\obj\Debug\net5.0
 J:\uni\Analisi2PNuevo\navtest\PruebaComponente\PruebaComponente\obj\Debug\net5.0-windows\ref\PruebaComponente.dll
 J:\uni\Analisi2PNuevo\navtest\PruebaComponente\PruebaComponente\obj\Debug\net5.0-windows\PruebaComponente.pdb
 J:\uni\Analisi2PNuevo\navtest\PruebaComponente\PruebaComponente\obj\Debug\net5.0-windows\PruebaComponente.genruntimeconfig.cache
+J:\uni\Analisi2PNuevo\navtest\PruebaComponente\PruebaComponente\bin\Debug\net5.0-windows\navControlador.dll
+J:\uni\Analisi2PNuevo\navtest\PruebaComponente\PruebaComponente\bin\Debug\net5.0-windows\navModelo.dll
+J:\uni\Analisi2PNuevo\navtest\PruebaComponente\PruebaComponente\bin\Debug\net5.0-windows\MySql.Data.dll
+J:\uni\Analisi2PNuevo\navtest\PruebaComponente\PruebaComponente\bin\Debug\net5.0-windows\Google.Protobuf.dll
+J:\uni\Analisi2PNuevo\navtest\PruebaComponente\PruebaComponente\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
+J:\uni\Analisi2PNuevo\navtest\PruebaComponente\PruebaComponente\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
+J:\uni\Analisi2PNuevo\navtest\PruebaComponente\PruebaComponente\bin\Debug\net5.0-windows\Renci.SshNet.dll
+J:\uni\Analisi2PNuevo\navtest\PruebaComponente\PruebaComponente\bin\Debug\net5.0-windows\navControlador.pdb
+J:\uni\Analisi2PNuevo\navtest\PruebaComponente\PruebaComponente\bin\Debug\net5.0-windows\navModelo.pdb
