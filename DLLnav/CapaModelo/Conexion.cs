@@ -45,10 +45,14 @@ namespace CapaModelo
         public static MySqlConnection conexion()
         {
             //actualizar los datos segun el usuario de su servidor local
-            String servidor = "34.132.76.83";
+            //String servidor = "34.132.76.83";
+            //String bd = "pruebas";
+            //String usuario = "root";
+            //String password = "root";//"root";
+            String servidor = "localhost";
             String bd = "pruebas";
             String usuario = "root";
-            String password = "root";//"root";
+            String password = "123456";
 
             String cadenaConexion = "Database=" + bd + "; Data Source=" + servidor + "; User Id= " + usuario +
             "; Password=" + password + ";";
