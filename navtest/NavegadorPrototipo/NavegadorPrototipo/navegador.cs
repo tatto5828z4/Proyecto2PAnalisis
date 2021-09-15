@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using navControlador;
 
 namespace NavegadorPrototipo
 {
     public partial class navegador : UserControl
     {
+        CapaControlador controlar = new CapaControlador();
         public navegador()
         {
             InitializeComponent();
@@ -62,16 +64,27 @@ namespace NavegadorPrototipo
             toolTipNavegador.SetToolTip(this.btnAyuda, "Abre la ventana de ayuda");
             //Salir
             toolTipNavegador.SetToolTip(this.btnSalir, "Cierra la ventana actual");
+            //desactivar los botones al inicio
+            desactivarBotones(0);
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+            pruebaRecogerDatos();
         }
 
-        public void funAsignarAlias(TextBox[] alias)
+        public void funAsignarAliasVista(TextBox[] alias, string tabla, string BD)
+        {
+            controlar.funAsignarAliasContro(alias, tabla, BD);
+        }
+
+        
+        /* Esta funcion serive para comprobar si existen las tablas en la BD y las columnas */
+        /*public string funAsignarAlias(TextBox[] alias,string tabla)
         {
             string[] arreglo;
             int cantidad = 0;
+            string error = "";
 
             foreach (TextBox dato in alias)
             {
@@ -87,6 +100,67 @@ namespace NavegadorPrototipo
                 MessageBox.Show("Lo que tiene es: " + arreglo[i]);
                 i++;
             }
+
+            return error;
+        }*/
+
+        private void desactivarBotones(int tipo)
+        {
+            //desactivarBotones cambiara los .Enabled de los botones
+            //indicados
+            /*
+             * 0 Desactiva los botones de cancelar y guardar
+             * 1 Desactiva los botones de insertar, modificar y eliminar
+             * 
+             * Cada uno activará lo que el otro desactive
+             * 0 Activa insertar, modificar y eliminar
+             * 1 Actica Cancelar y Guardar
+             */
+            if (tipo == 0)
+            {
+                btnIngresar.Enabled = true;
+                btnModificar.Enabled = true;
+                btnEliminar.Enabled = true;
+                btnGuardar.Enabled = false;
+                btnCancelar.Enabled = false;
+            }
+            else
+            {
+                btnIngresar.Enabled = false;
+                btnModificar.Enabled = false;
+                btnEliminar.Enabled = false;
+                btnGuardar.Enabled = true;
+                btnCancelar.Enabled = true;
+            }
+        }
+
+        List<Control> pruebaControles;
+        public void pruebasAsignar(List<Control> listaControles)
+        {
+            pruebaControles = listaControles;
+        }
+
+        public void pruebaRecogerDatos()
+        {
+            int x;
+            x = pruebaControles.Count;
+
+            for (int i = 0; i < x; i++)
+            {
+                MessageBox.Show("Control [" + i + "]: " + pruebaControles[i].Text);
+                pruebaControles[i].Enabled = false;
+            }
+            MessageBox.Show("Prueba de integración Noel");
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            desactivarBotones(0);
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            desactivarBotones(1);
         }
     }
 }
