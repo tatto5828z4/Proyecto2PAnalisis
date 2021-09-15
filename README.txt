@@ -1,5 +1,4 @@
 # Proyecto2PAnalisis
 
-La carpeta NavegadorG13 contiene lo que es el MDI, necesitan mandar a llamar la clase del navegador para que tenga la referencia.
-
-Navtest contiene el navegador
+1. La carpeta DLLnav contienen lo que es la DLL del navegador y el MVC
+2. La carpeta Navegador contienen el MDI, un formulario el cual tiene el navegador y elementos para realizar las pruebas respectivas.
