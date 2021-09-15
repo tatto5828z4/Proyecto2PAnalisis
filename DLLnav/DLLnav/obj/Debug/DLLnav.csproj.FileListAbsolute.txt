@@ -1,0 +1,9 @@
+C:\Users\Langas\source\repos\DLLnav\DLLnav\bin\Debug\DLLnav.dll
+C:\Users\Langas\source\repos\DLLnav\DLLnav\bin\Debug\DLLnav.pdb
+C:\Users\Langas\source\repos\DLLnav\DLLnav\obj\Debug\DLL.nav.navegador.resources
+C:\Users\Langas\source\repos\DLLnav\DLLnav\obj\Debug\DLL.nav.Properties.Resources.resources
+C:\Users\Langas\source\repos\DLLnav\DLLnav\obj\Debug\DLLnav.csproj.GenerateResource.cache
+C:\Users\Langas\source\repos\DLLnav\DLLnav\obj\Debug\DLLnav.csproj.CoreCompileInputs.cache
+C:\Users\Langas\source\repos\DLLnav\DLLnav\obj\Debug\DLLnav.dll
+C:\Users\Langas\source\repos\DLLnav\DLLnav\obj\Debug\DLLnav.pdb
+C:\Users\Langas\source\repos\DLLnav\DLLnav\obj\Debug\DLLnav.csproj.AssemblyReference.cache
