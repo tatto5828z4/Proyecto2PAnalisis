@@ -252,7 +252,7 @@
             this.navegador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.navegador1.Location = new System.Drawing.Point(-1, -1);
             this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1192, 87);
+            this.navegador1.Size = new System.Drawing.Size(1191, 87);
             this.navegador1.TabIndex = 0;
             // 
             // Form1
@@ -260,7 +260,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(199)))), ((int)(((byte)(153)))));
-            this.ClientSize = new System.Drawing.Size(1192, 500);
+            this.ClientSize = new System.Drawing.Size(1189, 500);
             this.Controls.Add(this.txtprueba);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.radioButton2);

@@ -68,5 +68,47 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="img\iOSFilled\ingresarr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\iOSFilled\modificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\iOSFilled\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\iOSFilled\cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\iOSFilled\borrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\iOSFilled\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\iOSFilled\imprimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\iOSFilled\actualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\iOSFilled\Inicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\iOSFilled\anterior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\iOSFilled\siguiente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\iOSFilled\Final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\iOSFilled\ayuda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\iOSFilled\salir2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
