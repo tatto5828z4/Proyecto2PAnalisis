@@ -51,6 +51,8 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.txtprueba = new System.Windows.Forms.TextBox();
             this.navegador1 = new DLL.nav.navegador();
+            this.dvgConsulta = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgConsulta)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGuardar
@@ -255,12 +257,23 @@
             this.navegador1.Size = new System.Drawing.Size(1191, 87);
             this.navegador1.TabIndex = 0;
             // 
+            // dvgConsulta
+            // 
+            this.dvgConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgConsulta.Location = new System.Drawing.Point(511, 117);
+            this.dvgConsulta.Name = "dvgConsulta";
+            this.dvgConsulta.ReadOnly = true;
+            this.dvgConsulta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dvgConsulta.Size = new System.Drawing.Size(650, 342);
+            this.dvgConsulta.TabIndex = 48;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(199)))), ((int)(((byte)(153)))));
             this.ClientSize = new System.Drawing.Size(1189, 500);
+            this.Controls.Add(this.dvgConsulta);
             this.Controls.Add(this.txtprueba);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.radioButton2);
@@ -288,6 +301,7 @@
             this.Name = "Form1";
             this.Text = "Pruebas";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dvgConsulta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -318,6 +332,7 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.TextBox txtprueba;
+        private System.Windows.Forms.DataGridView dvgConsulta;
     }
 }
 
