@@ -18,7 +18,7 @@ namespace DLL.nav
         public navegador()
         {
             InitializeComponent();
-            
+
         }
 
         /*private void pnlBgIngresar_MouseClick(object sender, MouseEventArgs e)
@@ -126,6 +126,17 @@ namespace DLL.nav
             desactivarBotones(1);
         }
 
+        //boton de verificacion para navegacion sin registros
+        public Boolean veriNavegar(){
+
+            if (dvgConsulta.RowCount-1 > 0)
+               
+                return true;
+            else 
+                return false;
+            }
+
+
         DataGridView dvgConsulta;
         //funcion para pedir datagridView
         public void pideGrid(DataGridView tabla)
@@ -143,6 +154,13 @@ namespace DLL.nav
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
+
+            //verificacion de la existencia de registros
+            if (veriNavegar() == false) { 
+            MessageBox.Show("No tiene registros actualmente, no se puede navegar");
+                return;
+              }
+
             //obtengo el indicie actual
             int actual = dvgConsulta.CurrentCell.RowIndex;
 
@@ -175,6 +193,13 @@ namespace DLL.nav
 
         private void btnAnterior_Click(object sender, EventArgs e)
         {
+            //verificacion de la existencia de registros
+            if (veriNavegar() == false)
+            {
+                MessageBox.Show("No tiene registros actualmente, no se puede navegar");
+                return;
+            }
+
             //obtengo el indicie actual
             int actual = dvgConsulta.CurrentCell.RowIndex;
 
@@ -217,6 +242,14 @@ namespace DLL.nav
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
+
+            //verificacion de la existencia de registros
+            if (veriNavegar() == false)
+            {
+                MessageBox.Show("No tiene registros actualmente, no se puede navegar");
+                return;
+            }
+
             dvgConsulta.CurrentCell = dvgConsulta.Rows[0].Cells[0];
 
             var arList = new ArrayList();//todos los campos a obtener de la tabla
@@ -234,6 +267,13 @@ namespace DLL.nav
 
         private void btnFinal_Click(object sender, EventArgs e)
         {
+            //verificacion de la existencia de registros
+            if (veriNavegar() == false)
+            {
+                MessageBox.Show("No tiene registros actualmente, no se puede navegar");
+                return;
+            }
+
             dvgConsulta.CurrentCell = dvgConsulta.Rows[dvgConsulta.RowCount - 2].Cells[0];
 
             var arList = new ArrayList();//todos los campos a obtener de la tabla
