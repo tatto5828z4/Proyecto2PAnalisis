@@ -187,7 +187,7 @@ namespace DLL.nav
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(85, 86);
             this.btnSiguiente.TabIndex = 0;
-            this.btnSiguiente.Text = "     Siguiente                             ";
+            this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSiguiente.UseVisualStyleBackColor = false;
             this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
@@ -246,7 +246,7 @@ namespace DLL.nav
             this.btnIngresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIngresar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresar.Location = new System.Drawing.Point(1, 1);
+            this.btnIngresar.Location = new System.Drawing.Point(0, 1);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(85, 86);
             this.btnIngresar.TabIndex = 2;
@@ -293,6 +293,7 @@ namespace DLL.nav
             this.Controls.Add(this.btnIngresar);
             this.Name = "navegador";
             this.Size = new System.Drawing.Size(1192, 87);
+            this.Load += new System.EventHandler(this.navegador_Load);
             this.ResumeLayout(false);
 
         }

@@ -31,6 +31,11 @@ namespace DLL.nav
             control.funAsignarAliasControl(alias, tabla, BD);
         }
 
+        public void funAsignarSalidadVista(Form menu)
+        {
+            control.funAsignarSalidadControl(menu);
+        }
+
         public void mensaje()
         {
             MessageBox.Show("Prueba de Funcion #2");
@@ -244,5 +249,9 @@ namespace DLL.nav
             }
         }
 
+        private void navegador_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -54,3 +54,10 @@ C:\Users\USUARIO\Desktop\proyecto2p\DLLnav\CapaModelo\obj\Debug\CapaModelo.cspro
 C:\Users\USUARIO\Desktop\proyecto2p\DLLnav\CapaModelo\obj\Debug\CapaModelo.csproj.CopyComplete
 C:\Users\USUARIO\Desktop\proyecto2p\DLLnav\CapaModelo\obj\Debug\CapaModelo.dll
 C:\Users\USUARIO\Desktop\proyecto2p\DLLnav\CapaModelo\obj\Debug\CapaModelo.pdb
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaModelo\bin\Debug\CapaModelo.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaModelo\bin\Debug\CapaModelo.pdb
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaModelo\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaModelo\obj\Debug\CapaModelo.csproj.CopyComplete
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaModelo\obj\Debug\CapaModelo.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaModelo\obj\Debug\CapaModelo.pdb
