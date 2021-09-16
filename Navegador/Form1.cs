@@ -18,7 +18,8 @@ namespace Navegador
 
             TextBox[] alias = { txtID, txtCodigoMarca, txtNombre, txtFecha, txtDescripcion, txtStock, txtPrecio, txtEstatus};
             navegador1.funAsignarAliasVista(alias, "producto", "pruebas");
-
+            navegador1.pideGrid(this.dvgConsulta);
+            navegador1.llenaTabla("marca");
             //String cadena = txtprueba.Text;
             //navegador1.pruebaMensaje(cadena);
         }

@@ -157,6 +157,7 @@ namespace DLL.nav
             this.btnInicio.Text = "Inicio";
             this.btnInicio.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnInicio.UseVisualStyleBackColor = false;
+            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
             // btnAnterior
             // 
@@ -173,6 +174,7 @@ namespace DLL.nav
             this.btnAnterior.Text = "Anterior";
             this.btnAnterior.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAnterior.UseVisualStyleBackColor = false;
+            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
             // btnSiguiente
             // 
@@ -185,9 +187,10 @@ namespace DLL.nav
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(85, 86);
             this.btnSiguiente.TabIndex = 0;
-            this.btnSiguiente.Text = "Siguiente";
+            this.btnSiguiente.Text = "     Siguiente                             ";
             this.btnSiguiente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSiguiente.UseVisualStyleBackColor = false;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // btnFinal
             // 
@@ -203,6 +206,7 @@ namespace DLL.nav
             this.btnFinal.Text = "Final";
             this.btnFinal.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnFinal.UseVisualStyleBackColor = false;
+            this.btnFinal.Click += new System.EventHandler(this.btnFinal_Click);
             // 
             // btnAyuda
             // 

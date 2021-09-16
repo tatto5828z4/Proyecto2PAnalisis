@@ -14,7 +14,7 @@ namespace CapaModelo
         public OdbcConnection conexion()
         {
             //creacion de la conexion via ODBC
-            OdbcConnection conn = new OdbcConnection("Dsn=nube");
+            OdbcConnection conn = new OdbcConnection("Dsn=pruebas");
             try
             {
                 conn.Open();
@@ -52,7 +52,7 @@ namespace CapaModelo
             String servidor = "localhost";
             String bd = "pruebas";
             String usuario = "root";
-            String password = "123456";
+            String password = "123456789";
 
             String cadenaConexion = "Database=" + bd + "; Data Source=" + servidor + "; User Id= " + usuario +
             "; Password=" + password + ";";

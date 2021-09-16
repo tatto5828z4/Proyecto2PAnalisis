@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data.Odbc;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -140,5 +141,19 @@ namespace CapaModelo
         {
             MessageBox.Show("si se puede abrir el form " + menu + "exitosamente");
         }
-    }
+
+        public OdbcDataAdapter llenarTbl(string tabla)// metodo  que obtinene el contenio de una tabla
+        {
+            Conexion cn = new Conexion();
+
+            //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
+            string sql = "select * from " + tabla + ";";
+            OdbcConnection conn = cn.conexion();
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, conn);
+            cn.desconexion(conn);
+
+            return dataTable;
+        }
+
+    }//fin de clase
 }
