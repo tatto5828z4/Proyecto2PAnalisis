@@ -27,7 +27,11 @@ namespace Navegador
             panel1.Visible = false;
             Form1 Prod = new Form1();
             Prod.MdiParent = this;
-            Prod.Show();
+        }
+
+        private void MDI_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

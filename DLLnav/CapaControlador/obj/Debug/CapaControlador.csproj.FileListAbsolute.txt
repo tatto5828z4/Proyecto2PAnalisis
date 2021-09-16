@@ -62,3 +62,14 @@ C:\Users\USUARIO\Desktop\proyecto2p\DLLnav\CapaControlador\bin\Debug\System.Nume
 C:\Users\USUARIO\Desktop\proyecto2p\DLLnav\CapaControlador\bin\Debug\CapaModelo.pdb
 C:\Users\USUARIO\Desktop\proyecto2p\DLLnav\CapaControlador\bin\Debug\MySql.Data.xml
 C:\Users\USUARIO\Desktop\proyecto2p\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaControlador\bin\Debug\CapaControlador.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaControlador\bin\Debug\CapaControlador.pdb
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaControlador\bin\Debug\CapaModelo.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaControlador\bin\Debug\MySql.Data.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaControlador\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaControlador\bin\Debug\CapaModelo.pdb
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaControlador\obj\Debug\CapaControlador.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaControlador\obj\Debug\CapaControlador.pdb
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaControlador\obj\Debug\CapaControlador.csprojAssemblyReference.cache

@@ -19,9 +19,21 @@ namespace CapaControlador
         public void funAsignarAliasControl(TextBox[] alias, string tabla, string BD)
         {
             errores = modelo.funAsignarAlias(alias, tabla, BD);
-
-            MessageBox.Show(errores);
         }
+
+        public void funAsignarSalidadControl(Form menu)
+        {
+            if (String.IsNullOrEmpty(errores))
+            {
+                modelo.funSalida(menu);
+            }
+            else
+            {
+                MessageBox.Show(errores);
+                menu.Close();
+            }
+        }
+
 
         public DataTable llenarTbl(string tablaDB)
         {
@@ -32,4 +44,5 @@ namespace CapaControlador
         }
 
     }
+
 }
