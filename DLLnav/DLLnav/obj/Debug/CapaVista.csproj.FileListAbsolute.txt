@@ -75,7 +75,6 @@ C:\Users\USUARIO\Desktop\proyecto2p\DLLnav\DLLnav\bin\Debug\K4os.Hash.xxHash.dll
 C:\Users\USUARIO\Desktop\proyecto2p\DLLnav\DLLnav\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\USUARIO\Desktop\proyecto2p\DLLnav\DLLnav\bin\Debug\CapaControlador.pdb
 C:\Users\USUARIO\Desktop\proyecto2p\DLLnav\DLLnav\bin\Debug\CapaModelo.pdb
-C:\Users\USUARIO\Desktop\proyecto2p\DLLnav\DLLnav\bin\Debug\MySql.Data.xml
 C:\Users\USUARIO\Desktop\proyecto2p\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\DLLnav\bin\Debug\DLLnav.dll
 C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\DLLnav\bin\Debug\DLLnav.pdb
@@ -93,3 +92,4 @@ C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.Co
 C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\DLLnav\obj\Debug\DLLnav.dll
 C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\DLLnav\obj\Debug\DLLnav.pdb
 C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\DLLnav\bin\Debug\CapaControlador.dll
+C:\Users\USUARIO\Desktop\proyecto2p\DLLnav\DLLnav\bin\Debug\MySql.Data.xml
