@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Odbc;
-
+using System.Collections;
 
 namespace CapaModelo
 {
@@ -154,6 +154,75 @@ namespace CapaModelo
 
             return dataTable;
         }
+        public ArrayList consIndividual(string id, string tablas, int cuenta, string referencia)
+        {
+            Conexion cn = new Conexion();
+            var arList = new ArrayList();
+            OdbcConnection conn = cn.conexion();
+            try
+            {
+                string busqueda = "select * from "+tablas+" where "+referencia+" = " + id + " ;";
+                OdbcCommand busI = new OdbcCommand(busqueda, conn);
+                OdbcDataReader lector = busI.ExecuteReader();
+                while (lector.Read())
+                {
+                    for(int i=0; i < cuenta; i++)
+                    {
+                        arList.Add(lector[i].ToString());
+                    }
+                }
+            }
+            catch (OdbcException)
+            {
+                Console.WriteLine("Error en la consulta");
+            }
+            cn.desconexion(conn);
+            return arList;
+        }
 
+        public string modificar(TextBox[] campos, string tablas)
+        {
+            int resultado=0;
+            Conexion cn = new Conexion();
+            OdbcConnection conn = cn.conexion();
+            string cad = "Entro a la conexion";
+            string sentencia = "update "+tablas+" set ";
+            for(int i = 1; i<campos.Length; i++)
+            {
+                if (i < campos.Length - 1)
+                {
+                    sentencia += campos[i].Tag.ToString() + " = '" + campos[i].Text + "', ";
+                }
+                else
+                {
+                    sentencia += campos[i].Tag.ToString() + " = '" + campos[i].Text + "' ";
+                }
+            }
+            sentencia += "where "+campos[0].Tag.ToString()+" = '"+campos[0].Text+"';";
+            cad = "Sebtebcia creada "+sentencia;
+            try
+            {
+                OdbcCommand ingreso = new OdbcCommand(sentencia, conn);
+                cad = "Se logró conexion";
+                ingreso.ExecuteNonQuery();
+                cad = "se ehecutó la sentencia";
+                resultado = 1;
+            }
+            catch (OdbcException Error)
+            {
+                cad = Error.Message;
+                Console.WriteLine("Error al actualizar " + Error);
+
+            }
+            cn.desconexion(conn);
+            if (resultado== 1)
+                {
+                    return cad;
+                }
+            else
+            {
+                return cad;
+            }
+        }
     }//fin de clase
 }

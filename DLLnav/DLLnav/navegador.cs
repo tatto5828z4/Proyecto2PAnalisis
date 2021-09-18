@@ -14,7 +14,13 @@ namespace DLL.nav
 {
     public partial class navegador : UserControl
     {
+        //Variables Globales
+        TextBox[] campos;
+        string tablas;
+        string DB;
+        int estado = 0;
         ClaseControlador control = new ClaseControlador();
+        //Fin varaibles globales
         public navegador()
         {
             InitializeComponent();
@@ -25,10 +31,12 @@ namespace DLL.nav
         {
             //MessageBox.Show("Hola");
         }*/
-
         public void funAsignarAliasVista(TextBox[] alias, string tabla, string BD)
         {
             control.funAsignarAliasControl(alias, tabla, BD);
+            campos = alias;
+            tablas = tabla;
+            DB = BD;
         }
 
         public void funAsignarSalidadVista(Form menu)
@@ -103,11 +111,42 @@ namespace DLL.nav
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            estado = 0;
             desactivarBotones(0);
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            switch (estado)
+            {
+                case 1://Este nos sirve para ingresar
+
+                    break;
+
+                case 2://Modificar
+                    string resultado;
+                    resultado = control.modificar(campos, tablas);
+                    MessageBox.Show(resultado);
+                  /*  if(resultado == true)
+                    {
+                        MessageBox.Show("Modificación realizada con éxito!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Modificación no se realizó con éxito!");
+                    }*/
+                    break;
+
+
+                case 3://Este es para eliminar
+
+                    break;
+
+                case 0://Error alguno de los otros casos no hizo su trabajo
+                    MessageBox.Show("Error, no ha seleccionado ninguna función para guardar sus acciones");
+                    break;
+            }
+            estado = 0;
             desactivarBotones(0);
         }
 
@@ -116,9 +155,35 @@ namespace DLL.nav
             desactivarBotones(1);
         }
 
-        private void btnModificar_Click(object sender, EventArgs e)
+        private void btnModificar_Click(object sender, EventArgs e)//Boton de modificar campos dinámico
         {
-            desactivarBotones(1);
+            if (dvgConsulta != null)
+            {
+                if (dvgConsulta.RowCount - 1 > 0)
+                {
+                    int cuenta = campos.Length;
+                    string referencia = campos[0].Tag.ToString();//Nos sirve para obtener el campo para hacer la consulta
+                    string id = dvgConsulta.CurrentRow.Cells[0].Value.ToString();
+                    var arList = control.consIndividual(id, tablas, cuenta, referencia);
+                    for(int i=0; i<cuenta; i++)
+                    {
+                        campos[i].Text = (string)arList[i];
+                    }
+                    estado = 2;
+                    desactivarBotones(1);
+                }
+                else
+                {
+                    MessageBox.Show("No tiene Registros");
+                    return;
+                }
+                   
+            }
+            else
+            {
+                MessageBox.Show("No existe ninguna datagridview");
+                return;
+            }          
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -145,9 +210,9 @@ namespace DLL.nav
         }
 
 
-        public void llenaTabla(string tablaBD)
+        public void llenaTabla()
         {
-            DataTable dt = control.llenarTbl(tablaBD);
+            DataTable dt = control.llenarTbl(tablas);
             dvgConsulta.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dvgConsulta.DataSource = dt;
         }
@@ -293,5 +358,21 @@ namespace DLL.nav
         {
 
         }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            llenaTabla();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            generic.Close();
+        }
+        Form generic;
+        public void pedirRef(Form generico)
+        {
+            generic = generico;
+        }
+
     }
 }
