@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaModelo;
-
+using System.Collections;
 namespace CapaControlador
 {
     public class ClaseControlador
@@ -34,6 +34,12 @@ namespace CapaControlador
             }
         }
 
+        public ArrayList consIndividual(string id, string tablas, int cuenta, string referencia)//Metodo necesario para la actualizacion
+        {
+            var arList = modelo.consIndividual(id, tablas, cuenta, referencia);
+            return arList;
+        }
+
 
         public DataTable llenarTbl(string tablaDB)
         {
@@ -42,7 +48,10 @@ namespace CapaControlador
             dt.Fill(table);
             return table;
         }
-
+        public string modificar(TextBox[] campos, string tablas)
+        {
+          return modelo.modificar(campos, tablas); 
+        }
     }
 
 }
