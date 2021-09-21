@@ -49,7 +49,6 @@
             this.lblCP = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
-            this.txtprueba = new System.Windows.Forms.TextBox();
             this.navegador1 = new DLL.nav.navegador();
             this.dvgConsulta = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dvgConsulta)).BeginInit();
@@ -240,15 +239,6 @@
             this.txtID.TabIndex = 26;
             this.txtID.Tag = "idProducto";
             // 
-            // txtprueba
-            // 
-            this.txtprueba.Location = new System.Drawing.Point(348, 348);
-            this.txtprueba.Name = "txtprueba";
-            this.txtprueba.Size = new System.Drawing.Size(102, 20);
-            this.txtprueba.TabIndex = 47;
-            this.txtprueba.Tag = "estado2";
-            this.txtprueba.Text = "Prueba aca";
-            // 
             // navegador1
             // 
             this.navegador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
@@ -274,7 +264,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(199)))), ((int)(((byte)(153)))));
             this.ClientSize = new System.Drawing.Size(1189, 500);
             this.Controls.Add(this.dvgConsulta);
-            this.Controls.Add(this.txtprueba);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.txtEstatus);
@@ -331,7 +320,6 @@
         private System.Windows.Forms.Label lblCP;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TextBox txtprueba;
         private System.Windows.Forms.DataGridView dvgConsulta;
     }
 }

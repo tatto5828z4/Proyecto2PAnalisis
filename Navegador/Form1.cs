@@ -16,7 +16,8 @@ namespace Navegador
         {
             InitializeComponent();
 
-            TextBox[] alias = { txtID, txtCodigoMarca, txtNombre, txtFecha, txtDescripcion, txtStock, txtPrecio, txtEstatus};
+            //TextBox[] alias = { txtID, txtCodigoMarca, txtNombre, txtFecha, txtDescripcion, txtStock, txtPrecio, txtEstatus};
+            TextBox[] alias = navegador1.funAsignandoTexts(this);
             navegador1.funAsignarAliasVista(alias, "producto", "pruebas");
             navegador1.funAsignarSalidadVista(this);
             navegador1.pideGrid(this.dvgConsulta);
