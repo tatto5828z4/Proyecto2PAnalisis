@@ -120,3 +120,17 @@ C:\Users\wilbe\OneDrive\Escritorio\Pruebas\DLLnav\DLLnav\bin\Debug\CapaControlad
 C:\Users\wilbe\OneDrive\Escritorio\Pruebas\DLLnav\DLLnav\bin\Debug\CapaModelo.pdb
 C:\Users\wilbe\OneDrive\Escritorio\Pruebas\DLLnav\DLLnav\bin\Debug\MySql.Data.xml
 C:\Users\wilbe\OneDrive\Escritorio\Pruebas\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\obj\Debug\DLL.nav.navegador.resources
+C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\obj\Debug\DLL.nav.Properties.Resources.resources
+C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\obj\Debug\DLLnav.dll
+C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\obj\Debug\DLLnav.pdb
+C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\bin\Debug\DLLnav.dll
+C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\bin\Debug\DLLnav.pdb
+C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\bin\Debug\CapaControlador.dll
+C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\bin\Debug\CapaModelo.dll
+C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\bin\Debug\CapaControlador.pdb
+C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\bin\Debug\CapaModelo.pdb
+C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CopyComplete

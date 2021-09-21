@@ -13,6 +13,36 @@ namespace CapaModelo
     public class ClaseModelo
     {
         Conexion conexion = new Conexion();
+
+        public TextBox[] funTexts(Control parent)
+        {
+            int contador = 0;
+
+            foreach (Control ctr in parent.Controls)
+            {
+                if (ctr is TextBox)
+                {
+                    contador++;
+                }
+            }
+
+            TextBox[] alias = new TextBox[contador];
+
+            contador = 0;
+            foreach (Control ctr in parent.Controls)
+            {
+
+                if (ctr is TextBox)
+                {
+                    alias[contador] = (TextBox)ctr;
+                    contador++;
+                }
+
+            }
+
+            return alias;
+        }
+
         public string funAsignarAlias(TextBox[] alias, string tabla, string BD)
         {
             /* Inicio para busqueda de tabla en BD */

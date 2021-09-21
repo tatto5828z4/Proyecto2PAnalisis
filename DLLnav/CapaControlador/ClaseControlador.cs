@@ -13,8 +13,24 @@ namespace CapaControlador
     public class ClaseControlador
     {
         string errores = "";
-       
+        TextBox[] texts;
+
         ClaseModelo modelo = new ClaseModelo();
+
+        public TextBox[] ordenandoTextos(Control parent)
+        {
+            texts = modelo.funTexts(parent);
+            TextBox[] alias = new TextBox[texts.Length];
+
+            int j = 0;
+            for (int i = (texts.Length - 1); i >= 0; i--)
+            {
+                alias[j] = texts[i];
+                j++;
+            }
+
+            return alias;
+        }
 
         public void funAsignarAliasControl(TextBox[] alias, string tabla, string BD)
         {

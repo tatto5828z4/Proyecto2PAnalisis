@@ -14,7 +14,7 @@ namespace CapaModelo
         public OdbcConnection conexion()
         {
             //creacion de la conexion via ODBC
-            OdbcConnection conn = new OdbcConnection("Dsn=pruebas");
+            OdbcConnection conn = new OdbcConnection("Dsn=local");
             try
             {
                 conn.Open();
@@ -36,38 +36,6 @@ namespace CapaModelo
             catch (OdbcException)
             {
                 Console.WriteLine("No se establecio Conexion!");
-            }
-        }
-    }
-
-    class Conexiontwo
-    {
-        public static MySqlConnection conexion()
-        {
-            //actualizar los datos segun el usuario de su servidor local
-            //String servidor = "34.132.76.83";
-            //String bd = "pruebas";
-            //String usuario = "root";
-            //String password = "root";//"root";
-            String servidor = "localhost";
-            String bd = "pruebas";
-            String usuario = "root";
-            String password = "root";
-
-            String cadenaConexion = "Database=" + bd + "; Data Source=" + servidor + "; User Id= " + usuario +
-            "; Password=" + password + ";";
-
-            try
-            {
-                MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
-                MessageBox.Show("conectado");
-
-                return conexionBD;
-            }
-            catch (MySqlException ex)
-            {
-                Console.WriteLine("Error: " + ex.Message);
-                return null;
             }
         }
     }

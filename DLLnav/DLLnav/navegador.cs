@@ -31,6 +31,12 @@ namespace DLL.nav
         {
             //MessageBox.Show("Hola");
         }*/
+
+        public TextBox[] funAsignandoTexts(Control parent)
+        {
+            return control.ordenandoTextos(parent);
+        }
+
         public void funAsignarAliasVista(TextBox[] alias, string tabla, string BD)
         {
             control.funAsignarAliasControl(alias, tabla, BD);
