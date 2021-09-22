@@ -53,5 +53,23 @@ namespace Navegador
         {
 
         }
+
+        private void radioButton1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (radioButton1.Checked == true)
+            {
+                txtEstatus.Text = "A";
+            }
+
+        }
+
+        private void radioButton2_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (radioButton2.Checked == true)
+            {
+                txtEstatus.Text = "I";
+            }
+
+        }
     }
 }
