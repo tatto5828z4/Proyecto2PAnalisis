@@ -46,7 +46,71 @@ namespace CapaModelo
             return alias;
         }
 
-        
+        public void funDeshabilitarTexts(Control parent)
+        {
+            foreach (Control ctr in parent.Controls)
+            {
+                if (ctr is TextBox)
+                {
+                    ctr.Enabled = false;
+                }
+
+                if(ctr is ComboBox)
+                {
+                    ctr.Enabled = false;
+                }
+
+                if(ctr is DateTimePicker)
+                {
+                    ctr.Enabled = false;
+                }
+
+                if(ctr is RadioButton)
+                {
+                    ctr.Enabled = false;
+                }
+            }
+        }
+
+        public int funUltimoEntero(string tabla, string campoB)
+        {
+            string ultimoEntero = "";
+            int enteroSumado = 0;
+            OdbcDataReader leer = null;
+
+            string sql = "SELECT" + " " + campoB + " " + "FROM" + " " + tabla + " " +  "ORDER BY" + " " + campoB + " " + "DESC LIMIT 1";
+            OdbcConnection conect = conexion.conexion();
+
+            try
+            {
+                OdbcCommand comando = new OdbcCommand(sql, conect);
+                leer = comando.ExecuteReader();
+
+                while (leer.Read())
+                {
+                    ultimoEntero = leer.GetString(0);
+                    //enteroSumado += ultimoEntero; 
+                    enteroSumado = int.Parse(ultimoEntero) + 1;
+                }
+
+            }
+            catch(OdbcException ex)
+            {
+                MessageBox.Show("Error al cargar los datos" + ex.Message);
+            }
+            finally
+            {
+                conexion.desconexion(conect);
+            }
+
+            if(enteroSumado == 0)
+            {
+                enteroSumado = 1;
+            }
+            
+
+            return enteroSumado;
+        }
 
 
         public string funAsignarAlias(TextBox[] alias, string tabla, string BD)

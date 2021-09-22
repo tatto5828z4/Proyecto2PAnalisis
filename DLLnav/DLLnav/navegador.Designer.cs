@@ -53,7 +53,7 @@ namespace DLL.nav
             this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnModificar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificar.Location = new System.Drawing.Point(86, 1);
+            this.btnModificar.Location = new System.Drawing.Point(85, 1);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(85, 86);
             this.btnModificar.TabIndex = 2;
@@ -70,7 +70,7 @@ namespace DLL.nav
             this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Location = new System.Drawing.Point(256, 1);
+            this.btnCancelar.Location = new System.Drawing.Point(255, 1);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(85, 86);
             this.btnCancelar.TabIndex = 0;
@@ -87,7 +87,7 @@ namespace DLL.nav
             this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Location = new System.Drawing.Point(341, 1);
+            this.btnEliminar.Location = new System.Drawing.Point(340, 1);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(85, 86);
             this.btnEliminar.TabIndex = 0;
@@ -104,7 +104,7 @@ namespace DLL.nav
             this.btnConsultar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConsultar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConsultar.Location = new System.Drawing.Point(426, 1);
+            this.btnConsultar.Location = new System.Drawing.Point(425, 1);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(85, 86);
             this.btnConsultar.TabIndex = 0;
@@ -119,7 +119,7 @@ namespace DLL.nav
             this.btnReporte.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReporte.Image = global::DLL.nav.Properties.Resources.imprimir;
-            this.btnReporte.Location = new System.Drawing.Point(511, 1);
+            this.btnReporte.Location = new System.Drawing.Point(510, 1);
             this.btnReporte.Name = "btnReporte";
             this.btnReporte.Size = new System.Drawing.Size(85, 86);
             this.btnReporte.TabIndex = 0;
@@ -134,7 +134,7 @@ namespace DLL.nav
             this.btnActualizar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizar.Image = global::DLL.nav.Properties.Resources.actualizar;
-            this.btnActualizar.Location = new System.Drawing.Point(596, 1);
+            this.btnActualizar.Location = new System.Drawing.Point(595, 1);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(85, 86);
             this.btnActualizar.TabIndex = 0;
@@ -151,7 +151,7 @@ namespace DLL.nav
             this.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInicio.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInicio.Location = new System.Drawing.Point(681, 1);
+            this.btnInicio.Location = new System.Drawing.Point(680, 1);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(85, 86);
             this.btnInicio.TabIndex = 0;
@@ -168,7 +168,7 @@ namespace DLL.nav
             this.btnAnterior.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAnterior.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnterior.Location = new System.Drawing.Point(766, 1);
+            this.btnAnterior.Location = new System.Drawing.Point(765, 1);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(85, 86);
             this.btnAnterior.TabIndex = 0;
@@ -184,7 +184,7 @@ namespace DLL.nav
             this.btnSiguiente.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Image = global::DLL.nav.Properties.Resources.siguiente;
-            this.btnSiguiente.Location = new System.Drawing.Point(851, 1);
+            this.btnSiguiente.Location = new System.Drawing.Point(850, 1);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(85, 86);
             this.btnSiguiente.TabIndex = 0;
@@ -200,7 +200,7 @@ namespace DLL.nav
             this.btnFinal.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnFinal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFinal.Image = global::DLL.nav.Properties.Resources.Final;
-            this.btnFinal.Location = new System.Drawing.Point(936, 1);
+            this.btnFinal.Location = new System.Drawing.Point(935, 1);
             this.btnFinal.Name = "btnFinal";
             this.btnFinal.Size = new System.Drawing.Size(85, 86);
             this.btnFinal.TabIndex = 0;
@@ -216,7 +216,7 @@ namespace DLL.nav
             this.btnAyuda.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAyuda.Image = global::DLL.nav.Properties.Resources.ayuda;
-            this.btnAyuda.Location = new System.Drawing.Point(1021, 1);
+            this.btnAyuda.Location = new System.Drawing.Point(1020, 1);
             this.btnAyuda.Name = "btnAyuda";
             this.btnAyuda.Size = new System.Drawing.Size(85, 86);
             this.btnAyuda.TabIndex = 0;
@@ -231,7 +231,7 @@ namespace DLL.nav
             this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Image = global::DLL.nav.Properties.Resources.salir2;
-            this.btnSalir.Location = new System.Drawing.Point(1106, 1);
+            this.btnSalir.Location = new System.Drawing.Point(1105, 1);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(83, 86);
             this.btnSalir.TabIndex = 0;
@@ -265,7 +265,7 @@ namespace DLL.nav
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Location = new System.Drawing.Point(171, 1);
+            this.btnGuardar.Location = new System.Drawing.Point(170, 1);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(85, 86);
             this.btnGuardar.TabIndex = 2;
@@ -294,7 +294,7 @@ namespace DLL.nav
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnIngresar);
             this.Name = "navegador";
-            this.Size = new System.Drawing.Size(1192, 87);
+            this.Size = new System.Drawing.Size(1189, 87);
             this.Load += new System.EventHandler(this.navegador_Load);
             this.ResumeLayout(false);
 
