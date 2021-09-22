@@ -50,6 +50,14 @@ namespace CapaControlador
             }
         }
 
+        public void funLlenarComboControl(ComboBox cbx, string tabla, string value, string display, string estatus)
+        {
+            modelo.funLlenarCombo(cbx,tabla,value, display, estatus);
+
+
+        }
+
+
         public ArrayList consIndividual(string id, string tablas, int cuenta, string referencia)//Metodo necesario para la actualizacion
         {
             var arList = modelo.consIndividual(id, tablas, cuenta, referencia);
@@ -67,6 +75,11 @@ namespace CapaControlador
         public string modificar(TextBox[] campos, string tablas)
         {
           return modelo.modificar(campos, tablas); 
+        }
+
+        public void funEliminarControl(TextBox[] arreglo, string tabla, string campoEstado)
+        {
+            modelo.eliminar(arreglo, tabla, campoEstado);
         }
     }
 

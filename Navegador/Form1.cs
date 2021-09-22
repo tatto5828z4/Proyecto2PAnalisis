@@ -20,12 +20,22 @@ namespace Navegador
             TextBox[] alias = navegador1.funAsignandoTexts(this);
             navegador1.funAsignarAliasVista(alias, "producto", "pruebas");
             navegador1.funAsignarSalidadVista(this);
+            navegador1.funLlenarComboControl(cbxCodMarca, "marca", "idMarca", "nombre","estatus");
+            navegador1.campoEstado = "estado";
+
             navegador1.pideGrid(this.dvgConsulta);
             navegador1.llenaTabla();
             navegador1.pedirRef(this);
             //String cadena = txtprueba.Text;
             //navegador1.pruebaMensaje(cadena);
+
+
+
+            //cbxCodMarca
+
         }
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -37,6 +47,29 @@ namespace Navegador
             String dt = "";
             dt = dtProducto.Value.ToString();
             txtFecha.Text = dt;
+        }
+
+        private void navegador1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (radioButton1.Checked == true)
+            {
+                txtEstatus.Text = "A";
+            }
+
+        }
+
+        private void radioButton2_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (radioButton2.Checked == true)
+            {
+                txtEstatus.Text = "I";
+            }
+
         }
     }
 }
