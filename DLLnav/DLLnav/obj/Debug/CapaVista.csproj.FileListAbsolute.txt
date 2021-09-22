@@ -146,3 +146,17 @@ D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CoreCompi
 D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CopyComplete
 D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\obj\Debug\DLLnav.dll
 D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\obj\Debug\DLLnav.pdb
+C:\Users\Wilmer\Documents\Navegador\DLLnav\DLLnav\bin\Debug\DLLnav.dll
+C:\Users\Wilmer\Documents\Navegador\DLLnav\DLLnav\bin\Debug\DLLnav.pdb
+C:\Users\Wilmer\Documents\Navegador\DLLnav\DLLnav\bin\Debug\CapaControlador.dll
+C:\Users\Wilmer\Documents\Navegador\DLLnav\DLLnav\bin\Debug\CapaModelo.dll
+C:\Users\Wilmer\Documents\Navegador\DLLnav\DLLnav\bin\Debug\CapaControlador.pdb
+C:\Users\Wilmer\Documents\Navegador\DLLnav\DLLnav\bin\Debug\CapaModelo.pdb
+C:\Users\Wilmer\Documents\Navegador\DLLnav\DLLnav\obj\Debug\CapaVista.csprojAssemblyReference.cache
+C:\Users\Wilmer\Documents\Navegador\DLLnav\DLLnav\obj\Debug\DLL.nav.navegador.resources
+C:\Users\Wilmer\Documents\Navegador\DLLnav\DLLnav\obj\Debug\DLL.nav.Properties.Resources.resources
+C:\Users\Wilmer\Documents\Navegador\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\Wilmer\Documents\Navegador\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\Wilmer\Documents\Navegador\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\Wilmer\Documents\Navegador\DLLnav\DLLnav\obj\Debug\DLLnav.dll
+C:\Users\Wilmer\Documents\Navegador\DLLnav\DLLnav\obj\Debug\DLLnav.pdb
