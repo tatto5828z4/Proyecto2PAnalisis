@@ -50,6 +50,14 @@ namespace DLL.nav
             control.funAsignarSalidadControl(menu);
         }
 
+        public void funLlenarComboControl(ComboBox cbx, string tabla, string value, string display, string estatus)
+        {
+            control.funLlenarComboControl( cbx,tabla,  value,  display,  estatus);
+
+        }
+
+
+
         public void mensaje()
         {
             MessageBox.Show("Prueba de Funcion #2");

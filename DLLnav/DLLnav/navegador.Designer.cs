@@ -53,10 +53,9 @@ namespace DLL.nav
             this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnModificar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificar.Location = new System.Drawing.Point(115, 1);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModificar.Location = new System.Drawing.Point(86, 1);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(113, 106);
+            this.btnModificar.Size = new System.Drawing.Size(85, 86);
             this.btnModificar.TabIndex = 2;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -71,10 +70,9 @@ namespace DLL.nav
             this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Location = new System.Drawing.Point(341, 1);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Location = new System.Drawing.Point(256, 1);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(113, 106);
+            this.btnCancelar.Size = new System.Drawing.Size(85, 86);
             this.btnCancelar.TabIndex = 0;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -89,10 +87,9 @@ namespace DLL.nav
             this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Location = new System.Drawing.Point(455, 1);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminar.Location = new System.Drawing.Point(341, 1);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(113, 106);
+            this.btnEliminar.Size = new System.Drawing.Size(85, 86);
             this.btnEliminar.TabIndex = 0;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -107,10 +104,9 @@ namespace DLL.nav
             this.btnConsultar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConsultar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConsultar.Location = new System.Drawing.Point(568, 1);
-            this.btnConsultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnConsultar.Location = new System.Drawing.Point(426, 1);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(113, 106);
+            this.btnConsultar.Size = new System.Drawing.Size(85, 86);
             this.btnConsultar.TabIndex = 0;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -123,10 +119,9 @@ namespace DLL.nav
             this.btnReporte.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReporte.Image = global::DLL.nav.Properties.Resources.imprimir;
-            this.btnReporte.Location = new System.Drawing.Point(681, 1);
-            this.btnReporte.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReporte.Location = new System.Drawing.Point(511, 1);
             this.btnReporte.Name = "btnReporte";
-            this.btnReporte.Size = new System.Drawing.Size(113, 106);
+            this.btnReporte.Size = new System.Drawing.Size(85, 86);
             this.btnReporte.TabIndex = 0;
             this.btnReporte.Text = "Reporteador";
             this.btnReporte.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -139,10 +134,9 @@ namespace DLL.nav
             this.btnActualizar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizar.Image = global::DLL.nav.Properties.Resources.actualizar;
-            this.btnActualizar.Location = new System.Drawing.Point(795, 1);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnActualizar.Location = new System.Drawing.Point(596, 1);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(113, 106);
+            this.btnActualizar.Size = new System.Drawing.Size(85, 86);
             this.btnActualizar.TabIndex = 0;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -157,10 +151,9 @@ namespace DLL.nav
             this.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInicio.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInicio.Location = new System.Drawing.Point(908, 1);
-            this.btnInicio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInicio.Location = new System.Drawing.Point(681, 1);
             this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(113, 106);
+            this.btnInicio.Size = new System.Drawing.Size(85, 86);
             this.btnInicio.TabIndex = 0;
             this.btnInicio.Text = "Inicio";
             this.btnInicio.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -175,10 +168,9 @@ namespace DLL.nav
             this.btnAnterior.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAnterior.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnterior.Location = new System.Drawing.Point(1021, 1);
-            this.btnAnterior.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAnterior.Location = new System.Drawing.Point(766, 1);
             this.btnAnterior.Name = "btnAnterior";
-            this.btnAnterior.Size = new System.Drawing.Size(113, 106);
+            this.btnAnterior.Size = new System.Drawing.Size(85, 86);
             this.btnAnterior.TabIndex = 0;
             this.btnAnterior.Text = "Anterior";
             this.btnAnterior.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -192,10 +184,9 @@ namespace DLL.nav
             this.btnSiguiente.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Image = global::DLL.nav.Properties.Resources.siguiente;
-            this.btnSiguiente.Location = new System.Drawing.Point(1135, 1);
-            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSiguiente.Location = new System.Drawing.Point(851, 1);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(113, 106);
+            this.btnSiguiente.Size = new System.Drawing.Size(85, 86);
             this.btnSiguiente.TabIndex = 0;
             this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -209,10 +200,9 @@ namespace DLL.nav
             this.btnFinal.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnFinal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFinal.Image = global::DLL.nav.Properties.Resources.Final;
-            this.btnFinal.Location = new System.Drawing.Point(1248, 1);
-            this.btnFinal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFinal.Location = new System.Drawing.Point(936, 1);
             this.btnFinal.Name = "btnFinal";
-            this.btnFinal.Size = new System.Drawing.Size(113, 106);
+            this.btnFinal.Size = new System.Drawing.Size(85, 86);
             this.btnFinal.TabIndex = 0;
             this.btnFinal.Text = "Final";
             this.btnFinal.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -226,10 +216,9 @@ namespace DLL.nav
             this.btnAyuda.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAyuda.Image = global::DLL.nav.Properties.Resources.ayuda;
-            this.btnAyuda.Location = new System.Drawing.Point(1361, 1);
-            this.btnAyuda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAyuda.Location = new System.Drawing.Point(1021, 1);
             this.btnAyuda.Name = "btnAyuda";
-            this.btnAyuda.Size = new System.Drawing.Size(113, 106);
+            this.btnAyuda.Size = new System.Drawing.Size(85, 86);
             this.btnAyuda.TabIndex = 0;
             this.btnAyuda.Text = "Ayuda";
             this.btnAyuda.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -242,10 +231,9 @@ namespace DLL.nav
             this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Image = global::DLL.nav.Properties.Resources.salir2;
-            this.btnSalir.Location = new System.Drawing.Point(1475, 1);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Location = new System.Drawing.Point(1106, 1);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(111, 106);
+            this.btnSalir.Size = new System.Drawing.Size(83, 86);
             this.btnSalir.TabIndex = 0;
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -261,9 +249,8 @@ namespace DLL.nav
             this.btnIngresar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIngresar.Location = new System.Drawing.Point(0, 1);
-            this.btnIngresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(113, 106);
+            this.btnIngresar.Size = new System.Drawing.Size(85, 86);
             this.btnIngresar.TabIndex = 2;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -278,10 +265,9 @@ namespace DLL.nav
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Location = new System.Drawing.Point(228, 1);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardar.Location = new System.Drawing.Point(171, 1);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(113, 106);
+            this.btnGuardar.Size = new System.Drawing.Size(85, 86);
             this.btnGuardar.TabIndex = 2;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -290,7 +276,7 @@ namespace DLL.nav
             // 
             // navegador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.Controls.Add(this.btnSalir);
@@ -307,9 +293,8 @@ namespace DLL.nav
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnIngresar);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "navegador";
-            this.Size = new System.Drawing.Size(1589, 107);
+            this.Size = new System.Drawing.Size(1192, 87);
             this.Load += new System.EventHandler(this.navegador_Load);
             this.ResumeLayout(false);
 

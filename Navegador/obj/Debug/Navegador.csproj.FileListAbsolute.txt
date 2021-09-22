@@ -97,8 +97,6 @@ C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\bin\Debug\Navegador.pdb
 C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\bin\Debug\DLLnav.dll
 C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\bin\Debug\CapaControlador.dll
 C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\bin\Debug\CapaModelo.dll
-C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\bin\Debug\MySql.Data.dll
-C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\bin\Debug\Ubiety.Dns.Core.dll
 C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\bin\Debug\DLLnav.pdb
 C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\bin\Debug\CapaControlador.pdb
 C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\bin\Debug\CapaModelo.pdb
@@ -110,7 +108,6 @@ C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\obj\Debug\Navegador.csproj.CoreCo
 C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\obj\Debug\Navegador.csproj.CopyComplete
 C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\obj\Debug\Navegador.exe
 C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\obj\Debug\Navegador.pdb
-C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\obj\Debug\Navegador.csprojAssemblyReference.cache
 C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\Navegador.exe.config
 C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\Navegador.exe
 C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\Navegador.pdb
@@ -160,3 +157,4 @@ C:\Users\Langas\Documents\navegador_proyecto\Navegador\obj\Debug\Navegador.cspro
 C:\Users\Langas\Documents\navegador_proyecto\Navegador\obj\Debug\Navegador.csproj.CopyComplete
 C:\Users\Langas\Documents\navegador_proyecto\Navegador\obj\Debug\Navegador.exe
 C:\Users\Langas\Documents\navegador_proyecto\Navegador\obj\Debug\Navegador.pdb
+C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\obj\Debug\Navegador.csprojAssemblyReference.cache

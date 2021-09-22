@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Odbc;
 using System.Collections;
+using System.Data;
 
 namespace CapaModelo
 {
     public class ClaseModelo
     {
         Conexion conexion = new Conexion();
-
+        string tablaBD = "";
         public TextBox[] funTexts(Control parent)
         {
             int contador = 0;
@@ -42,6 +43,9 @@ namespace CapaModelo
 
             return alias;
         }
+
+        
+
 
         public string funAsignarAlias(TextBox[] alias, string tabla, string BD)
         {
@@ -171,6 +175,42 @@ namespace CapaModelo
         {
             menu.Show();
         }
+
+        public void funLlenarCombo(ComboBox cbx,string tabla ,string value, string display,string estatus)
+        {
+            cbx.DataSource = null;
+            cbx.Items.Clear();
+
+            String psql = "SELECT * FROM " + " " + tabla + " " + "WHERE " + " " + estatus + "= 'A' ";
+
+            //MySqlConnection conexionBD = Conexion.conexion();
+            OdbcConnection conect = conexion.conexion();
+            
+
+            try
+            {
+                OdbcCommand comando = new OdbcCommand(psql, conect);
+                //MySqlCommand llenarCombo = new MySqlCommand(psql, conexionBD);
+                OdbcDataAdapter data = new OdbcDataAdapter(comando);
+
+                DataTable dt = new DataTable();
+                data.Fill(dt);
+
+                cbx.ValueMember = value;
+                cbx.DisplayMember = display;
+                cbx.DataSource = dt;
+            }
+            catch (OdbcException ex)
+            {
+                MessageBox.Show("Error al leer los datos " + ex.Message);
+            }
+            finally
+            {
+                //conexionBD.Close();
+                conexion.desconexion(conect);
+            }
+        }
+
 
         public OdbcDataAdapter llenarTbl(string tabla)// metodo  que obtinene el contenio de una tabla
         {
