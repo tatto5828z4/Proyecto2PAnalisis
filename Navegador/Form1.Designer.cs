@@ -246,6 +246,7 @@
             this.navegador1.Name = "navegador1";
             this.navegador1.Size = new System.Drawing.Size(1191, 87);
             this.navegador1.TabIndex = 0;
+            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
             // 
             // dvgConsulta
             // 
@@ -253,6 +254,7 @@
             this.dvgConsulta.Location = new System.Drawing.Point(511, 117);
             this.dvgConsulta.Name = "dvgConsulta";
             this.dvgConsulta.ReadOnly = true;
+            this.dvgConsulta.RowHeadersWidth = 47;
             this.dvgConsulta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dvgConsulta.Size = new System.Drawing.Size(650, 342);
             this.dvgConsulta.TabIndex = 48;

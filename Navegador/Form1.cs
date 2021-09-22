@@ -21,7 +21,7 @@ namespace Navegador
             navegador1.funAsignarAliasVista(alias, "producto", "pruebas");
             navegador1.funAsignarSalidadVista(this);
             navegador1.funLlenarComboControl(cbxCodMarca, "marca", "idMarca", "nombre","estatus");
-
+            navegador1.campoEstado = "estado";
 
             navegador1.pideGrid(this.dvgConsulta);
             navegador1.llenaTabla();
@@ -47,6 +47,11 @@ namespace Navegador
             String dt = "";
             dt = dtProducto.Value.ToString();
             txtFecha.Text = dt;
+        }
+
+        private void navegador1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

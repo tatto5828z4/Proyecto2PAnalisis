@@ -132,3 +132,17 @@ C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\bin\Debug\CapaModelo.
 C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\DLLnav\obj\Debug\CapaVista.csprojAssemblyReference.cache
 C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\DLLnav\bin\Debug\CapaControlador.dll
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\bin\Debug\DLLnav.dll
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\bin\Debug\DLLnav.pdb
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\bin\Debug\CapaControlador.dll
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\bin\Debug\CapaModelo.dll
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\bin\Debug\CapaControlador.pdb
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\bin\Debug\CapaModelo.pdb
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\obj\Debug\CapaVista.csprojAssemblyReference.cache
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\obj\Debug\DLL.nav.navegador.resources
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\obj\Debug\DLL.nav.Properties.Resources.resources
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.GenerateResource.cache
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CopyComplete
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\obj\Debug\DLLnav.dll
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\obj\Debug\DLLnav.pdb

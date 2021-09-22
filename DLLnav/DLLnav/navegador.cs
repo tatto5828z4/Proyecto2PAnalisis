@@ -19,8 +19,11 @@ namespace DLL.nav
         string tablas;
         string DB;
         int estado = 0;
+        public string campoEstado = "";
         ClaseControlador control = new ClaseControlador();
         //Fin varaibles globales
+
+
         public navegador()
         {
             InitializeComponent();
@@ -202,6 +205,8 @@ namespace DLL.nav
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            control.funEliminarControl(campos, tablas, campoEstado);
+
             desactivarBotones(1);
         }
 
