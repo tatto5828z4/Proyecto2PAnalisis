@@ -15,6 +15,8 @@ namespace CapaModelo
     {
         Conexion conexion = new Conexion();
         string tablaBD = "";
+        TextBox[] arreglo;
+
         public TextBox[] funTexts(Control parent)
         {
             int contador = 0;
@@ -168,6 +170,11 @@ namespace CapaModelo
                 }
 
             }
+
+            if (String.IsNullOrEmpty(errores))
+            {
+                arreglo = alias;
+            }
             /* Final de busqueda de columnas en la BD */
             return errores;
         }
@@ -269,13 +276,13 @@ namespace CapaModelo
                 }
             }
             sentencia += "where "+campos[0].Tag.ToString()+" = '"+campos[0].Text+"';";
-            cad = "Sebtebcia creada "+sentencia;
+            cad = "Sentencia creada "+sentencia;
             try
             {
                 OdbcCommand ingreso = new OdbcCommand(sentencia, conn);
                 cad = "Se logró conexion";
                 ingreso.ExecuteNonQuery();
-                cad = "se ehecutó la sentencia";
+                cad = "se ejecutó la sentencia";
                 resultado = 1;
             }
             catch (OdbcException Error)
@@ -294,5 +301,45 @@ namespace CapaModelo
                 return cad;
             }
         }
+
+        public void eliminar(TextBox[] arreglo, string tabla, string campoEstado)
+        {
+            Conexion cn = new Conexion();
+            OdbcConnection conexion = cn.conexion();
+
+            for (int i = 0; i < arreglo.Length; i++)
+            {
+                
+                if (arreglo[i].Tag.ToString() == campoEstado)
+                {
+                    
+                    if (arreglo[i].Text== "A" || arreglo[i].Text =="I")
+                    {
+                        string sql = "UPDATE" + " " + tabla + " " + "SET" + " " + campoEstado + " ="+"'"+arreglo[i].Text+"'"+ " "+"WHERE" + " " + arreglo[0].Tag.ToString() + " = " + arreglo[0].Text;
+                        //MessageBox.Show(sql);
+                        try
+                        {
+                            OdbcCommand eliminar = new OdbcCommand(sql, conexion);
+                            eliminar.ExecuteNonQuery();
+
+                            MessageBox.Show("Registro dado de baja correctamente");
+                        }
+                        catch (OdbcException error)
+                        {
+                            MessageBox.Show("Error al eliminar el registro " + error.Message);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ingrese un estado válido, A=Activo, I=Inactivo");
+                        break;
+                    }
+                    
+                }
+            }
+
+        }
+
+
     }//fin de clase
-}
+}//fin de clase

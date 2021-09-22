@@ -76,6 +76,11 @@ namespace CapaControlador
         {
           return modelo.modificar(campos, tablas); 
         }
+
+        public void funEliminarControl(TextBox[] arreglo, string tabla, string campoEstado)
+        {
+            modelo.eliminar(arreglo, tabla, campoEstado);
+        }
     }
 
 }
