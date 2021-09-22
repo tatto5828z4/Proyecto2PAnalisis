@@ -49,8 +49,9 @@
             this.lblCP = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
-            this.txtprueba = new System.Windows.Forms.TextBox();
             this.navegador1 = new DLL.nav.navegador();
+            this.dvgConsulta = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgConsulta)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGuardar
@@ -238,30 +239,31 @@
             this.txtID.TabIndex = 26;
             this.txtID.Tag = "idProducto";
             // 
-            // txtprueba
-            // 
-            this.txtprueba.Location = new System.Drawing.Point(348, 348);
-            this.txtprueba.Name = "txtprueba";
-            this.txtprueba.Size = new System.Drawing.Size(102, 20);
-            this.txtprueba.TabIndex = 47;
-            this.txtprueba.Tag = "estado2";
-            this.txtprueba.Text = "Prueba aca";
-            // 
             // navegador1
             // 
             this.navegador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.navegador1.Location = new System.Drawing.Point(-1, -1);
             this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1192, 87);
+            this.navegador1.Size = new System.Drawing.Size(1191, 87);
             this.navegador1.TabIndex = 0;
+            // 
+            // dvgConsulta
+            // 
+            this.dvgConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgConsulta.Location = new System.Drawing.Point(511, 117);
+            this.dvgConsulta.Name = "dvgConsulta";
+            this.dvgConsulta.ReadOnly = true;
+            this.dvgConsulta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dvgConsulta.Size = new System.Drawing.Size(650, 342);
+            this.dvgConsulta.TabIndex = 48;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(199)))), ((int)(((byte)(153)))));
-            this.ClientSize = new System.Drawing.Size(1192, 500);
-            this.Controls.Add(this.txtprueba);
+            this.ClientSize = new System.Drawing.Size(1189, 500);
+            this.Controls.Add(this.dvgConsulta);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.txtEstatus);
@@ -288,6 +290,7 @@
             this.Name = "Form1";
             this.Text = "Pruebas";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dvgConsulta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,7 +320,7 @@
         private System.Windows.Forms.Label lblCP;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TextBox txtprueba;
+        private System.Windows.Forms.DataGridView dvgConsulta;
     }
 }
 

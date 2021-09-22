@@ -39,32 +39,4 @@ namespace CapaModelo
             }
         }
     }
-
-    class Conexiontwo
-    {
-        public static MySqlConnection conexion()
-        {
-            //actualizar los datos segun el usuario de su servidor local
-            String servidor = "34.132.76.83";
-            String bd = "pruebas";
-            String usuario = "root";
-            String password = "root";//"root";
-
-            String cadenaConexion = "Database=" + bd + "; Data Source=" + servidor + "; User Id= " + usuario +
-            "; Password=" + password + ";";
-
-            try
-            {
-                MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
-                MessageBox.Show("conectado");
-
-                return conexionBD;
-            }
-            catch (MySqlException ex)
-            {
-                Console.WriteLine("Error: " + ex.Message);
-                return null;
-            }
-        }
-    }
 }

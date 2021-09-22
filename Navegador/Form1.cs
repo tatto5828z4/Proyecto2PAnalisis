@@ -16,12 +16,26 @@ namespace Navegador
         {
             InitializeComponent();
 
-            TextBox[] alias = { txtID, txtCodigoMarca, txtNombre, txtFecha, txtDescripcion, txtStock, txtPrecio, txtEstatus};
+            //TextBox[] alias = { txtID, txtCodigoMarca, txtNombre, txtFecha, txtDescripcion, txtStock, txtPrecio, txtEstatus};
+            TextBox[] alias = navegador1.funAsignandoTexts(this);
             navegador1.funAsignarAliasVista(alias, "producto", "pruebas");
+            navegador1.funAsignarSalidadVista(this);
+            navegador1.funLlenarComboControl(cbxCodMarca, "marca", "idMarca", "nombre","estatus");
 
+
+            navegador1.pideGrid(this.dvgConsulta);
+            navegador1.llenaTabla();
+            navegador1.pedirRef(this);
             //String cadena = txtprueba.Text;
             //navegador1.pruebaMensaje(cadena);
+
+
+
+            //cbxCodMarca
+
         }
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
