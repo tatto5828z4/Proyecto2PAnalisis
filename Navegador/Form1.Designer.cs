@@ -115,43 +115,45 @@
             // 
             // txtFecha
             // 
-            this.txtFecha.Location = new System.Drawing.Point(178, 321);
+            this.txtFecha.Location = new System.Drawing.Point(348, 228);
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(118, 20);
             this.txtFecha.TabIndex = 40;
-            this.txtFecha.Tag = "fecha";
+            this.txtFecha.Tag = "precio";
+            this.txtFecha.TextChanged += new System.EventHandler(this.txtFecha_TextChanged);
             // 
             // txtCodigoMarca
             // 
-            this.txtCodigoMarca.Location = new System.Drawing.Point(182, 227);
+            this.txtCodigoMarca.Location = new System.Drawing.Point(348, 168);
             this.txtCodigoMarca.Name = "txtCodigoMarca";
-            this.txtCodigoMarca.Size = new System.Drawing.Size(27, 20);
+            this.txtCodigoMarca.Size = new System.Drawing.Size(80, 20);
             this.txtCodigoMarca.TabIndex = 39;
-            this.txtCodigoMarca.Tag = "idMarca";
+            this.txtCodigoMarca.Tag = "stock";
+            this.txtCodigoMarca.TextChanged += new System.EventHandler(this.txtCodigoMarca_TextChanged);
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(348, 228);
+            this.txtPrecio.Location = new System.Drawing.Point(46, 367);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(100, 20);
             this.txtPrecio.TabIndex = 38;
-            this.txtPrecio.Tag = "precio";
+            this.txtPrecio.Tag = "descripcion";
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(348, 165);
+            this.txtStock.Location = new System.Drawing.Point(196, 322);
             this.txtStock.Name = "txtStock";
-            this.txtStock.Size = new System.Drawing.Size(100, 20);
+            this.txtStock.Size = new System.Drawing.Size(118, 20);
             this.txtStock.TabIndex = 37;
-            this.txtStock.Tag = "stock";
+            this.txtStock.Tag = "fecha";
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(46, 367);
+            this.txtDescripcion.Location = new System.Drawing.Point(46, 281);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(100, 20);
             this.txtDescripcion.TabIndex = 36;
-            this.txtDescripcion.Tag = "descripcion";
+            this.txtDescripcion.Tag = "nombre";
             // 
             // lblStock
             // 
@@ -227,11 +229,11 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(46, 281);
+            this.txtNombre.Location = new System.Drawing.Point(178, 229);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.Size = new System.Drawing.Size(35, 20);
             this.txtNombre.TabIndex = 27;
-            this.txtNombre.Tag = "nombre";
+            this.txtNombre.Tag = "idMarca";
             // 
             // txtID
             // 

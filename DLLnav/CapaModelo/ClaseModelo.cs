@@ -302,7 +302,10 @@ namespace CapaModelo
             }
         }
 
-        public void eliminar(TextBox[] arreglo, string tabla, string campoEstado)
+
+       
+            
+            public void eliminar(TextBox[] arreglo, string tabla, string campoEstado)
         {
             Conexion cn = new Conexion();
             OdbcConnection conexion = cn.conexion();

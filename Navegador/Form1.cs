@@ -71,5 +71,15 @@ namespace Navegador
             }
 
         }
+
+        private void txtCodigoMarca_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFecha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

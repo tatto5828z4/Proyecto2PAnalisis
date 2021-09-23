@@ -120,3 +120,12 @@ C:\Users\Wilmer\Documents\Navegador\DLLnav\CapaControlador\obj\Debug\CapaControl
 C:\Users\Wilmer\Documents\Navegador\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
 C:\Users\Wilmer\Documents\Navegador\DLLnav\CapaControlador\obj\Debug\CapaControlador.dll
 C:\Users\Wilmer\Documents\Navegador\DLLnav\CapaControlador\obj\Debug\CapaControlador.pdb
+C:\Users\USUARIO\Documents\funciona\DLLnav\CapaControlador\bin\Debug\CapaControlador.dll
+C:\Users\USUARIO\Documents\funciona\DLLnav\CapaControlador\bin\Debug\CapaControlador.pdb
+C:\Users\USUARIO\Documents\funciona\DLLnav\CapaControlador\bin\Debug\CapaModelo.dll
+C:\Users\USUARIO\Documents\funciona\DLLnav\CapaControlador\bin\Debug\CapaModelo.pdb
+C:\Users\USUARIO\Documents\funciona\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Documents\funciona\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Documents\funciona\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+C:\Users\USUARIO\Documents\funciona\DLLnav\CapaControlador\obj\Debug\CapaControlador.dll
+C:\Users\USUARIO\Documents\funciona\DLLnav\CapaControlador\obj\Debug\CapaControlador.pdb

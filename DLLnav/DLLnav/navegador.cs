@@ -272,6 +272,18 @@ namespace DLL.nav
                     arList.Add(col);//vamos guardando todos los campos
 
                 }
+
+                cuenta = campos.Length();
+                //asignacion del indice
+                campos[0].Text = "0";
+
+                for (int i = 0; i < cuenta; i++)
+                {
+                    campos[i + 1].Text = (string)arList[i];
+                }
+
+
+
             }
         }
 
