@@ -1,0 +1,196 @@
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\Navegador.exe.config
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\Navegador.exe
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\Navegador.pdb
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\DLLnav.dll
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\CapaControlador.dll
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\CapaModelo.dll
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\MySql.Data.dll
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\Google.Protobuf.dll
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\Zstandard.Net.dll
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\BouncyCastle.Crypto.dll
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\Ubiety.Dns.Core.dll
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\System.Memory.dll
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\System.Buffers.dll
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\K4os.Compression.LZ4.dll
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\K4os.Hash.xxHash.dll
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\DLLnav.pdb
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\CapaControlador.pdb
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\CapaModelo.pdb
+D:\Brayan Cifuentes\source\repos\Navegador\bin\Debug\MySql.Data.xml
+D:\Brayan Cifuentes\source\repos\Navegador\obj\Debug\Navegador.exe.config
+D:\Brayan Cifuentes\source\repos\Navegador\obj\Debug\Navegador.Form1.resources
+D:\Brayan Cifuentes\source\repos\Navegador\obj\Debug\Navegador.Properties.Resources.resources
+D:\Brayan Cifuentes\source\repos\Navegador\obj\Debug\Navegador.csproj.GenerateResource.cache
+D:\Brayan Cifuentes\source\repos\Navegador\obj\Debug\Navegador.csproj.CoreCompileInputs.cache
+D:\Brayan Cifuentes\source\repos\Navegador\obj\Debug\Navegador.csproj.CopyComplete
+D:\Brayan Cifuentes\source\repos\Navegador\obj\Debug\Navegador.exe
+D:\Brayan Cifuentes\source\repos\Navegador\obj\Debug\Navegador.pdb
+D:\Brayan Cifuentes\source\repos\Navegador\obj\Debug\Navegador.MDI.resources
+D:\Brayan Cifuentes\source\repos\Navegador\obj\Debug\Navegador.csprojAssemblyReference.cache
+J:\uni\NavegadorReDo\Navegador\bin\Debug\Navegador.exe.config
+J:\uni\NavegadorReDo\Navegador\bin\Debug\Navegador.exe
+J:\uni\NavegadorReDo\Navegador\bin\Debug\Navegador.pdb
+J:\uni\NavegadorReDo\Navegador\bin\Debug\DLLnav.dll
+J:\uni\NavegadorReDo\Navegador\bin\Debug\CapaControlador.dll
+J:\uni\NavegadorReDo\Navegador\bin\Debug\CapaModelo.dll
+J:\uni\NavegadorReDo\Navegador\bin\Debug\MySql.Data.dll
+J:\uni\NavegadorReDo\Navegador\bin\Debug\Google.Protobuf.dll
+J:\uni\NavegadorReDo\Navegador\bin\Debug\Zstandard.Net.dll
+J:\uni\NavegadorReDo\Navegador\bin\Debug\K4os.Compression.LZ4.Streams.dll
+J:\uni\NavegadorReDo\Navegador\bin\Debug\BouncyCastle.Crypto.dll
+J:\uni\NavegadorReDo\Navegador\bin\Debug\Ubiety.Dns.Core.dll
+J:\uni\NavegadorReDo\Navegador\bin\Debug\System.Memory.dll
+J:\uni\NavegadorReDo\Navegador\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+J:\uni\NavegadorReDo\Navegador\bin\Debug\System.Buffers.dll
+J:\uni\NavegadorReDo\Navegador\bin\Debug\K4os.Compression.LZ4.dll
+J:\uni\NavegadorReDo\Navegador\bin\Debug\K4os.Hash.xxHash.dll
+J:\uni\NavegadorReDo\Navegador\bin\Debug\DLLnav.pdb
+J:\uni\NavegadorReDo\Navegador\bin\Debug\CapaControlador.pdb
+J:\uni\NavegadorReDo\Navegador\bin\Debug\CapaModelo.pdb
+J:\uni\NavegadorReDo\Navegador\bin\Debug\MySql.Data.xml
+J:\uni\NavegadorReDo\Navegador\obj\Debug\Navegador.csproj.AssemblyReference.cache
+J:\uni\NavegadorReDo\Navegador\obj\Debug\Navegador.exe.config
+J:\uni\NavegadorReDo\Navegador\obj\Debug\Navegador.Form1.resources
+J:\uni\NavegadorReDo\Navegador\obj\Debug\Navegador.MDI.resources
+J:\uni\NavegadorReDo\Navegador\obj\Debug\Navegador.Properties.Resources.resources
+J:\uni\NavegadorReDo\Navegador\obj\Debug\Navegador.csproj.GenerateResource.cache
+J:\uni\NavegadorReDo\Navegador\obj\Debug\Navegador.csproj.CoreCompileInputs.cache
+J:\uni\NavegadorReDo\Navegador\obj\Debug\Navegador.csproj.CopyComplete
+J:\uni\NavegadorReDo\Navegador\obj\Debug\Navegador.exe
+J:\uni\NavegadorReDo\Navegador\obj\Debug\Navegador.pdb
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\Navegador.exe.config
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\Navegador.exe
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\Navegador.pdb
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\DLLnav.dll
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\CapaControlador.dll
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\CapaModelo.dll
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\MySql.Data.dll
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\Google.Protobuf.dll
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\Zstandard.Net.dll
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\System.Memory.dll
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\System.Buffers.dll
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\DLLnav.pdb
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\CapaControlador.pdb
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\CapaModelo.pdb
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\bin\Debug\MySql.Data.xml
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\obj\Debug\Navegador.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\obj\Debug\Navegador.Form1.resources
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\obj\Debug\Navegador.MDI.resources
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\obj\Debug\Navegador.Properties.Resources.resources
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\obj\Debug\Navegador.csproj.GenerateResource.cache
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\obj\Debug\Navegador.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\obj\Debug\Navegador.csproj.CopyComplete
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\obj\Debug\Navegador.exe
+C:\Users\USUARIO\Desktop\proyecto2p\Navegador\obj\Debug\Navegador.pdb
+C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\bin\Debug\Navegador.exe.config
+C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\bin\Debug\Navegador.exe
+C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\bin\Debug\Navegador.pdb
+C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\bin\Debug\DLLnav.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\bin\Debug\CapaControlador.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\bin\Debug\CapaModelo.dll
+C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\bin\Debug\DLLnav.pdb
+C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\bin\Debug\CapaControlador.pdb
+C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\bin\Debug\CapaModelo.pdb
+C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\obj\Debug\Navegador.Form1.resources
+C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\obj\Debug\Navegador.MDI.resources
+C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\obj\Debug\Navegador.Properties.Resources.resources
+C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\obj\Debug\Navegador.csproj.GenerateResource.cache
+C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\obj\Debug\Navegador.csproj.CoreCompileInputs.cache
+C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\obj\Debug\Navegador.csproj.CopyComplete
+C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\obj\Debug\Navegador.exe
+C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\obj\Debug\Navegador.pdb
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\Navegador.exe.config
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\Navegador.exe
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\Navegador.pdb
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\DLLnav.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\CapaControlador.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\CapaModelo.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\MySql.Data.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\Google.Protobuf.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\Zstandard.Net.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\System.Memory.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\System.Buffers.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\DLLnav.pdb
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\CapaControlador.pdb
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\CapaModelo.pdb
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\bin\Debug\MySql.Data.xml
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\obj\Debug\Navegador.csproj.AssemblyReference.cache
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\obj\Debug\Navegador.Form1.resources
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\obj\Debug\Navegador.MDI.resources
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\obj\Debug\Navegador.Properties.Resources.resources
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\obj\Debug\Navegador.csproj.GenerateResource.cache
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\obj\Debug\Navegador.csproj.CoreCompileInputs.cache
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\obj\Debug\Navegador.csproj.CopyComplete
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\obj\Debug\Navegador.exe
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas\Navegador\obj\Debug\Navegador.pdb
+C:\Users\Langas\Documents\navegador_proyecto\Navegador\bin\Debug\Navegador.exe.config
+C:\Users\Langas\Documents\navegador_proyecto\Navegador\bin\Debug\Navegador.exe
+C:\Users\Langas\Documents\navegador_proyecto\Navegador\bin\Debug\Navegador.pdb
+C:\Users\Langas\Documents\navegador_proyecto\Navegador\bin\Debug\DLLnav.dll
+C:\Users\Langas\Documents\navegador_proyecto\Navegador\bin\Debug\CapaControlador.dll
+C:\Users\Langas\Documents\navegador_proyecto\Navegador\bin\Debug\CapaModelo.dll
+C:\Users\Langas\Documents\navegador_proyecto\Navegador\bin\Debug\DLLnav.pdb
+C:\Users\Langas\Documents\navegador_proyecto\Navegador\bin\Debug\CapaControlador.pdb
+C:\Users\Langas\Documents\navegador_proyecto\Navegador\bin\Debug\CapaModelo.pdb
+C:\Users\Langas\Documents\navegador_proyecto\Navegador\obj\Debug\Navegador.csproj.AssemblyReference.cache
+C:\Users\Langas\Documents\navegador_proyecto\Navegador\obj\Debug\Navegador.Form1.resources
+C:\Users\Langas\Documents\navegador_proyecto\Navegador\obj\Debug\Navegador.MDI.resources
+C:\Users\Langas\Documents\navegador_proyecto\Navegador\obj\Debug\Navegador.Properties.Resources.resources
+C:\Users\Langas\Documents\navegador_proyecto\Navegador\obj\Debug\Navegador.csproj.GenerateResource.cache
+C:\Users\Langas\Documents\navegador_proyecto\Navegador\obj\Debug\Navegador.csproj.CoreCompileInputs.cache
+C:\Users\Langas\Documents\navegador_proyecto\Navegador\obj\Debug\Navegador.csproj.CopyComplete
+C:\Users\Langas\Documents\navegador_proyecto\Navegador\obj\Debug\Navegador.exe
+C:\Users\Langas\Documents\navegador_proyecto\Navegador\obj\Debug\Navegador.pdb
+C:\Users\jorgi\Desktop\EntregAnalisi\Navegador\obj\Debug\Navegador.csprojAssemblyReference.cache
+D:\Proyectos_Git_Analisis\ERP\Navegador\bin\Debug\Navegador.exe.config
+D:\Proyectos_Git_Analisis\ERP\Navegador\bin\Debug\Navegador.exe
+D:\Proyectos_Git_Analisis\ERP\Navegador\bin\Debug\Navegador.pdb
+D:\Proyectos_Git_Analisis\ERP\Navegador\bin\Debug\DLLnav.dll
+D:\Proyectos_Git_Analisis\ERP\Navegador\bin\Debug\CapaControlador.dll
+D:\Proyectos_Git_Analisis\ERP\Navegador\bin\Debug\CapaModelo.dll
+D:\Proyectos_Git_Analisis\ERP\Navegador\bin\Debug\DLLnav.pdb
+D:\Proyectos_Git_Analisis\ERP\Navegador\bin\Debug\CapaControlador.pdb
+D:\Proyectos_Git_Analisis\ERP\Navegador\bin\Debug\CapaModelo.pdb
+D:\Proyectos_Git_Analisis\ERP\Navegador\obj\Debug\Navegador.csprojAssemblyReference.cache
+D:\Proyectos_Git_Analisis\ERP\Navegador\obj\Debug\Navegador.Form1.resources
+D:\Proyectos_Git_Analisis\ERP\Navegador\obj\Debug\Navegador.MDI.resources
+D:\Proyectos_Git_Analisis\ERP\Navegador\obj\Debug\Navegador.Properties.Resources.resources
+D:\Proyectos_Git_Analisis\ERP\Navegador\obj\Debug\Navegador.csproj.GenerateResource.cache
+D:\Proyectos_Git_Analisis\ERP\Navegador\obj\Debug\Navegador.csproj.CoreCompileInputs.cache
+D:\Proyectos_Git_Analisis\ERP\Navegador\obj\Debug\Navegador.csproj.CopyComplete
+D:\Proyectos_Git_Analisis\ERP\Navegador\obj\Debug\Navegador.exe
+D:\Proyectos_Git_Analisis\ERP\Navegador\obj\Debug\Navegador.pdb
+C:\Users\Wilmer\Documents\Navegador\Navegador\bin\Debug\Navegador.exe.config
+C:\Users\Wilmer\Documents\Navegador\Navegador\bin\Debug\Navegador.exe
+C:\Users\Wilmer\Documents\Navegador\Navegador\bin\Debug\Navegador.pdb
+C:\Users\Wilmer\Documents\Navegador\Navegador\bin\Debug\DLLnav.dll
+C:\Users\Wilmer\Documents\Navegador\Navegador\bin\Debug\CapaControlador.dll
+C:\Users\Wilmer\Documents\Navegador\Navegador\bin\Debug\CapaModelo.dll
+C:\Users\Wilmer\Documents\Navegador\Navegador\bin\Debug\DLLnav.pdb
+C:\Users\Wilmer\Documents\Navegador\Navegador\bin\Debug\CapaControlador.pdb
+C:\Users\Wilmer\Documents\Navegador\Navegador\bin\Debug\CapaModelo.pdb
+C:\Users\Wilmer\Documents\Navegador\Navegador\obj\Debug\Navegador.csprojAssemblyReference.cache
+C:\Users\Wilmer\Documents\Navegador\Navegador\obj\Debug\Navegador.Form1.resources
+C:\Users\Wilmer\Documents\Navegador\Navegador\obj\Debug\Navegador.MDI.resources
+C:\Users\Wilmer\Documents\Navegador\Navegador\obj\Debug\Navegador.Properties.Resources.resources
+C:\Users\Wilmer\Documents\Navegador\Navegador\obj\Debug\Navegador.csproj.GenerateResource.cache
+C:\Users\Wilmer\Documents\Navegador\Navegador\obj\Debug\Navegador.csproj.CoreCompileInputs.cache
+C:\Users\Wilmer\Documents\Navegador\Navegador\obj\Debug\Navegador.csproj.CopyComplete
+C:\Users\Wilmer\Documents\Navegador\Navegador\obj\Debug\Navegador.exe
+C:\Users\Wilmer\Documents\Navegador\Navegador\obj\Debug\Navegador.pdb
