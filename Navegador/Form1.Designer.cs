@@ -113,6 +113,7 @@
             this.cbxCodMarca.Name = "cbxCodMarca";
             this.cbxCodMarca.Size = new System.Drawing.Size(121, 21);
             this.cbxCodMarca.TabIndex = 41;
+            this.cbxCodMarca.SelectedIndexChanged += new System.EventHandler(this.cbxCodMarca_SelectedIndexChanged);
             // 
             // txtFecha
             // 
@@ -126,7 +127,7 @@
             // 
             this.txtCodigoMarca.Location = new System.Drawing.Point(181, 229);
             this.txtCodigoMarca.Name = "txtCodigoMarca";
-            this.txtCodigoMarca.Size = new System.Drawing.Size(27, 20);
+            this.txtCodigoMarca.Size = new System.Drawing.Size(93, 20);
             this.txtCodigoMarca.TabIndex = 39;
             this.txtCodigoMarca.Tag = "idMarca";
             // 
@@ -256,11 +257,10 @@
             // navegador1
             // 
             this.navegador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.navegador1.Location = new System.Drawing.Point(-1, -1);
+            this.navegador1.Location = new System.Drawing.Point(-1, -2);
             this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1191, 87);
-            this.navegador1.TabIndex = 0;
-            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
+            this.navegador1.Size = new System.Drawing.Size(1189, 87);
+            this.navegador1.TabIndex = 49;
             // 
             // Form1
             // 
@@ -268,6 +268,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(199)))), ((int)(((byte)(153)))));
             this.ClientSize = new System.Drawing.Size(1189, 500);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.dvgConsulta);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.radioButton2);
@@ -290,7 +291,6 @@
             this.Controls.Add(this.lblCP);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtID);
-            this.Controls.Add(this.navegador1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Pruebas";
@@ -302,8 +302,6 @@
         }
 
         #endregion
-
-        private DLL.nav.navegador navegador1;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.TextBox txtEstatus;
@@ -326,6 +324,8 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.DataGridView dvgConsulta;
+        private DLL.nav.navegador navegador1;
+        //private DLL.nav.navegador navegador1;
     }
 }
 
