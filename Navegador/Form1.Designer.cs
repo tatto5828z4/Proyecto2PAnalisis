@@ -78,7 +78,7 @@
             // 
             // txtEstatus
             // 
-            this.txtEstatus.Location = new System.Drawing.Point(464, 281);
+            this.txtEstatus.Location = new System.Drawing.Point(455, 289);
             this.txtEstatus.Name = "txtEstatus";
             this.txtEstatus.Size = new System.Drawing.Size(27, 20);
             this.txtEstatus.TabIndex = 44;
@@ -107,6 +107,7 @@
             // 
             // cbxCodMarca
             // 
+            this.cbxCodMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxCodMarca.FormattingEnabled = true;
             this.cbxCodMarca.Location = new System.Drawing.Point(46, 228);
             this.cbxCodMarca.Name = "cbxCodMarca";
@@ -123,7 +124,7 @@
             // 
             // txtCodigoMarca
             // 
-            this.txtCodigoMarca.Location = new System.Drawing.Point(182, 227);
+            this.txtCodigoMarca.Location = new System.Drawing.Point(181, 229);
             this.txtCodigoMarca.Name = "txtCodigoMarca";
             this.txtCodigoMarca.Size = new System.Drawing.Size(27, 20);
             this.txtCodigoMarca.TabIndex = 39;

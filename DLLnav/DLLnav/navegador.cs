@@ -21,12 +21,15 @@ namespace DLL.nav
         int estado = 0;
         public string campoEstado = "";
         ClaseControlador control = new ClaseControlador();
+        Control controles;
         //Fin varaibles globales
 
 
         public navegador()
         {
             InitializeComponent();
+            btnGuardar.Enabled = false;
+            btnCancelar.Enabled = false;
 
         }
 
@@ -37,6 +40,7 @@ namespace DLL.nav
 
         public TextBox[] funAsignandoTexts(Control parent)
         {
+            controles = parent;
             return control.ordenandoTextos(parent);
         }
 
@@ -58,8 +62,6 @@ namespace DLL.nav
             control.funLlenarComboControl( cbx,tabla,  value,  display,  estatus);
 
         }
-
-
 
         public void mensaje()
         {
@@ -116,9 +118,15 @@ namespace DLL.nav
                 btnIngresar.Enabled = false;
                 btnModificar.Enabled = false;
                 btnEliminar.Enabled = false;
+                btnConsultar.Enabled = false;
+                btnReporte.Enabled = false;
+                btnActualizar.Enabled = false;
                 btnIngresar.Cursor = Cursors.No;
                 btnModificar.Cursor = Cursors.No;
                 btnEliminar.Cursor = Cursors.No;
+                btnConsultar.Cursor = Cursors.No;
+                btnReporte.Cursor = Cursors.No;
+                btnActualizar.Cursor = Cursors.No;
                 btnGuardar.Enabled = true;
                 btnCancelar.Enabled = true;
                 btnGuardar.Cursor = Cursors.Hand;
@@ -169,6 +177,41 @@ namespace DLL.nav
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+            int entero = control.funUltimoEnteroControl(tablas);
+            int cantidadCampos = campos.Length;
+            campos[0].Text = entero.ToString();
+
+            foreach (Control ctr in controles.Controls)
+            {
+                if (ctr is TextBox)
+                {
+                    if(ctr.Tag.ToString() == campos[0].Tag.ToString())
+                    {
+                        ctr.Enabled = false;
+                    }
+                    else
+                    {
+                        ctr.Enabled = true;
+                    }
+                    
+                }
+
+                if (ctr is ComboBox)
+                {
+                    ctr.Enabled = true;
+                }
+
+                if (ctr is DateTimePicker)
+                {
+                    ctr.Enabled = true;
+                }
+
+                if (ctr is RadioButton)
+                {
+                    ctr.Enabled = true;
+                }
+            }
+
             desactivarBotones(1);
         }
 

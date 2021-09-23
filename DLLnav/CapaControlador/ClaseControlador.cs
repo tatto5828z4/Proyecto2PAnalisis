@@ -14,12 +14,14 @@ namespace CapaControlador
     {
         string errores = "";
         TextBox[] texts;
+        Control control;
 
         ClaseModelo modelo = new ClaseModelo();
 
         public TextBox[] ordenandoTextos(Control parent)
         {
             texts = modelo.funTexts(parent);
+            control = parent;
             TextBox[] alias = new TextBox[texts.Length];
 
             int j = 0;
@@ -32,6 +34,7 @@ namespace CapaControlador
             return alias;
         }
 
+
         public void funAsignarAliasControl(TextBox[] alias, string tabla, string BD)
         {
             errores = modelo.funAsignarAlias(alias, tabla, BD);
@@ -42,12 +45,21 @@ namespace CapaControlador
             if (String.IsNullOrEmpty(errores))
             {
                 modelo.funSalida(menu);
+                modelo.funDeshabilitarTexts(control);
             }
             else
             {
                 MessageBox.Show(errores);
                 menu.Close();
             }
+        }
+
+        public int funUltimoEnteroControl(string tabla)
+        {
+            int longitud = texts.Length;
+            int entero = modelo.funUltimoEntero(tabla, texts[longitud - 1].Tag.ToString());
+
+            return entero;
         }
 
         public void funLlenarComboControl(ComboBox cbx, string tabla, string value, string display, string estatus)
