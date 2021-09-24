@@ -101,7 +101,6 @@ C:\Users\Langas\Documents\navegador_proyecto\DLLnav\CapaControlador\bin\Debug\Ca
 C:\Users\Langas\Documents\navegador_proyecto\DLLnav\CapaControlador\bin\Debug\CapaModelo.dll
 C:\Users\Langas\Documents\navegador_proyecto\DLLnav\CapaControlador\bin\Debug\CapaModelo.pdb
 C:\Users\Langas\Documents\navegador_proyecto\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
-C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaControlador\obj\Debug\CapaControlador.csprojAssemblyReference.cache
 D:\Proyectos_Git_Analisis\ERP\DLLnav\CapaControlador\bin\Debug\CapaControlador.dll
 D:\Proyectos_Git_Analisis\ERP\DLLnav\CapaControlador\bin\Debug\CapaControlador.pdb
 D:\Proyectos_Git_Analisis\ERP\DLLnav\CapaControlador\bin\Debug\CapaModelo.dll
@@ -120,3 +119,4 @@ C:\Users\Wilmer\Documents\Navegador\DLLnav\CapaControlador\obj\Debug\CapaControl
 C:\Users\Wilmer\Documents\Navegador\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
 C:\Users\Wilmer\Documents\Navegador\DLLnav\CapaControlador\obj\Debug\CapaControlador.dll
 C:\Users\Wilmer\Documents\Navegador\DLLnav\CapaControlador\obj\Debug\CapaControlador.pdb
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\CapaControlador\obj\Debug\CapaControlador.csprojAssemblyReference.cache

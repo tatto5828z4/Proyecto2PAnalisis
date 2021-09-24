@@ -39,7 +39,7 @@ namespace Navegador
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -51,7 +51,9 @@ namespace Navegador
 
         private void navegador1_Load(object sender, EventArgs e)
         {
-
+            //String cbx = cbxCodMarca.Text();
+            //cbxCodMarca
+            
         }
 
         private void radioButton1_MouseClick(object sender, MouseEventArgs e)
@@ -70,6 +72,17 @@ namespace Navegador
                 txtEstatus.Text = "I";
             }
 
+        }
+
+        private void navegador1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbxCodMarca_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            String cbx = cbxCodMarca.SelectedValue.ToString();
+            txtCodigoMarca.Text = cbx;
         }
     }
 }

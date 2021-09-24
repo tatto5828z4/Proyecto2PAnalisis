@@ -131,7 +131,6 @@ C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\bin\Debug\CapaControl
 C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\bin\Debug\CapaModelo.pdb
 C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\DLLnav\obj\Debug\CapaVista.csprojAssemblyReference.cache
-C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\DLLnav\bin\Debug\CapaControlador.dll
 D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\bin\Debug\DLLnav.dll
 D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\bin\Debug\DLLnav.pdb
 D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\bin\Debug\CapaControlador.dll
@@ -160,3 +159,4 @@ C:\Users\Wilmer\Documents\Navegador\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.Cor
 C:\Users\Wilmer\Documents\Navegador\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\Wilmer\Documents\Navegador\DLLnav\DLLnav\obj\Debug\DLLnav.dll
 C:\Users\Wilmer\Documents\Navegador\DLLnav\DLLnav\obj\Debug\DLLnav.pdb
+C:\Users\jorgi\Desktop\EntregAnalisi\DLLnav\DLLnav\bin\Debug\CapaControlador.dll
