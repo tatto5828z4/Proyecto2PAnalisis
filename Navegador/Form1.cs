@@ -58,7 +58,7 @@ namespace Navegador
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             String dt = "";
-            dt = dtProducto.Value.ToString();
+            dt = dtProducto.Value.ToString("yyyy-MM-dd");//lo pasa al formato necesitado por mysql
             txtFecha.Text = dt;
         }
 

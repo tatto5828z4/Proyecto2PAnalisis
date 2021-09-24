@@ -174,3 +174,17 @@ C:\Users\geova\Documents\Octavo_Semestre\Analisis2\NAVEGADOR_AYUDA\DLLnav\DLLnav
 C:\Users\geova\Documents\Octavo_Semestre\Analisis2\NAVEGADOR_AYUDA\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\geova\Documents\Octavo_Semestre\Analisis2\NAVEGADOR_AYUDA\DLLnav\DLLnav\obj\Debug\DLLnav.dll
 C:\Users\geova\Documents\Octavo_Semestre\Analisis2\NAVEGADOR_AYUDA\DLLnav\DLLnav\obj\Debug\DLLnav.pdb
+J:\uni\NavegadorUltm\DLLnav\DLLnav\bin\Debug\DLLnav.dll
+J:\uni\NavegadorUltm\DLLnav\DLLnav\bin\Debug\DLLnav.pdb
+J:\uni\NavegadorUltm\DLLnav\DLLnav\bin\Debug\CapaControlador.dll
+J:\uni\NavegadorUltm\DLLnav\DLLnav\bin\Debug\CapaModelo.dll
+J:\uni\NavegadorUltm\DLLnav\DLLnav\bin\Debug\CapaControlador.pdb
+J:\uni\NavegadorUltm\DLLnav\DLLnav\bin\Debug\CapaModelo.pdb
+J:\uni\NavegadorUltm\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+J:\uni\NavegadorUltm\DLLnav\DLLnav\obj\Debug\DLL.nav.navegador.resources
+J:\uni\NavegadorUltm\DLLnav\DLLnav\obj\Debug\DLL.nav.Properties.Resources.resources
+J:\uni\NavegadorUltm\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.GenerateResource.cache
+J:\uni\NavegadorUltm\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+J:\uni\NavegadorUltm\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CopyComplete
+J:\uni\NavegadorUltm\DLLnav\DLLnav\obj\Debug\DLLnav.dll
+J:\uni\NavegadorUltm\DLLnav\DLLnav\obj\Debug\DLLnav.pdb

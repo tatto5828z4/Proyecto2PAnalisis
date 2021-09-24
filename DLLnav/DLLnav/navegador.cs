@@ -97,8 +97,8 @@ namespace DLL.nav
             //desactivarBotones cambiara los .Enabled de los botones
             //indicados
             /*
-             * 0 Desactiva los botones de cancelar y guardar
-             * 1 Desactiva los botones de insertar, modificar y eliminar
+             * 0 Desactiva los botones de cancelar y guardar. Activa ingreso, modificación, eliminación, consulta, reporte y actu
+             * 1 Desactiva los botones de insertar, modificar, eliminar, consulta, reporte y actu. Activa guardar y cancelar
              * 
              * Cada uno activará lo que el otro desactive
              * 0 Activa insertar, modificar y eliminar
@@ -106,35 +106,29 @@ namespace DLL.nav
              */
             if (tipo == 0)
             {
+                //activa
                 btnIngresar.Enabled = true;
                 btnModificar.Enabled = true;
                 btnEliminar.Enabled = true;
-                btnIngresar.Cursor = Cursors.Hand;
-                btnModificar.Cursor = Cursors.Hand;
-                btnEliminar.Cursor = Cursors.Hand;
+                btnConsultar.Enabled = true;
+                btnReporte.Enabled = true;
+                btnActualizar.Enabled = true;
+                //desactiva
                 btnGuardar.Enabled = false;
                 btnCancelar.Enabled = false;
-                btnGuardar.Cursor = Cursors.No;
-                btnCancelar.Cursor = Cursors.No;
             }
             else
             {
+                //desactiva
                 btnIngresar.Enabled = false;
                 btnModificar.Enabled = false;
                 btnEliminar.Enabled = false;
                 btnConsultar.Enabled = false;
                 btnReporte.Enabled = false;
                 btnActualizar.Enabled = false;
-                btnIngresar.Cursor = Cursors.No;
-                btnModificar.Cursor = Cursors.No;
-                btnEliminar.Cursor = Cursors.No;
-                btnConsultar.Cursor = Cursors.No;
-                btnReporte.Cursor = Cursors.No;
-                btnActualizar.Cursor = Cursors.No;
+                //activa
                 btnGuardar.Enabled = true;
                 btnCancelar.Enabled = true;
-                btnGuardar.Cursor = Cursors.Hand;
-                btnCancelar.Cursor = Cursors.Hand;
             }
         }
 
@@ -142,6 +136,7 @@ namespace DLL.nav
         {
             estado = 0;
             desactivarBotones(0);
+            manipularTextboxs(0);
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -177,6 +172,8 @@ namespace DLL.nav
             }
             estado = 0;
             desactivarBotones(0);
+            manipularTextboxs(0);
+            llenaTabla();//recarga los datos de la tabla
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
@@ -217,6 +214,7 @@ namespace DLL.nav
             }
 
             desactivarBotones(1);
+            manipularTextboxs(1);
         }
 
         private void btnModificar_Click(object sender, EventArgs e)//Boton de modificar campos dinámico
@@ -235,6 +233,7 @@ namespace DLL.nav
                     }
                     estado = 2;
                     desactivarBotones(1);
+                    manipularTextboxs(1);
                 }
                 else
                 {
@@ -255,6 +254,7 @@ namespace DLL.nav
             control.funEliminarControl(campos, tablas, campoEstado);
 
             desactivarBotones(1);
+            manipularTextboxs(1);
         }
 
         //boton de verificacion para navegacion sin registros
@@ -320,6 +320,7 @@ namespace DLL.nav
 
                 }
             }
+            cargaData();
         }
 
         private void btnAnterior_Click(object sender, EventArgs e)
@@ -369,6 +370,7 @@ namespace DLL.nav
 
                 */
             }
+            cargaData();
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
@@ -394,6 +396,7 @@ namespace DLL.nav
                 arList.Add(col);//vamos guardando todos los campos
 
             }
+            cargaData();
         }
 
         private void btnFinal_Click(object sender, EventArgs e)
@@ -418,6 +421,7 @@ namespace DLL.nav
                 arList.Add(col);//vamos guardando todos los campos
 
             }
+            cargaData();
         }
 
         private void navegador_Load(object sender, EventArgs e)
@@ -428,6 +432,7 @@ namespace DLL.nav
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             llenaTabla();
+            //falta actu de combos
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -447,6 +452,91 @@ namespace DLL.nav
 
             //Help.ShowHelp(this, "Ayudas/AyudasSistemaReparto.chm", "ManualSistemaReparto.html");
 
+        }
+
+        private void manipularTextboxs(int modo)
+        {
+            /*
+             * 0 desactiva todos los controles de entrada del usuario y limpia los campos
+             * 1 activa todos los controles menos el id
+             */
+            //llamar este metodo desde donde se utilice (al iniciar, guardar, cancelar, ingresar, etc)
+            //basicamente: ingresar, modificar y eliminar activan el modo 1
+            //y el guardar y cancelar usan el modo 0 (desactivan todo porque ya habran completado una operacion)
+
+            int cantidadCampos = campos.Length;
+            if (modo == 0)
+            {
+                foreach (Control ctr in controles.Controls)
+                {
+                    if (ctr is TextBox)
+                    {
+                        ctr.Enabled = false;
+                        ctr.Text = "";
+                    }
+
+                    if (ctr is ComboBox)
+                    {
+                        ctr.Enabled = false;
+                        ctr.Text = "";
+                    }
+
+                    if (ctr is DateTimePicker)
+                    {
+                        ctr.Enabled = false;
+                        ctr.Text = DateTime.Today.ToString();
+                    }
+
+                    if (ctr is RadioButton)
+                    {
+                        ctr.Enabled = false;
+                    }
+                }
+            }
+
+            if (modo == 1)
+            {
+                foreach (Control ctr in controles.Controls)
+                {
+                    if (ctr is TextBox)
+                    {
+                        if (ctr.Tag.ToString() == campos[0].Tag.ToString())
+                        {
+                            ctr.Enabled = false;
+                        }
+                        else
+                        {
+                            ctr.Enabled = true;
+                        }
+                    }
+
+                    if (ctr is ComboBox)
+                    {
+                        ctr.Enabled = true;
+                    }
+
+                    if (ctr is DateTimePicker)
+                    {
+                        ctr.Enabled = true;
+                    }
+
+                    if (ctr is RadioButton)
+                    {
+                        ctr.Enabled = true;
+                    }
+                }
+            }
+
+        }
+        public void cargaData()
+        {
+            int cantidadCampos = dvgConsulta.Columns.Count;
+            for (int i = 0; i < cantidadCampos; i++)
+            {
+                campos[i].Text = dvgConsulta.CurrentRow.Cells[i].Value.ToString();
+            }
+            //dvgConsulta.CurrentRow();
+            //dvgConsulta.CurrentCellChanged
         }
     }
 }

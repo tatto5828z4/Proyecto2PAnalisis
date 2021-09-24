@@ -129,3 +129,12 @@ C:\Users\geova\Documents\Octavo_Semestre\Analisis2\NAVEGADOR_AYUDA\DLLnav\CapaCo
 C:\Users\geova\Documents\Octavo_Semestre\Analisis2\NAVEGADOR_AYUDA\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
 C:\Users\geova\Documents\Octavo_Semestre\Analisis2\NAVEGADOR_AYUDA\DLLnav\CapaControlador\obj\Debug\CapaControlador.dll
 C:\Users\geova\Documents\Octavo_Semestre\Analisis2\NAVEGADOR_AYUDA\DLLnav\CapaControlador\obj\Debug\CapaControlador.pdb
+J:\uni\NavegadorUltm\DLLnav\CapaControlador\bin\Debug\CapaControlador.dll
+J:\uni\NavegadorUltm\DLLnav\CapaControlador\bin\Debug\CapaControlador.pdb
+J:\uni\NavegadorUltm\DLLnav\CapaControlador\bin\Debug\CapaModelo.dll
+J:\uni\NavegadorUltm\DLLnav\CapaControlador\bin\Debug\CapaModelo.pdb
+J:\uni\NavegadorUltm\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.AssemblyReference.cache
+J:\uni\NavegadorUltm\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+J:\uni\NavegadorUltm\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+J:\uni\NavegadorUltm\DLLnav\CapaControlador\obj\Debug\CapaControlador.dll
+J:\uni\NavegadorUltm\DLLnav\CapaControlador\obj\Debug\CapaControlador.pdb
