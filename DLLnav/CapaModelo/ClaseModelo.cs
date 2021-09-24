@@ -16,6 +16,10 @@ namespace CapaModelo
         Conexion conexion = new Conexion();
         string tablaBD = "";
         TextBox[] arreglo;
+        string rutaAyudaCHM = "";
+        string rutaAyudaHTML = "";
+      
+
 
         public TextBox[] funTexts(Control parent)
         {
@@ -402,6 +406,45 @@ namespace CapaModelo
                 }
             }
 
+        }
+        
+        public void funAyuda(string idAyuda, string nombreCampo ,string tablaA, Control parent)
+        {
+            OdbcDataReader leer = null;
+
+            string sql = "SELECT * FROM " + " " + tablaA + " " + "WHERE " + " " + nombreCampo +  "=" + idAyuda;
+
+            OdbcConnection conect = conexion.conexion();
+
+            try{
+
+                OdbcCommand comando = new OdbcCommand(sql, conect);
+                leer = comando.ExecuteReader();
+
+                while (leer.Read())
+                {
+                    rutaAyudaCHM = leer.GetString(1);
+                    
+                    rutaAyudaHTML = leer.GetString(2);
+                }
+
+                
+            }
+            catch (OdbcException ex) { 
+
+                MessageBox.Show("Error al cargar los datos" + ex.Message);
+
+            }
+
+            finally
+            {
+                conexion.desconexion(conect);
+
+            }
+
+          
+            Help.ShowHelp(parent, rutaAyudaCHM,rutaAyudaHTML);
+          
         }
 
 

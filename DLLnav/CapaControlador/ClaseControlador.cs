@@ -93,6 +93,18 @@ namespace CapaControlador
         {
             modelo.eliminar(arreglo, tabla, campoEstado);
         }
+
+        public void funAyudaControl(string idAyuda, string nombreCampo, string tablaA)
+        {
+            modelo.funAyuda(idAyuda,nombreCampo,tablaA,control);
+
+            //MessageBox.Show(tablaA);
+
+            
+
+        }
+
+
     }
 
 }

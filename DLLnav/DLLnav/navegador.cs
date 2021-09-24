@@ -20,8 +20,12 @@ namespace DLL.nav
         string DB;
         int estado = 0;
         public string campoEstado = "";
+        public string tablaAyuda = "";
+        public string idAyuda = "";
+        public string campoAyuda = "";
         ClaseControlador control = new ClaseControlador();
         Control controles;
+        
         //Fin varaibles globales
 
 
@@ -436,5 +440,13 @@ namespace DLL.nav
             generic = generico;
         }
 
+        private void btnAyuda_Click(object sender, EventArgs e)
+        {
+            control.funAyudaControl(idAyuda,campoAyuda, tablaAyuda);
+         //   Help.ShowHelp(parent, rutaAyudaCHM, rutaAyudaHTML);
+
+            //Help.ShowHelp(this, "Ayudas/AyudasSistemaReparto.chm", "ManualSistemaReparto.html");
+
+        }
     }
 }
