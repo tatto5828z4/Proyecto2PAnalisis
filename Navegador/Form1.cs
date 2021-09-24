@@ -21,7 +21,16 @@ namespace Navegador
             navegador1.funAsignarAliasVista(alias, "producto", "pruebas");
             navegador1.funAsignarSalidadVista(this);
             navegador1.funLlenarComboControl(cbxCodMarca, "marca", "idMarca", "nombre","estatus");
+            
+            //inicio de elementos para dar de baja
             navegador1.campoEstado = "estado";
+            //fin de elementos para dar de baja
+
+            //inicio de elementos para ejecutar la ayuda
+            navegador1.tablaAyuda = "ayuda";
+            navegador1.campoAyuda = "idAyuda";
+            navegador1.idAyuda = "1";
+            //fin de elementos para ejecutar la ayuda
 
             navegador1.pideGrid(this.dvgConsulta);
             navegador1.llenaTabla();
@@ -35,8 +44,12 @@ namespace Navegador
 
         }
 
+       /* public void ayudaR()
+        {
+            Help.ShowHelp(this, "Ayudas/AyudasSistemaReparto.chm", "ManualSistemaReparto.html");
 
-
+        }
+       */
         private void Form1_Load(object sender, EventArgs e)
         {
             
