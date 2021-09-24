@@ -325,7 +325,7 @@ namespace CapaModelo
             return arList;
         }
 
-        public string modificar(TextBox[] campos, string tablas)
+        public bool modificar(TextBox[] campos, string tablas)
         {
             int resultado=0;
             Conexion cn = new Conexion();
@@ -362,11 +362,11 @@ namespace CapaModelo
             cn.desconexion(conn);
             if (resultado== 1)
                 {
-                    return cad;
+                    return true;
                 }
             else
             {
-                return cad;
+                return false;
             }
         }
 

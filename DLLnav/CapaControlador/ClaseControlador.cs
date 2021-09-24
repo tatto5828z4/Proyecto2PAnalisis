@@ -84,7 +84,7 @@ namespace CapaControlador
             dt.Fill(table);
             return table;
         }
-        public string modificar(TextBox[] campos, string tablas)
+        public bool modificar(TextBox[] campos, string tablas)
         {
           return modelo.modificar(campos, tablas); 
         }

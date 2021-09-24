@@ -148,17 +148,16 @@ namespace DLL.nav
                     break;
 
                 case 2://Modificar
-                    string resultado;
+                    bool resultado;
                     resultado = control.modificar(campos, tablas);
-                    MessageBox.Show(resultado);
-                  /*  if(resultado == true)
+                    if(resultado == true)
                     {
                         MessageBox.Show("Modificación realizada con éxito!");
                     }
                     else
                     {
                         MessageBox.Show("Modificación no se realizó con éxito!");
-                    }*/
+                    }
                     break;
 
 
