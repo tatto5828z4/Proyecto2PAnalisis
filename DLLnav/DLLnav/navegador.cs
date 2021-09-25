@@ -25,7 +25,12 @@ namespace DLL.nav
         public string campoAyuda = "";
         ClaseControlador control = new ClaseControlador();
         Control controles;
-        
+        ArrayList referencia0 = new ArrayList();
+        ArrayList referencia1 = new ArrayList();
+        ArrayList referencia2 = new ArrayList();
+        ArrayList referencia3 = new ArrayList();
+        ArrayList referencia4 = new ArrayList();
+
         //Fin varaibles globales
 
 
@@ -63,8 +68,24 @@ namespace DLL.nav
 
         public void funLlenarComboControl(ComboBox cbx, string tabla, string value, string display, string estatus)
         {
+            referencia1.Add(tabla);
+            referencia2.Add(value);
+            referencia3.Add(display);
+            referencia4.Add(estatus);
+            referencia0.Add(cbx);
             control.funLlenarComboControl( cbx,tabla,  value,  display,  estatus);
 
+        }
+
+        private void actualizarCombo()
+        {
+            for (int i=0; i < referencia0.Count; i++)
+            {
+                //ComboBox temporal = (ComboBox)referencia0[i];
+                //MessageBox.Show(temporal.Text + (string)referencia1[i] + (string)referencia2[i] + (string)referencia3[i] + (string)referencia4[i]);
+                control.funLlenarComboControl((ComboBox)referencia0[i], (string)referencia1[i], (string)referencia2[i], (string)referencia3[i], (string)referencia4[i]);
+            } 
+            
         }
 
         public void mensaje()
@@ -466,6 +487,8 @@ namespace DLL.nav
                 campos[i].Text = "";
 
             }
+
+            actualizarCombo();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

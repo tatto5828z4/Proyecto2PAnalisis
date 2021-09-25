@@ -230,3 +230,17 @@ C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\DLLnav\DLLnav\obj\Debug\CapaV
 C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\DLLnav\DLLnav\obj\Debug\DLLnav.dll
 C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\DLLnav\DLLnav\obj\Debug\DLLnav.pdb
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\DLLnav\bin\Debug\DLLnav.dll
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\DLLnav\bin\Debug\DLLnav.pdb
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\DLLnav\bin\Debug\CapaControlador.dll
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\DLLnav\bin\Debug\CapaModelo.dll
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\DLLnav\bin\Debug\CapaControlador.pdb
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\DLLnav\bin\Debug\CapaModelo.pdb
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\DLLnav\obj\Debug\DLL.nav.navegador.resources
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\DLLnav\obj\Debug\DLL.nav.Properties.Resources.resources
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\DLLnav\obj\Debug\DLLnav.dll
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\DLLnav\obj\Debug\DLLnav.pdb

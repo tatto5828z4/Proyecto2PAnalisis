@@ -257,27 +257,41 @@ namespace CapaModelo
 
         public void funLlenarCombo(ComboBox cbx, string tabla, string value, string display, string estatus)
         {
-            cbx.DataSource = null;
+            //cbx.DataSource = null;
             cbx.Items.Clear();
 
             String psql = "SELECT * FROM " + " " + tabla + " " + "WHERE " + " " + estatus + "= 'A' ";
+            //cbx.Items.Add(psql);
 
             //MySqlConnection conexionBD = Conexion.conexion();
             OdbcConnection conect = conexion.conexion();
 
+            
 
             try
             {
-                OdbcCommand comando = new OdbcCommand(psql, conect);
-                //MySqlCommand llenarCombo = new MySqlCommand(psql, conexionBD);
-                OdbcDataAdapter data = new OdbcDataAdapter(comando);
+                /* OdbcCommand comando = new OdbcCommand(psql, conect);
+                 //MySqlCommand llenarCombo = new MySqlCommand(psql, conexionBD);
+                 OdbcDataAdapter data = new OdbcDataAdapter(comando);
 
-                DataTable dt = new DataTable();
-                data.Fill(dt);
+                 DataTable dt = new DataTable();
+                 data.Fill(dt);
 
-                cbx.ValueMember = value;
-                cbx.DisplayMember = display;
-                cbx.DataSource = dt;
+                 cbx.ValueMember = value;
+                 cbx.DisplayMember = display;
+                 cbx.DataSource = dt;*/
+         
+
+                OdbcCommand busI = new OdbcCommand(psql, conect);
+                OdbcDataReader lector = busI.ExecuteReader();
+                while (lector.Read())
+                {
+                    /*arList.Add(lector[0]);{
+                    arList.Add(lector[1]);
+                    arList.Add(lector[2]);*/
+
+                    cbx.Items.Add(lector[0] + " " + lector[1] + " " + lector[2] + " ");
+                }
             }
             catch (OdbcException ex)
             {

@@ -92,10 +92,18 @@ namespace Navegador
 
         }
 
+
         private void cbxCodMarca_SelectedIndexChanged(object sender, EventArgs e)
         {
-            String cbx = cbxCodMarca.SelectedValue.ToString();
+            
+            String cbx = cbxCodMarca.Text;
             txtCodigoMarca.Text = cbx;
+            
+        }
+
+        private void navegador1_Load_2(object sender, EventArgs e)
+        {
+
         }
     }
 }
