@@ -202,3 +202,17 @@ C:\Users\wilbe\OneDrive\Escritorio\PruebasV2\DLLnav\DLLnav\obj\Debug\CapaVista.c
 C:\Users\wilbe\OneDrive\Escritorio\PruebasV2\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\wilbe\OneDrive\Escritorio\PruebasV2\DLLnav\DLLnav\obj\Debug\DLLnav.dll
 C:\Users\wilbe\OneDrive\Escritorio\PruebasV2\DLLnav\DLLnav\obj\Debug\DLLnav.pdb
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\DLLnav\bin\Debug\DLLnav.dll
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\DLLnav\bin\Debug\DLLnav.pdb
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\DLLnav\bin\Debug\CapaModelo.dll
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\DLLnav\bin\Debug\CapaControlador.pdb
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\DLLnav\bin\Debug\CapaModelo.pdb
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\DLLnav\obj\Debug\DLL.nav.navegador.resources
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\DLLnav\obj\Debug\DLL.nav.Properties.Resources.resources
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\DLLnav\obj\Debug\DLLnav.dll
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\DLLnav\obj\Debug\DLLnav.pdb
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\DLLnav\bin\Debug\CapaControlador.dll
