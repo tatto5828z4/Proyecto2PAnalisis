@@ -105,5 +105,10 @@ namespace Navegador
         {
 
         }
+
+        private void dvgConsulta_CurrentCellChanged(object sender, EventArgs e)
+        {
+            //navegador1.cargaData();
+        }
     }
 }

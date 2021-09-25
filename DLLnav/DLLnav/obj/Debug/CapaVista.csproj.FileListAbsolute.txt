@@ -244,3 +244,17 @@ C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\DLLnav\obj\Debug\CapaVist
 C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\DLLnav\obj\Debug\DLLnav.dll
 C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\DLLnav\obj\Debug\DLLnav.pdb
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\DLLnav\bin\Debug\DLLnav.dll
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\DLLnav\bin\Debug\DLLnav.pdb
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\DLLnav\bin\Debug\CapaControlador.dll
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\DLLnav\bin\Debug\CapaModelo.dll
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\DLLnav\bin\Debug\CapaControlador.pdb
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\DLLnav\bin\Debug\CapaModelo.pdb
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\DLLnav\obj\Debug\DLL.nav.navegador.resources
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\DLLnav\obj\Debug\DLL.nav.Properties.Resources.resources
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\DLLnav\obj\Debug\DLLnav.dll
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\DLLnav\obj\Debug\DLLnav.pdb
