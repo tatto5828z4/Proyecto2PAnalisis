@@ -1,0 +1,16 @@
+J:\uni\NavegadorReDo\DLLnav\CapaModelo\bin\x64\Debug\CapaModelo.dll
+J:\uni\NavegadorReDo\DLLnav\CapaModelo\bin\x64\Debug\CapaModelo.pdb
+J:\uni\NavegadorReDo\DLLnav\CapaModelo\bin\x64\Debug\BouncyCastle.Crypto.dll
+J:\uni\NavegadorReDo\DLLnav\CapaModelo\bin\x64\Debug\K4os.Compression.LZ4.dll
+J:\uni\NavegadorReDo\DLLnav\CapaModelo\bin\x64\Debug\K4os.Compression.LZ4.Streams.dll
+J:\uni\NavegadorReDo\DLLnav\CapaModelo\bin\x64\Debug\K4os.Hash.xxHash.dll
+J:\uni\NavegadorReDo\DLLnav\CapaModelo\bin\x64\Debug\System.Buffers.dll
+J:\uni\NavegadorReDo\DLLnav\CapaModelo\bin\x64\Debug\System.Memory.dll
+J:\uni\NavegadorReDo\DLLnav\CapaModelo\bin\x64\Debug\System.Numerics.Vectors.dll
+J:\uni\NavegadorReDo\DLLnav\CapaModelo\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+J:\uni\NavegadorReDo\DLLnav\CapaModelo\bin\x64\Debug\Ubiety.Dns.Core.dll
+J:\uni\NavegadorReDo\DLLnav\CapaModelo\bin\x64\Debug\Zstandard.Net.dll
+J:\uni\NavegadorReDo\DLLnav\CapaModelo\obj\x64\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+J:\uni\NavegadorReDo\DLLnav\CapaModelo\obj\x64\Debug\CapaModelo.csproj.CopyComplete
+J:\uni\NavegadorReDo\DLLnav\CapaModelo\obj\x64\Debug\CapaModelo.dll
+J:\uni\NavegadorReDo\DLLnav\CapaModelo\obj\x64\Debug\CapaModelo.pdb
