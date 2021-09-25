@@ -141,9 +141,20 @@ namespace DLL.nav
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+
             switch (estado)
             {
-                case 1://Este nos sirve para ingresar
+                case 1://Ingresar
+                    bool resultadoI;
+                    resultadoI = control.insertar(campos, tablas);
+                    if (resultadoI == true)
+                    {
+                        MessageBox.Show("El ingreso se a realizado con éxito!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("El ingreso no se realizó con éxito!");
+                    }
 
                     break;
 
@@ -161,7 +172,20 @@ namespace DLL.nav
                     break;
 
 
-                case 3://Este es para eliminar
+                case 3://Eliminar
+                    //string resultadoE;
+                    control.funEliminarControl(campos, tablas, campoEstado);
+                    //resultadoE = control.ToString();
+                    //bool value = Convert.ToBoolean(resultadoE);
+
+                    //if (value == true)
+                    //{
+                      //  MessageBox.Show("Eliminación realizada con éxito!");
+                    //}
+                    //else
+                    //{
+                     //   MessageBox.Show("Eliminación no se realizó con éxito!");
+                    //}
 
                     break;
 
@@ -180,6 +204,7 @@ namespace DLL.nav
             int entero = control.funUltimoEnteroControl(tablas);
             int cantidadCampos = campos.Length;
             campos[0].Text = entero.ToString();
+           
 
             foreach (Control ctr in controles.Controls)
             {
@@ -192,6 +217,7 @@ namespace DLL.nav
                     else
                     {
                         ctr.Enabled = true;
+                      
                     }
                     
                 }
@@ -212,6 +238,7 @@ namespace DLL.nav
                 }
             }
 
+            estado = 1;
             desactivarBotones(1);
             manipularTextboxs(1);
         }
@@ -250,8 +277,9 @@ namespace DLL.nav
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            control.funEliminarControl(campos, tablas, campoEstado);
+            //control.funEliminarControl(campos, tablas, campoEstado);
 
+            estado = 3;
             desactivarBotones(1);
             manipularTextboxs(1);
         }

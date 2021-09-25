@@ -197,3 +197,19 @@ C:\Users\wilbe\OneDrive\Escritorio\PruebasV2\DLLnav\CapaModelo\obj\Debug\CapaMod
 C:\Users\wilbe\OneDrive\Escritorio\PruebasV2\DLLnav\CapaModelo\obj\Debug\CapaModelo.csproj.CopyComplete
 C:\Users\wilbe\OneDrive\Escritorio\PruebasV2\DLLnav\CapaModelo\obj\Debug\CapaModelo.dll
 C:\Users\wilbe\OneDrive\Escritorio\PruebasV2\DLLnav\CapaModelo\obj\Debug\CapaModelo.pdb
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaModelo\bin\Debug\CapaModelo.dll
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaModelo\bin\Debug\CapaModelo.pdb
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaModelo\bin\Debug\Zstandard.Net.dll
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaModelo\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaModelo\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaModelo\bin\Debug\System.Memory.dll
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaModelo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaModelo\bin\Debug\System.Buffers.dll
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaModelo\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaModelo\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaModelo\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaModelo\obj\Debug\CapaModelo.csproj.CopyComplete
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaModelo\obj\Debug\CapaModelo.dll
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaModelo\obj\Debug\CapaModelo.pdb
