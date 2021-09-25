@@ -303,6 +303,7 @@ namespace DLL.nav
             estado = 3;
             desactivarBotones(1);
             manipularTextboxs(1);
+            cargaData();
         }
 
         //boton de verificacion para navegacion sin registros
@@ -587,6 +588,12 @@ namespace DLL.nav
         public void cargaData()
         {
             int cantidadCampos = dvgConsulta.Columns.Count;
+            /*
+            if (cantidadCampos == 0)
+            {
+                return;
+            }
+            */
             for (int i = 0; i < cantidadCampos; i++)
             {
                 campos[i].Text = dvgConsulta.CurrentRow.Cells[i].Value.ToString();

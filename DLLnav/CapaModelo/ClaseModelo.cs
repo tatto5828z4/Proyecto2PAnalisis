@@ -260,7 +260,7 @@ namespace CapaModelo
             //cbx.DataSource = null;
             cbx.Items.Clear();
 
-            String psql = "SELECT * FROM " + " " + tabla + " " + "WHERE " + " " + estatus + "= 'A' ";
+            String psql = "SELECT * FROM " + " " + tabla + " " + "WHERE " + " " + estatus + "= 'A' or " + estatus + "= '1' ";
             //cbx.Items.Add(psql);
 
             //MySqlConnection conexionBD = Conexion.conexion();
