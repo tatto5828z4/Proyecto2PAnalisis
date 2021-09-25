@@ -490,6 +490,7 @@ namespace DLL.nav
             }
 
             actualizarCombo();
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

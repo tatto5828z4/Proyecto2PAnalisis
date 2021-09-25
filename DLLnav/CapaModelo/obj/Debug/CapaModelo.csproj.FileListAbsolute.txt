@@ -268,3 +268,4 @@ C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\CapaModelo\obj\Debug\Cap
 C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\CapaModelo\obj\Debug\CapaModelo.csproj.CopyComplete
 C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\CapaModelo\obj\Debug\CapaModelo.dll
 C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\CapaModelo\obj\Debug\CapaModelo.pdb
+J:\uni\NavegadorReDo\DLLnav\CapaModelo\bin\Debug\System.Numerics.Vectors.dll
