@@ -460,6 +460,12 @@ namespace DLL.nav
         {
             llenaTabla();
             //falta actu de combos
+            for (int i = 0; i < campos.Length; i++)
+            {
+
+                campos[i].Text = "";
+
+            }
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

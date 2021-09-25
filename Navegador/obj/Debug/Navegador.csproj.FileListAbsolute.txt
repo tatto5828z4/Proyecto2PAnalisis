@@ -265,3 +265,21 @@ C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\Navegador\obj\Debug\Navegador.cs
 C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\Navegador\obj\Debug\Navegador.csproj.CopyComplete
 C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\Navegador\obj\Debug\Navegador.exe
 C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\Navegador\obj\Debug\Navegador.pdb
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\Navegador\bin\Debug\Navegador.exe.config
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\Navegador\bin\Debug\Navegador.exe
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\Navegador\bin\Debug\Navegador.pdb
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\Navegador\bin\Debug\DLLnav.dll
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\Navegador\bin\Debug\CapaControlador.dll
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\Navegador\bin\Debug\CapaModelo.dll
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\Navegador\bin\Debug\DLLnav.pdb
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\Navegador\bin\Debug\CapaControlador.pdb
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\Navegador\bin\Debug\CapaModelo.pdb
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\Navegador\obj\Debug\Navegador.csproj.AssemblyReference.cache
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\Navegador\obj\Debug\Navegador.Form1.resources
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\Navegador\obj\Debug\Navegador.MDI.resources
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\Navegador\obj\Debug\Navegador.Properties.Resources.resources
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\Navegador\obj\Debug\Navegador.csproj.GenerateResource.cache
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\Navegador\obj\Debug\Navegador.csproj.CoreCompileInputs.cache
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\Navegador\obj\Debug\Navegador.csproj.CopyComplete
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\Navegador\obj\Debug\Navegador.exe
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\Navegador\obj\Debug\Navegador.pdb
