@@ -60,7 +60,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(348, 302);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(63, 17);
+            this.radioButton2.Size = new System.Drawing.Size(66, 19);
             this.radioButton2.TabIndex = 45;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Inactivo";
@@ -72,7 +72,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(348, 284);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(55, 17);
+            this.radioButton1.Size = new System.Drawing.Size(56, 19);
             this.radioButton1.TabIndex = 43;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Activo";
@@ -87,6 +87,7 @@
             this.dtProducto.Size = new System.Drawing.Size(121, 20);
             this.dtProducto.TabIndex = 42;
             this.dtProducto.Value = new System.DateTime(2021, 9, 11, 0, 0, 0, 0);
+            this.dtProducto.ValueChanged += new System.EventHandler(this.dtProducto_ValueChanged);
             // 
             // cbxCodMarca
             // 
@@ -103,7 +104,7 @@
             this.lblStock.AutoSize = true;
             this.lblStock.Location = new System.Drawing.Point(345, 149);
             this.lblStock.Name = "lblStock";
-            this.lblStock.Size = new System.Drawing.Size(81, 13);
+            this.lblStock.Size = new System.Drawing.Size(89, 15);
             this.lblStock.TabIndex = 35;
             this.lblStock.Text = "Stock Producto";
             // 
@@ -112,7 +113,7 @@
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.Location = new System.Drawing.Point(345, 212);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(83, 13);
+            this.lblPrecio.Size = new System.Drawing.Size(94, 15);
             this.lblPrecio.TabIndex = 34;
             this.lblPrecio.Text = "Precio Producto";
             // 
@@ -121,7 +122,7 @@
             this.lblEstatus.AutoSize = true;
             this.lblEstatus.Location = new System.Drawing.Point(345, 265);
             this.lblEstatus.Name = "lblEstatus";
-            this.lblEstatus.Size = new System.Drawing.Size(88, 13);
+            this.lblEstatus.Size = new System.Drawing.Size(99, 15);
             this.lblEstatus.TabIndex = 33;
             this.lblEstatus.Text = "Estatus Producto";
             // 
@@ -130,7 +131,7 @@
             this.lblNP.AutoSize = true;
             this.lblNP.Location = new System.Drawing.Point(43, 265);
             this.lblNP.Name = "lblNP";
-            this.lblNP.Size = new System.Drawing.Size(90, 13);
+            this.lblNP.Size = new System.Drawing.Size(104, 15);
             this.lblNP.TabIndex = 32;
             this.lblNP.Text = "Nombre Producto";
             // 
@@ -139,7 +140,7 @@
             this.lblFechaP.AutoSize = true;
             this.lblFechaP.Location = new System.Drawing.Point(43, 306);
             this.lblFechaP.Name = "lblFechaP";
-            this.lblFechaP.Size = new System.Drawing.Size(83, 13);
+            this.lblFechaP.Size = new System.Drawing.Size(93, 15);
             this.lblFechaP.TabIndex = 31;
             this.lblFechaP.Text = "Fecha Producto";
             // 
@@ -148,7 +149,7 @@
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Location = new System.Drawing.Point(43, 351);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(109, 13);
+            this.lblDescripcion.Size = new System.Drawing.Size(124, 15);
             this.lblDescripcion.TabIndex = 30;
             this.lblDescripcion.Text = "Descripcion Producto";
             // 
@@ -157,7 +158,7 @@
             this.lblCM.AutoSize = true;
             this.lblCM.Location = new System.Drawing.Point(46, 212);
             this.lblCM.Name = "lblCM";
-            this.lblCM.Size = new System.Drawing.Size(90, 13);
+            this.lblCM.Size = new System.Drawing.Size(103, 15);
             this.lblCM.TabIndex = 29;
             this.lblCM.Text = "Codigo De Marca";
             // 
@@ -166,7 +167,7 @@
             this.lblCP.AutoSize = true;
             this.lblCP.Location = new System.Drawing.Point(46, 149);
             this.lblCP.Name = "lblCP";
-            this.lblCP.Size = new System.Drawing.Size(86, 13);
+            this.lblCP.Size = new System.Drawing.Size(98, 15);
             this.lblCP.TabIndex = 28;
             this.lblCP.Text = "Codigo Producto";
             // 
@@ -215,6 +216,7 @@
             this.txtFecha.Size = new System.Drawing.Size(99, 20);
             this.txtFecha.TabIndex = 53;
             this.txtFecha.Tag = "fecha";
+            this.txtFecha.TextChanged += new System.EventHandler(this.txtFecha_TextChanged);
             // 
             // txtDescripcion
             // 
