@@ -264,17 +264,17 @@ namespace CapaModelo
 
             try
             {
-                 OdbcCommand comando = new OdbcCommand(psql, conect);
-                 //MySqlCommand llenarCombo = new MySqlCommand(psql, conexionBD);
-                 OdbcDataAdapter data = new OdbcDataAdapter(comando);
+                OdbcCommand comando = new OdbcCommand(psql, conect);
+                //MySqlCommand llenarCombo = new MySqlCommand(psql, conexionBD);
+                OdbcDataAdapter data = new OdbcDataAdapter(comando);
 
-                 DataTable dt = new DataTable();
-                 data.Fill(dt);
+                DataTable dt = new DataTable();
+                data.Fill(dt);
 
-                 cbx.ValueMember = value;
-                 cbx.DisplayMember = display;
-                 cbx.DataSource = dt;
-         
+                cbx.ValueMember = value;
+                cbx.DisplayMember = display;
+                cbx.DataSource = dt;
+
 
                 /*OdbcCommand busI = new OdbcCommand(psql, conect);
                 OdbcDataReader lector = busI.ExecuteReader();
@@ -309,6 +309,44 @@ namespace CapaModelo
             }
         }
 
+
+        public void funSetearRB(RadioButton activo, RadioButton inactivo, TextBox estatus)
+        {
+            if (estatus.Text == "A")
+            {
+                activo.Checked = true;
+            }
+            else if (estatus.Text == "I")
+            {
+                inactivo.Checked = true;
+            }
+
+        } 
+
+        public void funCambioEstatusRB(TextBox estado, RadioButton AI, string cadenaEstado)
+        {
+            if (AI.Checked == true)
+            {
+                estado.Text = cadenaEstado;
+            }
+        }
+
+        public void funComboTextbox(ComboBox combo, TextBox combotexto)
+        {
+            if (combo.SelectedValue == null)
+            {
+                return;
+            }
+            String cbx = combo.SelectedValue.ToString();
+            combotexto.Text = cbx;
+
+        }
+
+        public void funTextboxCombo(ComboBox combo, TextBox combotexto)
+        {
+            combo.SelectedValue = combotexto.Text.ToString();
+
+        }
 
         public OdbcDataAdapter llenarTbl(string tabla)// metodo  que obtinene el contenio de una tabla
         {

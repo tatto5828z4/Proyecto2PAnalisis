@@ -71,20 +71,12 @@ namespace Navegador
 
         private void radioButton1_MouseClick(object sender, MouseEventArgs e)
         {
-            if (radioButton1.Checked == true)
-            {
-                txtEstatus.Text = "A";
-            }
-
+            navegador1.funCambioEstatusRBVista(txtEstatus, radioButton1, "A");
         }
 
         private void radioButton2_MouseClick(object sender, MouseEventArgs e)
         {
-            if (radioButton2.Checked == true)
-            {
-                txtEstatus.Text = "I";
-            }
-
+            navegador1.funCambioEstatusRBVista(txtEstatus, radioButton2, "I");
         }
 
         private void navegador1_Load_1(object sender, EventArgs e)
@@ -96,14 +88,8 @@ namespace Navegador
         private void cbxCodMarca_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            // String cbx = cbxCodMarca.Text;
-            //txtCodigoMarca.Text = cbx;
-            if (cbxCodMarca.SelectedValue==null)
-            {
-                return;
-            }
-            String cbx = cbxCodMarca.SelectedValue.ToString();
-            txtCodigoMarca.Text = cbx;
+            navegador1.funComboTextboxVista(cbxCodMarca, txtCodigoMarca);
+            
         }
 
         private void navegador1_Load_2(object sender, EventArgs e)
@@ -119,6 +105,16 @@ namespace Navegador
         private void dvgConsulta_SelectionChanged(object sender, EventArgs e)
         {
             navegador1.funSeleccionarDTVista(dvgConsulta);
+        }
+
+        private void txtEstatus_TextChanged(object sender, EventArgs e)
+        {
+            navegador1.funSetearRBVista(radioButton1, radioButton2, txtEstatus);
+        }
+
+        private void txtCodigoMarca_TextChanged(object sender, EventArgs e)
+        {
+            navegador1.funTextboxComboVista(cbxCodMarca, txtCodigoMarca);
         }
     }
 }

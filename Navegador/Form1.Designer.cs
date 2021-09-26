@@ -198,6 +198,7 @@
             this.txtCodigoMarca.Size = new System.Drawing.Size(40, 20);
             this.txtCodigoMarca.TabIndex = 51;
             this.txtCodigoMarca.Tag = "idMarca";
+            this.txtCodigoMarca.TextChanged += new System.EventHandler(this.txtCodigoMarca_TextChanged);
             // 
             // txtNombre
             // 
@@ -246,6 +247,7 @@
             this.txtEstatus.Size = new System.Drawing.Size(34, 20);
             this.txtEstatus.TabIndex = 57;
             this.txtEstatus.Tag = "estado";
+            this.txtEstatus.TextChanged += new System.EventHandler(this.txtEstatus_TextChanged);
             // 
             // contextMenuStrip1
             // 
