@@ -76,10 +76,6 @@ namespace CapaModelo
             }
         }
 
-
-
-
-
         public int funUltimoEntero(string tabla, string campoB)
         {
             string ultimoEntero = "";
@@ -295,6 +291,21 @@ namespace CapaModelo
             {
                 //conexionBD.Close();
                 conexion.desconexion(conect);
+            }
+        }
+
+        public void funSeleccionarDT(DataGridView data)
+        {
+            var filaSeleccionada = data.CurrentRow;
+            int i = 0;
+            if (filaSeleccionada != null) //¿Existe una referencia?
+            {
+                foreach (DataGridViewCell celda in filaSeleccionada.Cells)
+                {
+                    arreglo[i].Text = celda.Value.ToString();
+                    i++;
+                }
+
             }
         }
 

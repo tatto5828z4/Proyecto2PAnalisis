@@ -65,8 +65,11 @@ namespace CapaControlador
         public void funLlenarComboControl(ComboBox cbx, string tabla, string value, string display, string estatus)
         {
             modelo.funLlenarCombo(cbx,tabla,value, display, estatus);
+        }
 
-
+        public void funSeleccionarDTControl(DataGridView data)
+        {
+            modelo.funSeleccionarDT(data);
         }
 
 
