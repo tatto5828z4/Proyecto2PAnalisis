@@ -82,6 +82,18 @@ namespace DLL.nav
             control.funSeleccionarDTControl(data);
         }
 
+
+        public void funSetearRBVista(RadioButton activo, RadioButton inactivo, TextBox estatus)
+        {
+            control.funSetearRBControl(activo, inactivo, estatus);
+        }
+
+
+        public void funCambioEstatusRBVista(TextBox estado, RadioButton AI, string cadenaEstado)
+        {
+            control.funCambioEstatusRBControl(estado, AI, cadenaEstado);
+        }
+
         private void actualizarCombo()
         {
             for (int i=0; i < referencia0.Count; i++)

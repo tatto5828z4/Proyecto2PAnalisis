@@ -246,6 +246,7 @@
             this.txtEstatus.Size = new System.Drawing.Size(34, 20);
             this.txtEstatus.TabIndex = 57;
             this.txtEstatus.Tag = "estado";
+            this.txtEstatus.TextChanged += new System.EventHandler(this.txtEstatus_TextChanged);
             // 
             // contextMenuStrip1
             // 
