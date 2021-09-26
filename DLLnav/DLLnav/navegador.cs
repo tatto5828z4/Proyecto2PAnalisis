@@ -94,6 +94,16 @@ namespace DLL.nav
             control.funCambioEstatusRBControl(estado, AI, cadenaEstado);
         }
 
+        public void funComboTextboxVista(ComboBox combo, TextBox combotexto)
+        {
+            control.funComboTextboxControl(combo, combotexto);
+        }
+
+        public void funTextboxComboVista(ComboBox combo, TextBox combotexto)
+        {
+            control.funTextboxComboControl(combo, combotexto);
+        }
+
         private void actualizarCombo()
         {
             for (int i=0; i < referencia0.Count; i++)

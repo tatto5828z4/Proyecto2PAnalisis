@@ -198,6 +198,7 @@
             this.txtCodigoMarca.Size = new System.Drawing.Size(40, 20);
             this.txtCodigoMarca.TabIndex = 51;
             this.txtCodigoMarca.Tag = "idMarca";
+            this.txtCodigoMarca.TextChanged += new System.EventHandler(this.txtCodigoMarca_TextChanged);
             // 
             // txtNombre
             // 
