@@ -77,6 +77,11 @@ namespace DLL.nav
 
         }
 
+        public void funSeleccionarDTVista(DataGridView data)
+        {
+            control.funSeleccionarDTControl(data);
+        }
+
         private void actualizarCombo()
         {
             for (int i=0; i < referencia0.Count; i++)

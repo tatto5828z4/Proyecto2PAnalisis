@@ -115,5 +115,10 @@ namespace Navegador
         {
             //navegador1.cargaData();
         }
+
+        private void dvgConsulta_SelectionChanged(object sender, EventArgs e)
+        {
+            navegador1.funSeleccionarDTVista(dvgConsulta);
+        }
     }
 }

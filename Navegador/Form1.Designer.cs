@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.dtProducto = new System.Windows.Forms.DateTimePicker();
@@ -51,20 +50,10 @@
             this.txtStock = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtEstatus = new System.Windows.Forms.TextBox();
-            this.navegador1 = new DLL.nav.navegador();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.navegador1 = new DLL.nav.navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dvgConsulta)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Location = new System.Drawing.Point(178, 364);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(85, 23);
-            this.btnGuardar.TabIndex = 46;
-            this.btnGuardar.Text = "PruebaFecha";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // radioButton2
             // 
@@ -192,6 +181,7 @@
             this.dvgConsulta.Size = new System.Drawing.Size(650, 342);
             this.dvgConsulta.TabIndex = 48;
             this.dvgConsulta.CurrentCellChanged += new System.EventHandler(this.dvgConsulta_CurrentCellChanged);
+            this.dvgConsulta.SelectionChanged += new System.EventHandler(this.dvgConsulta_SelectionChanged);
             // 
             // txtID
             // 
@@ -257,21 +247,21 @@
             this.txtEstatus.TabIndex = 57;
             this.txtEstatus.Tag = "estado";
             // 
-            // navegador1
-            // 
-            this.navegador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.navegador1.Location = new System.Drawing.Point(-1, -2);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1189, 87);
-            this.navegador1.TabIndex = 49;
-            this.navegador1.Load += new System.EventHandler(this.navegador1_Load_2);
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(18, 18);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // navegador1
+            // 
+            this.navegador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.navegador1.Location = new System.Drawing.Point(-1, -2);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1189, 87);
+            this.navegador1.TabIndex = 49;
+            this.navegador1.Load += new System.EventHandler(this.navegador1_Load_2);
             // 
             // Form1
             // 
@@ -289,7 +279,6 @@
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.navegador1);
             this.Controls.Add(this.dvgConsulta);
-            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.dtProducto);
@@ -313,7 +302,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.DateTimePicker dtProducto;
