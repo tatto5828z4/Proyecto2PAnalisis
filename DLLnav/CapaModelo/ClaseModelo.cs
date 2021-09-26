@@ -331,6 +331,41 @@ namespace CapaModelo
             }
         }
 
+        public void funComboTextbox(ComboBox combo, TextBox combotexto)
+        {
+            if (combo.SelectedValue == null)
+            {
+                return;
+            }
+            String cbx = combo.SelectedValue.ToString();
+            combotexto.Text = cbx;
+
+        }
+
+        public void funTextboxCombo(ComboBox combo, TextBox combotexto)
+        {
+            combo.SelectedValue = combotexto.Text.ToString();
+
+        }
+
+        public void funDPTextBox(DateTimePicker date, TextBox textoDate)
+        {
+            String dt = "";
+            dt = date.Value.ToString("yyyy-MM-dd");//lo pasa al formato necesitado por mysql
+            textoDate.Text = dt;
+
+        }
+
+        public void funTextBoxDPT(DateTimePicker date, TextBox textoDate)
+        {
+            if (textoDate.Text != "")
+            {
+                date.Value = Convert.ToDateTime(textoDate.Text.ToString());
+            }
+
+        }
+
+
 
         public OdbcDataAdapter llenarTbl(string tabla)// metodo  que obtinene el contenio de una tabla
         {

@@ -94,6 +94,26 @@ namespace DLL.nav
             control.funCambioEstatusRBControl(estado, AI, cadenaEstado);
         }
 
+        public void funComboTextboxVista(ComboBox combo, TextBox combotexto)
+        {
+            control.funComboTextboxControl(combo, combotexto);
+        }
+
+        public void funTextboxComboVista(ComboBox combo, TextBox combotexto)
+        {
+            control.funTextboxComboControl(combo, combotexto);
+        }
+
+        public void funDPTextBoxVista(DateTimePicker date, TextBox textoDate)
+        {
+            control.funDPTextBoxControl(date, textoDate);
+        }
+
+        public void funTextBoxDPTVista(DateTimePicker date, TextBox textoDate)
+        {
+            control.funTextBoxDPTControl(date,textoDate);
+        }
+
         private void actualizarCombo()
         {
             for (int i=0; i < referencia0.Count; i++)
@@ -559,12 +579,17 @@ namespace DLL.nav
                     if (ctr is DateTimePicker)
                     {
                         ctr.Enabled = false;
-                        ctr.Text = DateTime.Today.ToString();
+                        //((DateTimePicker)ctr).Value = DateTime.Now;
                     }
 
                     if (ctr is RadioButton)
                     {
                         ctr.Enabled = false;
+                    }
+
+                    if (ctr is DataGridView)
+                    {
+                        ctr.Enabled = true;
                     }
                 }
             }
@@ -582,6 +607,7 @@ namespace DLL.nav
                         else
                         {
                             ctr.Enabled = true;
+                            ctr.Text = "";
                         }
                     }
 
@@ -593,11 +619,18 @@ namespace DLL.nav
                     if (ctr is DateTimePicker)
                     {
                         ctr.Enabled = true;
+                        ((DateTimePicker)ctr).Value = DateTime.Now;
                     }
 
                     if (ctr is RadioButton)
                     {
                         ctr.Enabled = true;
+                        ((RadioButton)ctr).Checked = false;
+                    }
+
+                    if (ctr is DataGridView)
+                    {
+                        ctr.Enabled = false;
                     }
                 }
             }

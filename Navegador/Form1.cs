@@ -88,14 +88,8 @@ namespace Navegador
         private void cbxCodMarca_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            // String cbx = cbxCodMarca.Text;
-            //txtCodigoMarca.Text = cbx;
-            if (cbxCodMarca.SelectedValue==null)
-            {
-                return;
-            }
-            String cbx = cbxCodMarca.SelectedValue.ToString();
-            txtCodigoMarca.Text = cbx;
+            navegador1.funComboTextboxVista(cbxCodMarca, txtCodigoMarca);
+            
         }
 
         private void navegador1_Load_2(object sender, EventArgs e)
@@ -116,6 +110,21 @@ namespace Navegador
         private void txtEstatus_TextChanged(object sender, EventArgs e)
         {
             navegador1.funSetearRBVista(radioButton1, radioButton2, txtEstatus);
+        }
+
+        private void txtCodigoMarca_TextChanged(object sender, EventArgs e)
+        {
+            navegador1.funTextboxComboVista(cbxCodMarca, txtCodigoMarca);
+        }
+
+        private void dtProducto_ValueChanged(object sender, EventArgs e)
+        {
+            navegador1.funDPTextBoxVista(dtProducto,txtFecha);
+        }
+
+        private void txtFecha_TextChanged(object sender, EventArgs e)
+        {
+            navegador1.funTextBoxDPTVista(dtProducto, txtFecha);
         }
     }
 }
