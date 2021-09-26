@@ -48,11 +48,11 @@ namespace DLL.nav
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnModificar.BackgroundImage = global::DLL.nav.Properties.Resources.modificar;
             this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnModificar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificar.Image = global::DLL.nav.Properties.Resources.modificar;
             this.btnModificar.Location = new System.Drawing.Point(85, 1);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(85, 86);
@@ -65,11 +65,11 @@ namespace DLL.nav
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnCancelar.BackgroundImage = global::DLL.nav.Properties.Resources.cancelar;
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Image = global::DLL.nav.Properties.Resources.cancelar;
             this.btnCancelar.Location = new System.Drawing.Point(255, 1);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(85, 86);
@@ -82,11 +82,11 @@ namespace DLL.nav
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnEliminar.BackgroundImage = global::DLL.nav.Properties.Resources.borrar;
             this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Image = global::DLL.nav.Properties.Resources.borrar;
             this.btnEliminar.Location = new System.Drawing.Point(340, 1);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(85, 86);
@@ -99,11 +99,11 @@ namespace DLL.nav
             // btnConsultar
             // 
             this.btnConsultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnConsultar.BackgroundImage = global::DLL.nav.Properties.Resources.buscar;
             this.btnConsultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnConsultar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConsultar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsultar.Image = global::DLL.nav.Properties.Resources.buscar;
             this.btnConsultar.Location = new System.Drawing.Point(425, 1);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(85, 86);
@@ -146,11 +146,11 @@ namespace DLL.nav
             // btnInicio
             // 
             this.btnInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnInicio.BackgroundImage = global::DLL.nav.Properties.Resources.Inicio;
             this.btnInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInicio.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInicio.Image = global::DLL.nav.Properties.Resources.Inicio;
             this.btnInicio.Location = new System.Drawing.Point(680, 1);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(85, 86);
@@ -163,11 +163,11 @@ namespace DLL.nav
             // btnAnterior
             // 
             this.btnAnterior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnAnterior.BackgroundImage = global::DLL.nav.Properties.Resources.anterior;
             this.btnAnterior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAnterior.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAnterior.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnterior.Image = global::DLL.nav.Properties.Resources.anterior;
             this.btnAnterior.Location = new System.Drawing.Point(765, 1);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(85, 86);
@@ -223,6 +223,7 @@ namespace DLL.nav
             this.btnAyuda.Text = "Ayuda";
             this.btnAyuda.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAyuda.UseVisualStyleBackColor = false;
+            this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
             // 
             // btnSalir
             // 
@@ -243,11 +244,11 @@ namespace DLL.nav
             // btnIngresar
             // 
             this.btnIngresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnIngresar.BackgroundImage = global::DLL.nav.Properties.Resources.ingresarr;
             this.btnIngresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnIngresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIngresar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIngresar.Image = global::DLL.nav.Properties.Resources.ingresarr;
             this.btnIngresar.Location = new System.Drawing.Point(0, 1);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(85, 86);
@@ -260,11 +261,11 @@ namespace DLL.nav
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(146)))));
-            this.btnGuardar.BackgroundImage = global::DLL.nav.Properties.Resources.guardar;
             this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Image = global::DLL.nav.Properties.Resources.guardar;
             this.btnGuardar.Location = new System.Drawing.Point(170, 1);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(85, 86);

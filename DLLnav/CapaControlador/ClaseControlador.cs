@@ -84,15 +84,32 @@ namespace CapaControlador
             dt.Fill(table);
             return table;
         }
-        public string modificar(TextBox[] campos, string tablas)
+        public bool modificar(TextBox[] campos, string tablas)
         {
           return modelo.modificar(campos, tablas); 
+        }
+
+        public bool insertar(TextBox[] campos, string tablas)
+        {
+            return modelo.insertar(campos, tablas);
         }
 
         public void funEliminarControl(TextBox[] arreglo, string tabla, string campoEstado)
         {
             modelo.eliminar(arreglo, tabla, campoEstado);
         }
+
+        public void funAyudaControl(string idAyuda, string nombreCampo, string tablaA)
+        {
+            modelo.funAyuda(idAyuda,nombreCampo,tablaA,control);
+
+            //MessageBox.Show(tablaA);
+
+            
+
+        }
+
+
     }
 
 }

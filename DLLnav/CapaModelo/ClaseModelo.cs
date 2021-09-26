@@ -16,6 +16,10 @@ namespace CapaModelo
         Conexion conexion = new Conexion();
         string tablaBD = "";
         TextBox[] arreglo;
+        string rutaAyudaCHM = "";
+        string rutaAyudaHTML = "";
+
+
 
         public TextBox[] funTexts(Control parent)
         {
@@ -55,22 +59,26 @@ namespace CapaModelo
                     ctr.Enabled = false;
                 }
 
-                if(ctr is ComboBox)
+                if (ctr is ComboBox)
                 {
                     ctr.Enabled = false;
                 }
 
-                if(ctr is DateTimePicker)
+                if (ctr is DateTimePicker)
                 {
                     ctr.Enabled = false;
                 }
 
-                if(ctr is RadioButton)
+                if (ctr is RadioButton)
                 {
                     ctr.Enabled = false;
                 }
             }
         }
+
+
+
+
 
         public int funUltimoEntero(string tabla, string campoB)
         {
@@ -78,7 +86,7 @@ namespace CapaModelo
             int enteroSumado = 0;
             OdbcDataReader leer = null;
 
-            string sql = "SELECT" + " " + campoB + " " + "FROM" + " " + tabla + " " +  "ORDER BY" + " " + campoB + " " + "DESC LIMIT 1";
+            string sql = "SELECT" + " " + campoB + " " + "FROM" + " " + tabla + " " + "ORDER BY" + " " + campoB + " " + "DESC LIMIT 1";
             OdbcConnection conect = conexion.conexion();
 
             try
@@ -94,7 +102,7 @@ namespace CapaModelo
                 }
 
             }
-            catch(OdbcException ex)
+            catch (OdbcException ex)
             {
                 MessageBox.Show("Error al cargar los datos" + ex.Message);
             }
@@ -103,11 +111,11 @@ namespace CapaModelo
                 conexion.desconexion(conect);
             }
 
-            if(enteroSumado == 0)
+            if (enteroSumado == 0)
             {
                 enteroSumado = 1;
             }
-            
+
 
             return enteroSumado;
         }
@@ -247,29 +255,37 @@ namespace CapaModelo
             menu.Show();
         }
 
-        public void funLlenarCombo(ComboBox cbx,string tabla ,string value, string display,string estatus)
+        public void funLlenarCombo(ComboBox cbx, string tabla, string value, string display, string estatus)
         {
             cbx.DataSource = null;
             cbx.Items.Clear();
 
-            String psql = "SELECT * FROM " + " " + tabla + " " + "WHERE " + " " + estatus + "= 'A' ";
+            String psql = "SELECT * FROM " + " " + tabla + " " + "WHERE " + " " + estatus + "= 'A' or " + estatus + "= '1' ";
+            //cbx.Items.Add(psql);
 
             //MySqlConnection conexionBD = Conexion.conexion();
             OdbcConnection conect = conexion.conexion();
-            
 
             try
             {
-                OdbcCommand comando = new OdbcCommand(psql, conect);
-                //MySqlCommand llenarCombo = new MySqlCommand(psql, conexionBD);
-                OdbcDataAdapter data = new OdbcDataAdapter(comando);
+                 OdbcCommand comando = new OdbcCommand(psql, conect);
+                 //MySqlCommand llenarCombo = new MySqlCommand(psql, conexionBD);
+                 OdbcDataAdapter data = new OdbcDataAdapter(comando);
 
-                DataTable dt = new DataTable();
-                data.Fill(dt);
+                 DataTable dt = new DataTable();
+                 data.Fill(dt);
 
-                cbx.ValueMember = value;
-                cbx.DisplayMember = display;
-                cbx.DataSource = dt;
+                 cbx.ValueMember = value;
+                 cbx.DisplayMember = display;
+                 cbx.DataSource = dt;
+         
+
+                /*OdbcCommand busI = new OdbcCommand(psql, conect);
+                OdbcDataReader lector = busI.ExecuteReader();
+                while (lector.Read())
+                {
+                    cbx.Items.Add(lector[0] + " " + lector[1] + " " + lector[2] + " ");
+                }*/
             }
             catch (OdbcException ex)
             {
@@ -302,12 +318,12 @@ namespace CapaModelo
             OdbcConnection conn = cn.conexion();
             try
             {
-                string busqueda = "select * from "+tablas+" where "+referencia+" = " + id + " ;";
+                string busqueda = "select * from " + tablas + " where " + referencia + " = " + id + " ;";
                 OdbcCommand busI = new OdbcCommand(busqueda, conn);
                 OdbcDataReader lector = busI.ExecuteReader();
                 while (lector.Read())
                 {
-                    for(int i=0; i < cuenta; i++)
+                    for (int i = 0; i < cuenta; i++)
                     {
                         arList.Add(lector[i].ToString());
                     }
@@ -321,14 +337,14 @@ namespace CapaModelo
             return arList;
         }
 
-        public string modificar(TextBox[] campos, string tablas)
+        public bool modificar(TextBox[] campos, string tablas)
         {
-            int resultado=0;
+            int resultado = 0;
             Conexion cn = new Conexion();
             OdbcConnection conn = cn.conexion();
             string cad = "Entro a la conexion";
-            string sentencia = "update "+tablas+" set ";
-            for(int i = 1; i<campos.Length; i++)
+            string sentencia = "update " + tablas + " set ";
+            for (int i = 1; i < campos.Length; i++)
             {
                 if (i < campos.Length - 1)
                 {
@@ -339,8 +355,8 @@ namespace CapaModelo
                     sentencia += campos[i].Tag.ToString() + " = '" + campos[i].Text + "' ";
                 }
             }
-            sentencia += "where "+campos[0].Tag.ToString()+" = '"+campos[0].Text+"';";
-            cad = "Sentencia creada "+sentencia;
+            sentencia += "where " + campos[0].Tag.ToString() + " = '" + campos[0].Text + "';";
+            cad = "Sentencia creada " + sentencia;
             try
             {
                 OdbcCommand ingreso = new OdbcCommand(sentencia, conn);
@@ -356,17 +372,76 @@ namespace CapaModelo
 
             }
             cn.desconexion(conn);
-            if (resultado== 1)
-                {
-                    return cad;
-                }
+            if (resultado == 1)
+            {
+                return true;
+            }
             else
             {
-                return cad;
+                return false;
             }
         }
 
-        public void eliminar(TextBox[] arreglo, string tabla, string campoEstado)
+
+        public bool insertar(TextBox[] campos, string tablas)
+        {
+            int resultado = 0;
+            Conexion cn = new Conexion();
+            OdbcConnection conn = cn.conexion();
+            string sentencia = "insert into " + tablas + " ( ";
+            for (int i = 0; i < campos.Length; i++)
+            {
+                if (i < campos.Length - 1)
+                {
+                    sentencia += campos[i].Tag.ToString() + ", ";
+                }
+                else
+                {
+                    sentencia += campos[i].Tag.ToString() + " ) values (";
+                }
+            }
+
+            for (int i = 0; i < campos.Length; i++)
+            {
+                if (i < campos.Length - 1)
+                {
+                    sentencia += "'" + campos[i].Text + "'"  + ", ";
+                }
+                else
+                {
+                    sentencia += "'" + campos[i].Text + "'" + " );";
+                }
+            }
+
+            try
+            {
+                OdbcCommand ingreso = new OdbcCommand(sentencia, conn);
+                ingreso.ExecuteNonQuery();
+                resultado = 1;
+            }
+            catch (OdbcException Error)
+            {
+                Console.WriteLine("Error al ingresar " + Error);
+
+            }
+            cn.desconexion(conn);
+            if (resultado == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+
+
+
+
+
+
+            public void eliminar(TextBox[] arreglo, string tabla, string campoEstado)
         {
             Conexion cn = new Conexion();
             OdbcConnection conexion = cn.conexion();
@@ -377,7 +452,7 @@ namespace CapaModelo
                 if (arreglo[i].Tag.ToString() == campoEstado)
                 {
                     
-                    if (arreglo[i].Text== "A" || arreglo[i].Text =="I")
+                    if (arreglo[i].Text =="I")
                     {
                         string sql = "UPDATE" + " " + tabla + " " + "SET" + " " + campoEstado + " ="+"'"+arreglo[i].Text+"'"+ " "+"WHERE" + " " + arreglo[0].Tag.ToString() + " = " + arreglo[0].Text;
                         //MessageBox.Show(sql);
@@ -395,13 +470,52 @@ namespace CapaModelo
                     }
                     else
                     {
-                        MessageBox.Show("Ingrese un estado válido, A=Activo, I=Inactivo");
+                        MessageBox.Show("Ingrese un estado válido I=Inactivo");
                         break;
                     }
                     
                 }
             }
 
+        }
+        
+        public void funAyuda(string idAyuda, string nombreCampo ,string tablaA, Control parent)
+        {
+            OdbcDataReader leer = null;
+
+            string sql = "SELECT * FROM " + " " + tablaA + " " + "WHERE " + " " + nombreCampo +  "=" + idAyuda;
+
+            OdbcConnection conect = conexion.conexion();
+
+            try{
+
+                OdbcCommand comando = new OdbcCommand(sql, conect);
+                leer = comando.ExecuteReader();
+
+                while (leer.Read())
+                {
+                    rutaAyudaCHM = leer.GetString(1);
+                    
+                    rutaAyudaHTML = leer.GetString(2);
+                }
+
+                
+            }
+            catch (OdbcException ex) { 
+
+                MessageBox.Show("Error al cargar los datos" + ex.Message);
+
+            }
+
+            finally
+            {
+                conexion.desconexion(conect);
+
+            }
+
+          
+            Help.ShowHelp(parent, rutaAyudaCHM,rutaAyudaHTML);
+          
         }
 
 
