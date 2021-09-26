@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.dtProducto = new System.Windows.Forms.DateTimePicker();
@@ -51,27 +50,17 @@
             this.txtStock = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtEstatus = new System.Windows.Forms.TextBox();
-            this.navegador1 = new DLL.nav.navegador();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.navegador1 = new DLL.nav.navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dvgConsulta)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Location = new System.Drawing.Point(178, 364);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(85, 23);
-            this.btnGuardar.TabIndex = 46;
-            this.btnGuardar.Text = "PruebaFecha";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(348, 302);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(66, 19);
+            this.radioButton2.Size = new System.Drawing.Size(63, 17);
             this.radioButton2.TabIndex = 45;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Inactivo";
@@ -83,7 +72,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(348, 284);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(56, 19);
+            this.radioButton1.Size = new System.Drawing.Size(55, 17);
             this.radioButton1.TabIndex = 43;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Activo";
@@ -114,7 +103,7 @@
             this.lblStock.AutoSize = true;
             this.lblStock.Location = new System.Drawing.Point(345, 149);
             this.lblStock.Name = "lblStock";
-            this.lblStock.Size = new System.Drawing.Size(89, 15);
+            this.lblStock.Size = new System.Drawing.Size(81, 13);
             this.lblStock.TabIndex = 35;
             this.lblStock.Text = "Stock Producto";
             // 
@@ -123,7 +112,7 @@
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.Location = new System.Drawing.Point(345, 212);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(94, 15);
+            this.lblPrecio.Size = new System.Drawing.Size(83, 13);
             this.lblPrecio.TabIndex = 34;
             this.lblPrecio.Text = "Precio Producto";
             // 
@@ -132,7 +121,7 @@
             this.lblEstatus.AutoSize = true;
             this.lblEstatus.Location = new System.Drawing.Point(345, 265);
             this.lblEstatus.Name = "lblEstatus";
-            this.lblEstatus.Size = new System.Drawing.Size(99, 15);
+            this.lblEstatus.Size = new System.Drawing.Size(88, 13);
             this.lblEstatus.TabIndex = 33;
             this.lblEstatus.Text = "Estatus Producto";
             // 
@@ -141,7 +130,7 @@
             this.lblNP.AutoSize = true;
             this.lblNP.Location = new System.Drawing.Point(43, 265);
             this.lblNP.Name = "lblNP";
-            this.lblNP.Size = new System.Drawing.Size(104, 15);
+            this.lblNP.Size = new System.Drawing.Size(90, 13);
             this.lblNP.TabIndex = 32;
             this.lblNP.Text = "Nombre Producto";
             // 
@@ -150,7 +139,7 @@
             this.lblFechaP.AutoSize = true;
             this.lblFechaP.Location = new System.Drawing.Point(43, 306);
             this.lblFechaP.Name = "lblFechaP";
-            this.lblFechaP.Size = new System.Drawing.Size(93, 15);
+            this.lblFechaP.Size = new System.Drawing.Size(83, 13);
             this.lblFechaP.TabIndex = 31;
             this.lblFechaP.Text = "Fecha Producto";
             // 
@@ -159,7 +148,7 @@
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Location = new System.Drawing.Point(43, 351);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(124, 15);
+            this.lblDescripcion.Size = new System.Drawing.Size(109, 13);
             this.lblDescripcion.TabIndex = 30;
             this.lblDescripcion.Text = "Descripcion Producto";
             // 
@@ -168,7 +157,7 @@
             this.lblCM.AutoSize = true;
             this.lblCM.Location = new System.Drawing.Point(46, 212);
             this.lblCM.Name = "lblCM";
-            this.lblCM.Size = new System.Drawing.Size(103, 15);
+            this.lblCM.Size = new System.Drawing.Size(90, 13);
             this.lblCM.TabIndex = 29;
             this.lblCM.Text = "Codigo De Marca";
             // 
@@ -177,7 +166,7 @@
             this.lblCP.AutoSize = true;
             this.lblCP.Location = new System.Drawing.Point(46, 149);
             this.lblCP.Name = "lblCP";
-            this.lblCP.Size = new System.Drawing.Size(98, 15);
+            this.lblCP.Size = new System.Drawing.Size(86, 13);
             this.lblCP.TabIndex = 28;
             this.lblCP.Text = "Codigo Producto";
             // 
@@ -191,6 +180,8 @@
             this.dvgConsulta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dvgConsulta.Size = new System.Drawing.Size(650, 342);
             this.dvgConsulta.TabIndex = 48;
+            this.dvgConsulta.CurrentCellChanged += new System.EventHandler(this.dvgConsulta_CurrentCellChanged);
+            this.dvgConsulta.SelectionChanged += new System.EventHandler(this.dvgConsulta_SelectionChanged);
             // 
             // txtID
             // 
@@ -207,6 +198,7 @@
             this.txtCodigoMarca.Size = new System.Drawing.Size(40, 20);
             this.txtCodigoMarca.TabIndex = 51;
             this.txtCodigoMarca.Tag = "idMarca";
+            this.txtCodigoMarca.TextChanged += new System.EventHandler(this.txtCodigoMarca_TextChanged);
             // 
             // txtNombre
             // 
@@ -255,20 +247,23 @@
             this.txtEstatus.Size = new System.Drawing.Size(34, 20);
             this.txtEstatus.TabIndex = 57;
             this.txtEstatus.Tag = "estado";
-            // 
-            // navegador1
-            // 
-            this.navegador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.navegador1.Location = new System.Drawing.Point(-1, -2);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1189, 87);
-            this.navegador1.TabIndex = 49;
+            this.txtEstatus.TextChanged += new System.EventHandler(this.txtEstatus_TextChanged);
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(18, 18);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // navegador1
+            // 
+            this.navegador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.navegador1.Location = new System.Drawing.Point(-1, -2);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1189, 87);
+            this.navegador1.TabIndex = 49;
+            this.navegador1.Load += new System.EventHandler(this.navegador1_Load_2);
             // 
             // Form1
             // 
@@ -286,7 +281,6 @@
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.navegador1);
             this.Controls.Add(this.dvgConsulta);
-            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.dtProducto);
@@ -310,7 +304,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.DateTimePicker dtProducto;

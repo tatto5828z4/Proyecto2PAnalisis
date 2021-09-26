@@ -22,19 +22,7 @@ D:\Brayan Cifuentes\source\repos\DLLnav\CapaControlador\obj\Debug\CapaControlado
 J:\uni\NavegadorReDo\DLLnav\CapaControlador\bin\Debug\CapaControlador.dll
 J:\uni\NavegadorReDo\DLLnav\CapaControlador\bin\Debug\CapaControlador.pdb
 J:\uni\NavegadorReDo\DLLnav\CapaControlador\bin\Debug\CapaModelo.dll
-J:\uni\NavegadorReDo\DLLnav\CapaControlador\bin\Debug\MySql.Data.dll
-J:\uni\NavegadorReDo\DLLnav\CapaControlador\bin\Debug\Google.Protobuf.dll
-J:\uni\NavegadorReDo\DLLnav\CapaControlador\bin\Debug\Zstandard.Net.dll
-J:\uni\NavegadorReDo\DLLnav\CapaControlador\bin\Debug\K4os.Compression.LZ4.Streams.dll
-J:\uni\NavegadorReDo\DLLnav\CapaControlador\bin\Debug\BouncyCastle.Crypto.dll
-J:\uni\NavegadorReDo\DLLnav\CapaControlador\bin\Debug\Ubiety.Dns.Core.dll
-J:\uni\NavegadorReDo\DLLnav\CapaControlador\bin\Debug\System.Memory.dll
-J:\uni\NavegadorReDo\DLLnav\CapaControlador\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-J:\uni\NavegadorReDo\DLLnav\CapaControlador\bin\Debug\System.Buffers.dll
-J:\uni\NavegadorReDo\DLLnav\CapaControlador\bin\Debug\K4os.Compression.LZ4.dll
-J:\uni\NavegadorReDo\DLLnav\CapaControlador\bin\Debug\K4os.Hash.xxHash.dll
 J:\uni\NavegadorReDo\DLLnav\CapaControlador\bin\Debug\CapaModelo.pdb
-J:\uni\NavegadorReDo\DLLnav\CapaControlador\bin\Debug\MySql.Data.xml
 J:\uni\NavegadorReDo\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.AssemblyReference.cache
 J:\uni\NavegadorReDo\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
 J:\uni\NavegadorReDo\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
@@ -129,3 +117,57 @@ C:\Users\geova\Documents\Octavo_Semestre\Analisis2\NAVEGADOR_AYUDA\DLLnav\CapaCo
 C:\Users\geova\Documents\Octavo_Semestre\Analisis2\NAVEGADOR_AYUDA\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
 C:\Users\geova\Documents\Octavo_Semestre\Analisis2\NAVEGADOR_AYUDA\DLLnav\CapaControlador\obj\Debug\CapaControlador.dll
 C:\Users\geova\Documents\Octavo_Semestre\Analisis2\NAVEGADOR_AYUDA\DLLnav\CapaControlador\obj\Debug\CapaControlador.pdb
+J:\uni\NavegadorUltm\DLLnav\CapaControlador\bin\Debug\CapaControlador.dll
+J:\uni\NavegadorUltm\DLLnav\CapaControlador\bin\Debug\CapaControlador.pdb
+J:\uni\NavegadorUltm\DLLnav\CapaControlador\bin\Debug\CapaModelo.dll
+J:\uni\NavegadorUltm\DLLnav\CapaControlador\bin\Debug\CapaModelo.pdb
+J:\uni\NavegadorUltm\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.AssemblyReference.cache
+J:\uni\NavegadorUltm\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+J:\uni\NavegadorUltm\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+J:\uni\NavegadorUltm\DLLnav\CapaControlador\obj\Debug\CapaControlador.dll
+J:\uni\NavegadorUltm\DLLnav\CapaControlador\obj\Debug\CapaControlador.pdb
+C:\Users\wilbe\OneDrive\Escritorio\PruebasV2\DLLnav\CapaControlador\bin\Debug\CapaControlador.dll
+C:\Users\wilbe\OneDrive\Escritorio\PruebasV2\DLLnav\CapaControlador\bin\Debug\CapaControlador.pdb
+C:\Users\wilbe\OneDrive\Escritorio\PruebasV2\DLLnav\CapaControlador\bin\Debug\CapaModelo.dll
+C:\Users\wilbe\OneDrive\Escritorio\PruebasV2\DLLnav\CapaControlador\bin\Debug\CapaModelo.pdb
+C:\Users\wilbe\OneDrive\Escritorio\PruebasV2\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.AssemblyReference.cache
+C:\Users\wilbe\OneDrive\Escritorio\PruebasV2\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\wilbe\OneDrive\Escritorio\PruebasV2\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+C:\Users\wilbe\OneDrive\Escritorio\PruebasV2\DLLnav\CapaControlador\obj\Debug\CapaControlador.dll
+C:\Users\wilbe\OneDrive\Escritorio\PruebasV2\DLLnav\CapaControlador\obj\Debug\CapaControlador.pdb
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaControlador\bin\Debug\CapaControlador.dll
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaControlador\bin\Debug\CapaControlador.pdb
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaControlador\bin\Debug\CapaModelo.dll
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaControlador\bin\Debug\CapaModelo.pdb
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaControlador\obj\Debug\CapaControlador.dll
+C:\Users\HP\Desktop\Análisis de Sistemas 2\HCS\DLLnav\CapaControlador\obj\Debug\CapaControlador.pdb
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\DLLnav\CapaControlador\bin\Debug\CapaControlador.dll
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\DLLnav\CapaControlador\bin\Debug\CapaControlador.pdb
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\DLLnav\CapaControlador\bin\Debug\CapaModelo.dll
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\DLLnav\CapaControlador\bin\Debug\CapaModelo.pdb
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.AssemblyReference.cache
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\DLLnav\CapaControlador\obj\Debug\CapaControlador.dll
+C:\Users\kikhe\OneDrive\Escritorio\Navegador Nuevo\DLLnav\CapaControlador\obj\Debug\CapaControlador.pdb
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\CapaControlador\bin\Debug\CapaControlador.dll
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\CapaControlador\bin\Debug\CapaControlador.pdb
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\CapaControlador\bin\Debug\CapaModelo.dll
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\CapaControlador\bin\Debug\CapaModelo.pdb
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.AssemblyReference.cache
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\CapaControlador\obj\Debug\CapaControlador.dll
+C:\Users\alecz\OneDrive\Escritorio\Proyecto HSC\DLLnav\CapaControlador\obj\Debug\CapaControlador.pdb
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\CapaControlador\bin\Debug\CapaControlador.dll
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\CapaControlador\bin\Debug\CapaControlador.pdb
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\CapaControlador\bin\Debug\CapaModelo.dll
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\CapaControlador\bin\Debug\CapaModelo.pdb
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\CapaControlador\obj\Debug\CapaControlador.dll
+C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\CapaControlador\obj\Debug\CapaControlador.pdb
