@@ -20,13 +20,25 @@ namespace DLL.nav
         string DB;
         int estado = 0;
         public string campoEstado = "";
+        public string tablaAyuda = "";
+        public string idAyuda = "";
+        public string campoAyuda = "";
         ClaseControlador control = new ClaseControlador();
+        Control controles;
+        ArrayList referencia0 = new ArrayList();
+        ArrayList referencia1 = new ArrayList();
+        ArrayList referencia2 = new ArrayList();
+        ArrayList referencia3 = new ArrayList();
+        ArrayList referencia4 = new ArrayList();
+
         //Fin varaibles globales
 
 
         public navegador()
         {
             InitializeComponent();
+            btnGuardar.Enabled = false;
+            btnCancelar.Enabled = false;
 
         }
 
@@ -37,6 +49,7 @@ namespace DLL.nav
 
         public TextBox[] funAsignandoTexts(Control parent)
         {
+            controles = parent;
             return control.ordenandoTextos(parent);
         }
 
@@ -55,11 +68,30 @@ namespace DLL.nav
 
         public void funLlenarComboControl(ComboBox cbx, string tabla, string value, string display, string estatus)
         {
+            referencia1.Add(tabla);
+            referencia2.Add(value);
+            referencia3.Add(display);
+            referencia4.Add(estatus);
+            referencia0.Add(cbx);
             control.funLlenarComboControl( cbx,tabla,  value,  display,  estatus);
 
         }
 
+        public void funSeleccionarDTVista(DataGridView data)
+        {
+            control.funSeleccionarDTControl(data);
+        }
 
+        private void actualizarCombo()
+        {
+            for (int i=0; i < referencia0.Count; i++)
+            {
+                //ComboBox temporal = (ComboBox)referencia0[i];
+                //MessageBox.Show(temporal.Text + (string)referencia1[i] + (string)referencia2[i] + (string)referencia3[i] + (string)referencia4[i]);
+                control.funLlenarComboControl((ComboBox)referencia0[i], (string)referencia1[i], (string)referencia2[i], (string)referencia3[i], (string)referencia4[i]);
+            } 
+            
+        }
 
         public void mensaje()
         {
@@ -91,8 +123,8 @@ namespace DLL.nav
             //desactivarBotones cambiara los .Enabled de los botones
             //indicados
             /*
-             * 0 Desactiva los botones de cancelar y guardar
-             * 1 Desactiva los botones de insertar, modificar y eliminar
+             * 0 Desactiva los botones de cancelar y guardar. Activa ingreso, modificación, eliminación, consulta, reporte y actu
+             * 1 Desactiva los botones de insertar, modificar, eliminar, consulta, reporte y actu. Activa guardar y cancelar
              * 
              * Cada uno activará lo que el otro desactive
              * 0 Activa insertar, modificar y eliminar
@@ -100,29 +132,29 @@ namespace DLL.nav
              */
             if (tipo == 0)
             {
+                //activa
                 btnIngresar.Enabled = true;
                 btnModificar.Enabled = true;
                 btnEliminar.Enabled = true;
-                btnIngresar.Cursor = Cursors.Hand;
-                btnModificar.Cursor = Cursors.Hand;
-                btnEliminar.Cursor = Cursors.Hand;
+                btnConsultar.Enabled = true;
+                btnReporte.Enabled = true;
+                btnActualizar.Enabled = true;
+                //desactiva
                 btnGuardar.Enabled = false;
                 btnCancelar.Enabled = false;
-                btnGuardar.Cursor = Cursors.No;
-                btnCancelar.Cursor = Cursors.No;
             }
             else
             {
+                //desactiva
                 btnIngresar.Enabled = false;
                 btnModificar.Enabled = false;
                 btnEliminar.Enabled = false;
-                btnIngresar.Cursor = Cursors.No;
-                btnModificar.Cursor = Cursors.No;
-                btnEliminar.Cursor = Cursors.No;
+                btnConsultar.Enabled = false;
+                btnReporte.Enabled = false;
+                btnActualizar.Enabled = false;
+                //activa
                 btnGuardar.Enabled = true;
                 btnCancelar.Enabled = true;
-                btnGuardar.Cursor = Cursors.Hand;
-                btnCancelar.Cursor = Cursors.Hand;
             }
         }
 
@@ -130,32 +162,56 @@ namespace DLL.nav
         {
             estado = 0;
             desactivarBotones(0);
+            manipularTextboxs(0);
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+
             switch (estado)
             {
-                case 1://Este nos sirve para ingresar
+                case 1://Ingresar
+                    bool resultadoI;
+                    resultadoI = control.insertar(campos, tablas);
+                    if (resultadoI == true)
+                    {
+                        MessageBox.Show("El ingreso se a realizado con éxito!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("El ingreso no se realizó con éxito!");
+                    }
 
                     break;
 
                 case 2://Modificar
-                    string resultado;
+                    bool resultado;
                     resultado = control.modificar(campos, tablas);
-                    MessageBox.Show(resultado);
-                  /*  if(resultado == true)
+                    if(resultado == true)
                     {
                         MessageBox.Show("Modificación realizada con éxito!");
                     }
                     else
                     {
                         MessageBox.Show("Modificación no se realizó con éxito!");
-                    }*/
+                    }
                     break;
 
 
-                case 3://Este es para eliminar
+                case 3://Eliminar
+                    //string resultadoE;
+                    control.funEliminarControl(campos, tablas, campoEstado);
+                    //resultadoE = control.ToString();
+                    //bool value = Convert.ToBoolean(resultadoE);
+
+                    //if (value == true)
+                    //{
+                      //  MessageBox.Show("Eliminación realizada con éxito!");
+                    //}
+                    //else
+                    //{
+                     //   MessageBox.Show("Eliminación no se realizó con éxito!");
+                    //}
 
                     break;
 
@@ -165,11 +221,52 @@ namespace DLL.nav
             }
             estado = 0;
             desactivarBotones(0);
+            manipularTextboxs(0);
+            llenaTabla();//recarga los datos de la tabla
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+            int entero = control.funUltimoEnteroControl(tablas);
+            int cantidadCampos = campos.Length;
+            campos[0].Text = entero.ToString();
+           
+
+            foreach (Control ctr in controles.Controls)
+            {
+                if (ctr is TextBox)
+                {
+                    if(ctr.Tag.ToString() == campos[0].Tag.ToString())
+                    {
+                        ctr.Enabled = false;
+                    }
+                    else
+                    {
+                        ctr.Enabled = true;
+                      
+                    }
+                    
+                }
+
+                if (ctr is ComboBox)
+                {
+                    ctr.Enabled = true;
+                }
+
+                if (ctr is DateTimePicker)
+                {
+                    ctr.Enabled = true;
+                }
+
+                if (ctr is RadioButton)
+                {
+                    ctr.Enabled = true;
+                }
+            }
+
+            estado = 1;
             desactivarBotones(1);
+            manipularTextboxs(1);
         }
 
         private void btnModificar_Click(object sender, EventArgs e)//Boton de modificar campos dinámico
@@ -188,6 +285,7 @@ namespace DLL.nav
                     }
                     estado = 2;
                     desactivarBotones(1);
+                    manipularTextboxs(1);
                 }
                 else
                 {
@@ -205,9 +303,12 @@ namespace DLL.nav
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            control.funEliminarControl(campos, tablas, campoEstado);
+            //control.funEliminarControl(campos, tablas, campoEstado);
 
+            estado = 3;
             desactivarBotones(1);
+            manipularTextboxs(1);
+            cargaData();
         }
 
         //boton de verificacion para navegacion sin registros
@@ -273,6 +374,7 @@ namespace DLL.nav
 
                 }
             }
+            cargaData();
         }
 
         private void btnAnterior_Click(object sender, EventArgs e)
@@ -322,6 +424,7 @@ namespace DLL.nav
 
                 */
             }
+            cargaData();
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
@@ -347,6 +450,7 @@ namespace DLL.nav
                 arList.Add(col);//vamos guardando todos los campos
 
             }
+            cargaData();
         }
 
         private void btnFinal_Click(object sender, EventArgs e)
@@ -371,6 +475,7 @@ namespace DLL.nav
                 arList.Add(col);//vamos guardando todos los campos
 
             }
+            cargaData();
         }
 
         private void navegador_Load(object sender, EventArgs e)
@@ -381,6 +486,16 @@ namespace DLL.nav
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             llenaTabla();
+            //falta actu de combos
+            for (int i = 0; i < campos.Length; i++)
+            {
+
+                campos[i].Text = "";
+
+            }
+
+            actualizarCombo();
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -393,5 +508,104 @@ namespace DLL.nav
             generic = generico;
         }
 
+        private void btnAyuda_Click(object sender, EventArgs e)
+        {
+            control.funAyudaControl(idAyuda,campoAyuda, tablaAyuda);
+         //   Help.ShowHelp(parent, rutaAyudaCHM, rutaAyudaHTML);
+
+            //Help.ShowHelp(this, "Ayudas/AyudasSistemaReparto.chm", "ManualSistemaReparto.html");
+
+        }
+
+        private void manipularTextboxs(int modo)
+        {
+            /*
+             * 0 desactiva todos los controles de entrada del usuario y limpia los campos
+             * 1 activa todos los controles menos el id
+             */
+            //llamar este metodo desde donde se utilice (al iniciar, guardar, cancelar, ingresar, etc)
+            //basicamente: ingresar, modificar y eliminar activan el modo 1
+            //y el guardar y cancelar usan el modo 0 (desactivan todo porque ya habran completado una operacion)
+
+            int cantidadCampos = campos.Length;
+            if (modo == 0)
+            {
+                foreach (Control ctr in controles.Controls)
+                {
+                    if (ctr is TextBox)
+                    {
+                        ctr.Enabled = false;
+                        ctr.Text = "";
+                    }
+
+                    if (ctr is ComboBox)
+                    {
+                        ctr.Enabled = false;
+                        ctr.Text = "";
+                    }
+
+                    if (ctr is DateTimePicker)
+                    {
+                        ctr.Enabled = false;
+                        ctr.Text = DateTime.Today.ToString();
+                    }
+
+                    if (ctr is RadioButton)
+                    {
+                        ctr.Enabled = false;
+                    }
+                }
+            }
+
+            if (modo == 1)
+            {
+                foreach (Control ctr in controles.Controls)
+                {
+                    if (ctr is TextBox)
+                    {
+                        if (ctr.Tag.ToString() == campos[0].Tag.ToString())
+                        {
+                            ctr.Enabled = false;
+                        }
+                        else
+                        {
+                            ctr.Enabled = true;
+                        }
+                    }
+
+                    if (ctr is ComboBox)
+                    {
+                        ctr.Enabled = true;
+                    }
+
+                    if (ctr is DateTimePicker)
+                    {
+                        ctr.Enabled = true;
+                    }
+
+                    if (ctr is RadioButton)
+                    {
+                        ctr.Enabled = true;
+                    }
+                }
+            }
+
+        }
+        public void cargaData()
+        {
+            int cantidadCampos = dvgConsulta.Columns.Count;
+            /*
+            if (cantidadCampos == 0)
+            {
+                return;
+            }
+            */
+            for (int i = 0; i < cantidadCampos; i++)
+            {
+                campos[i].Text = dvgConsulta.CurrentRow.Cells[i].Value.ToString();
+            }
+            //dvgConsulta.CurrentRow();
+            //dvgConsulta.CurrentCellChanged
+        }
     }
 }

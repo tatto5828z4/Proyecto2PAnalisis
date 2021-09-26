@@ -14,12 +14,14 @@ namespace CapaControlador
     {
         string errores = "";
         TextBox[] texts;
+        Control control;
 
         ClaseModelo modelo = new ClaseModelo();
 
         public TextBox[] ordenandoTextos(Control parent)
         {
             texts = modelo.funTexts(parent);
+            control = parent;
             TextBox[] alias = new TextBox[texts.Length];
 
             int j = 0;
@@ -32,6 +34,7 @@ namespace CapaControlador
             return alias;
         }
 
+
         public void funAsignarAliasControl(TextBox[] alias, string tabla, string BD)
         {
             errores = modelo.funAsignarAlias(alias, tabla, BD);
@@ -42,6 +45,7 @@ namespace CapaControlador
             if (String.IsNullOrEmpty(errores))
             {
                 modelo.funSalida(menu);
+                modelo.funDeshabilitarTexts(control);
             }
             else
             {
@@ -50,11 +54,22 @@ namespace CapaControlador
             }
         }
 
+        public int funUltimoEnteroControl(string tabla)
+        {
+            int longitud = texts.Length;
+            int entero = modelo.funUltimoEntero(tabla, texts[longitud - 1].Tag.ToString());
+
+            return entero;
+        }
+
         public void funLlenarComboControl(ComboBox cbx, string tabla, string value, string display, string estatus)
         {
             modelo.funLlenarCombo(cbx,tabla,value, display, estatus);
+        }
 
-
+        public void funSeleccionarDTControl(DataGridView data)
+        {
+            modelo.funSeleccionarDT(data);
         }
 
 
@@ -72,15 +87,32 @@ namespace CapaControlador
             dt.Fill(table);
             return table;
         }
-        public string modificar(TextBox[] campos, string tablas)
+        public bool modificar(TextBox[] campos, string tablas)
         {
           return modelo.modificar(campos, tablas); 
+        }
+
+        public bool insertar(TextBox[] campos, string tablas)
+        {
+            return modelo.insertar(campos, tablas);
         }
 
         public void funEliminarControl(TextBox[] arreglo, string tabla, string campoEstado)
         {
             modelo.eliminar(arreglo, tabla, campoEstado);
         }
+
+        public void funAyudaControl(string idAyuda, string nombreCampo, string tablaA)
+        {
+            modelo.funAyuda(idAyuda,nombreCampo,tablaA,control);
+
+            //MessageBox.Show(tablaA);
+
+            
+
+        }
+
+
     }
 
 }
