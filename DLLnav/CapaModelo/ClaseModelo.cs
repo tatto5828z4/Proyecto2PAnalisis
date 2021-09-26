@@ -331,6 +331,22 @@ namespace CapaModelo
             }
         }
 
+        public void funComboTextbox(ComboBox combo, TextBox combotexto)
+        {
+            if (combo.SelectedValue == null)
+            {
+                return;
+            }
+            String cbx = combo.SelectedValue.ToString();
+            combotexto.Text = cbx;
+
+        }
+
+        public void funTextboxCombo(ComboBox combo, TextBox combotexto)
+        {
+            combo.SelectedValue = combotexto.Text.ToString();
+
+        }
 
         public OdbcDataAdapter llenarTbl(string tabla)// metodo  que obtinene el contenio de una tabla
         {

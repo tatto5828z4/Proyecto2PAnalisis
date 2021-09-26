@@ -84,6 +84,17 @@ namespace CapaControlador
             modelo.funCambioEstatusRB(estado, AI, cadenaEstado);
         }
 
+        public void funComboTextboxControl(ComboBox combo, TextBox combotexto)
+        {
+            modelo.funComboTextbox(combo, combotexto);
+
+        }
+
+        public void funTextboxComboControl(ComboBox combo, TextBox combotexto)
+        {
+            modelo.funTextboxCombo(combo, combotexto);
+        }
+
         public ArrayList consIndividual(string id, string tablas, int cuenta, string referencia)//Metodo necesario para la actualizacion
         {
             var arList = modelo.consIndividual(id, tablas, cuenta, referencia);
