@@ -58,7 +58,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(348, 302);
+            this.radioButton2.Location = new System.Drawing.Point(364, 302);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(66, 19);
             this.radioButton2.TabIndex = 45;
@@ -70,7 +70,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(348, 284);
+            this.radioButton1.Location = new System.Drawing.Point(364, 284);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(56, 19);
             this.radioButton1.TabIndex = 43;
@@ -82,7 +82,7 @@
             // dtProducto
             // 
             this.dtProducto.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtProducto.Location = new System.Drawing.Point(46, 322);
+            this.dtProducto.Location = new System.Drawing.Point(49, 322);
             this.dtProducto.Name = "dtProducto";
             this.dtProducto.Size = new System.Drawing.Size(121, 20);
             this.dtProducto.TabIndex = 42;
@@ -199,6 +199,7 @@
             this.txtCodigoMarca.Size = new System.Drawing.Size(40, 20);
             this.txtCodigoMarca.TabIndex = 51;
             this.txtCodigoMarca.Tag = "idMarca";
+            this.txtCodigoMarca.Visible = false;
             this.txtCodigoMarca.TextChanged += new System.EventHandler(this.txtCodigoMarca_TextChanged);
             // 
             // txtNombre
@@ -216,6 +217,7 @@
             this.txtFecha.Size = new System.Drawing.Size(99, 20);
             this.txtFecha.TabIndex = 53;
             this.txtFecha.Tag = "fecha";
+            this.txtFecha.Visible = false;
             this.txtFecha.TextChanged += new System.EventHandler(this.txtFecha_TextChanged);
             // 
             // txtDescripcion
@@ -249,6 +251,7 @@
             this.txtEstatus.Size = new System.Drawing.Size(34, 20);
             this.txtEstatus.TabIndex = 57;
             this.txtEstatus.Tag = "estado";
+            this.txtEstatus.Visible = false;
             this.txtEstatus.TextChanged += new System.EventHandler(this.txtEstatus_TextChanged);
             // 
             // contextMenuStrip1
