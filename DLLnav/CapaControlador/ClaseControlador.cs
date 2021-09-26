@@ -95,6 +95,17 @@ namespace CapaControlador
             modelo.funTextboxCombo(combo, combotexto);
         }
 
+        public void funDPTextBoxControl(DateTimePicker date, TextBox textoDate)
+        {
+            modelo.funDPTextBox(date,textoDate);
+
+        }
+
+        public void funTextBoxDPTControl(DateTimePicker date, TextBox textoDate)
+        {
+            modelo.funTextBoxDPT(date, textoDate);
+        }
+
         public ArrayList consIndividual(string id, string tablas, int cuenta, string referencia)//Metodo necesario para la actualizacion
         {
             var arList = modelo.consIndividual(id, tablas, cuenta, referencia);

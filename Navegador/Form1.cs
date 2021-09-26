@@ -116,5 +116,15 @@ namespace Navegador
         {
             navegador1.funTextboxComboVista(cbxCodMarca, txtCodigoMarca);
         }
+
+        private void dtProducto_ValueChanged(object sender, EventArgs e)
+        {
+            navegador1.funDPTextBoxVista(dtProducto,txtFecha);
+        }
+
+        private void txtFecha_TextChanged(object sender, EventArgs e)
+        {
+            navegador1.funTextBoxDPTVista(dtProducto, txtFecha);
+        }
     }
 }

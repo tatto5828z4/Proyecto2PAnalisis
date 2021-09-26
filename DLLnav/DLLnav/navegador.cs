@@ -104,6 +104,16 @@ namespace DLL.nav
             control.funTextboxComboControl(combo, combotexto);
         }
 
+        public void funDPTextBoxVista(DateTimePicker date, TextBox textoDate)
+        {
+            control.funDPTextBoxControl(date, textoDate);
+        }
+
+        public void funTextBoxDPTVista(DateTimePicker date, TextBox textoDate)
+        {
+            control.funTextBoxDPTControl(date,textoDate);
+        }
+
         private void actualizarCombo()
         {
             for (int i=0; i < referencia0.Count; i++)
