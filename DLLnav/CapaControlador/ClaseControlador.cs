@@ -65,10 +65,24 @@ namespace CapaControlador
         public void funLlenarComboControl(ComboBox cbx, string tabla, string value, string display, string estatus)
         {
             modelo.funLlenarCombo(cbx,tabla,value, display, estatus);
-
-
         }
 
+        public void funSeleccionarDTControl(DataGridView data)
+        {
+            modelo.funSeleccionarDT(data);
+        }
+
+
+        public void funSetearRBControl(RadioButton activo, RadioButton inactivo, TextBox estatus)
+        {
+            modelo.funSetearRB(activo, inactivo, estatus);
+        }
+
+
+        public void funCambioEstatusRBControl(TextBox estado, RadioButton AI, string cadenaEstado)
+        {
+            modelo.funCambioEstatusRB(estado, AI, cadenaEstado);
+        }
 
         public ArrayList consIndividual(string id, string tablas, int cuenta, string referencia)//Metodo necesario para la actualizacion
         {
@@ -84,15 +98,32 @@ namespace CapaControlador
             dt.Fill(table);
             return table;
         }
-        public string modificar(TextBox[] campos, string tablas)
+        public bool modificar(TextBox[] campos, string tablas)
         {
           return modelo.modificar(campos, tablas); 
+        }
+
+        public bool insertar(TextBox[] campos, string tablas)
+        {
+            return modelo.insertar(campos, tablas);
         }
 
         public void funEliminarControl(TextBox[] arreglo, string tabla, string campoEstado)
         {
             modelo.eliminar(arreglo, tabla, campoEstado);
         }
+
+        public void funAyudaControl(string idAyuda, string nombreCampo, string tablaA)
+        {
+            modelo.funAyuda(idAyuda,nombreCampo,tablaA,control);
+
+            //MessageBox.Show(tablaA);
+
+            
+
+        }
+
+
     }
 
 }

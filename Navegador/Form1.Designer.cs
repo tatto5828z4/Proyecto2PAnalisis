@@ -28,17 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnGuardar = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.txtEstatus = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.dtProducto = new System.Windows.Forms.DateTimePicker();
             this.cbxCodMarca = new System.Windows.Forms.ComboBox();
-            this.txtFecha = new System.Windows.Forms.TextBox();
-            this.txtCodigoMarca = new System.Windows.Forms.TextBox();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.txtStock = new System.Windows.Forms.TextBox();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.lblStock = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblEstatus = new System.Windows.Forms.Label();
@@ -47,22 +41,19 @@
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblCM = new System.Windows.Forms.Label();
             this.lblCP = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.dvgConsulta = new System.Windows.Forms.DataGridView();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtCodigoMarca = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtFecha = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.txtStock = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtEstatus = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.navegador1 = new DLL.nav.navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dvgConsulta)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Location = new System.Drawing.Point(178, 364);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(85, 23);
-            this.btnGuardar.TabIndex = 46;
-            this.btnGuardar.Text = "PruebaFecha";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // radioButton2
             // 
@@ -75,14 +66,6 @@
             this.radioButton2.Text = "Inactivo";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.radioButton2_MouseClick);
-            // 
-            // txtEstatus
-            // 
-            this.txtEstatus.Location = new System.Drawing.Point(455, 289);
-            this.txtEstatus.Name = "txtEstatus";
-            this.txtEstatus.Size = new System.Drawing.Size(27, 20);
-            this.txtEstatus.TabIndex = 44;
-            this.txtEstatus.Tag = "estado";
             // 
             // radioButton1
             // 
@@ -113,46 +96,7 @@
             this.cbxCodMarca.Name = "cbxCodMarca";
             this.cbxCodMarca.Size = new System.Drawing.Size(121, 21);
             this.cbxCodMarca.TabIndex = 41;
-            // 
-            // txtFecha
-            // 
-            this.txtFecha.Location = new System.Drawing.Point(178, 321);
-            this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(118, 20);
-            this.txtFecha.TabIndex = 40;
-            this.txtFecha.Tag = "fecha";
-            // 
-            // txtCodigoMarca
-            // 
-            this.txtCodigoMarca.Location = new System.Drawing.Point(181, 229);
-            this.txtCodigoMarca.Name = "txtCodigoMarca";
-            this.txtCodigoMarca.Size = new System.Drawing.Size(27, 20);
-            this.txtCodigoMarca.TabIndex = 39;
-            this.txtCodigoMarca.Tag = "idMarca";
-            // 
-            // txtPrecio
-            // 
-            this.txtPrecio.Location = new System.Drawing.Point(348, 228);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(100, 20);
-            this.txtPrecio.TabIndex = 38;
-            this.txtPrecio.Tag = "precio";
-            // 
-            // txtStock
-            // 
-            this.txtStock.Location = new System.Drawing.Point(348, 165);
-            this.txtStock.Name = "txtStock";
-            this.txtStock.Size = new System.Drawing.Size(100, 20);
-            this.txtStock.TabIndex = 37;
-            this.txtStock.Tag = "stock";
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Location = new System.Drawing.Point(46, 367);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(100, 20);
-            this.txtDescripcion.TabIndex = 36;
-            this.txtDescripcion.Tag = "descripcion";
+            this.cbxCodMarca.SelectedIndexChanged += new System.EventHandler(this.cbxCodMarca_SelectedIndexChanged);
             // 
             // lblStock
             // 
@@ -226,22 +170,6 @@
             this.lblCP.TabIndex = 28;
             this.lblCP.Text = "Codigo Producto";
             // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(46, 281);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
-            this.txtNombre.TabIndex = 27;
-            this.txtNombre.Tag = "nombre";
-            // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(46, 168);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(100, 20);
-            this.txtID.TabIndex = 26;
-            this.txtID.Tag = "idProducto";
-            // 
             // dvgConsulta
             // 
             this.dvgConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -252,15 +180,89 @@
             this.dvgConsulta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dvgConsulta.Size = new System.Drawing.Size(650, 342);
             this.dvgConsulta.TabIndex = 48;
+            this.dvgConsulta.CurrentCellChanged += new System.EventHandler(this.dvgConsulta_CurrentCellChanged);
+            this.dvgConsulta.SelectionChanged += new System.EventHandler(this.dvgConsulta_SelectionChanged);
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(46, 170);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(121, 20);
+            this.txtID.TabIndex = 50;
+            this.txtID.Tag = "idProducto";
+            // 
+            // txtCodigoMarca
+            // 
+            this.txtCodigoMarca.Location = new System.Drawing.Point(178, 228);
+            this.txtCodigoMarca.Name = "txtCodigoMarca";
+            this.txtCodigoMarca.Size = new System.Drawing.Size(40, 20);
+            this.txtCodigoMarca.TabIndex = 51;
+            this.txtCodigoMarca.Tag = "idMarca";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(49, 283);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(121, 20);
+            this.txtNombre.TabIndex = 52;
+            this.txtNombre.Tag = "nombre";
+            // 
+            // txtFecha
+            // 
+            this.txtFecha.Location = new System.Drawing.Point(178, 322);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(99, 20);
+            this.txtFecha.TabIndex = 53;
+            this.txtFecha.Tag = "fecha";
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.Location = new System.Drawing.Point(46, 369);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(121, 20);
+            this.txtDescripcion.TabIndex = 54;
+            this.txtDescripcion.Tag = "descripcion";
+            // 
+            // txtStock
+            // 
+            this.txtStock.Location = new System.Drawing.Point(348, 170);
+            this.txtStock.Name = "txtStock";
+            this.txtStock.Size = new System.Drawing.Size(121, 20);
+            this.txtStock.TabIndex = 55;
+            this.txtStock.Tag = "stock";
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Location = new System.Drawing.Point(348, 230);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(121, 20);
+            this.txtPrecio.TabIndex = 56;
+            this.txtPrecio.Tag = "precio";
+            // 
+            // txtEstatus
+            // 
+            this.txtEstatus.Location = new System.Drawing.Point(435, 301);
+            this.txtEstatus.Name = "txtEstatus";
+            this.txtEstatus.Size = new System.Drawing.Size(34, 20);
+            this.txtEstatus.TabIndex = 57;
+            this.txtEstatus.Tag = "estado";
+            this.txtEstatus.TextChanged += new System.EventHandler(this.txtEstatus_TextChanged);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(18, 18);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // navegador1
             // 
             this.navegador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.navegador1.Location = new System.Drawing.Point(-1, -1);
+            this.navegador1.Location = new System.Drawing.Point(-1, -2);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
             this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1191, 87);
-            this.navegador1.TabIndex = 0;
-            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
+            this.navegador1.Size = new System.Drawing.Size(1189, 87);
+            this.navegador1.TabIndex = 49;
+            this.navegador1.Load += new System.EventHandler(this.navegador1_Load_2);
             // 
             // Form1
             // 
@@ -268,18 +270,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(199)))), ((int)(((byte)(153)))));
             this.ClientSize = new System.Drawing.Size(1189, 500);
-            this.Controls.Add(this.dvgConsulta);
-            this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.txtEstatus);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.dtProducto);
-            this.Controls.Add(this.cbxCodMarca);
-            this.Controls.Add(this.txtFecha);
-            this.Controls.Add(this.txtCodigoMarca);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtStock);
             this.Controls.Add(this.txtDescripcion);
+            this.Controls.Add(this.txtFecha);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtCodigoMarca);
+            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.navegador1);
+            this.Controls.Add(this.dvgConsulta);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.dtProducto);
+            this.Controls.Add(this.cbxCodMarca);
             this.Controls.Add(this.lblStock);
             this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.lblEstatus);
@@ -288,9 +292,6 @@
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblCM);
             this.Controls.Add(this.lblCP);
-            this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.txtID);
-            this.Controls.Add(this.navegador1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Pruebas";
@@ -302,19 +303,10 @@
         }
 
         #endregion
-
-        private DLL.nav.navegador navegador1;
-        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.TextBox txtEstatus;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.DateTimePicker dtProducto;
         private System.Windows.Forms.ComboBox cbxCodMarca;
-        private System.Windows.Forms.TextBox txtFecha;
-        private System.Windows.Forms.TextBox txtCodigoMarca;
-        private System.Windows.Forms.TextBox txtPrecio;
-        private System.Windows.Forms.TextBox txtStock;
-        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label lblStock;
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Label lblEstatus;
@@ -323,9 +315,18 @@
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Label lblCM;
         private System.Windows.Forms.Label lblCP;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.DataGridView dvgConsulta;
+        private DLL.nav.navegador navegador1;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.TextBox txtCodigoMarca;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtFecha;
+        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.TextBox txtStock;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.TextBox txtEstatus;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        //private DLL.nav.navegador navegador1;
     }
 }
 

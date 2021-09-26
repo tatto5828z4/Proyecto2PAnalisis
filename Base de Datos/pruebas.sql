@@ -19,3 +19,9 @@ CREATE TABLE producto(
   
   foreign key (idMarca) references marca(idMarca)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+select * from marca;
+
+insert into marca values ("8","Marca4","A");
+
+insert into marca values ("12","Marca4000","A")
