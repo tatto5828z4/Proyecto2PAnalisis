@@ -569,12 +569,17 @@ namespace DLL.nav
                     if (ctr is DateTimePicker)
                     {
                         ctr.Enabled = false;
-                        ctr.Text = DateTime.Today.ToString();
+                        //((DateTimePicker)ctr).Value = DateTime.Now;
                     }
 
                     if (ctr is RadioButton)
                     {
                         ctr.Enabled = false;
+                    }
+
+                    if (ctr is DataGridView)
+                    {
+                        ctr.Enabled = true;
                     }
                 }
             }
@@ -592,6 +597,7 @@ namespace DLL.nav
                         else
                         {
                             ctr.Enabled = true;
+                            ctr.Text = "";
                         }
                     }
 
@@ -603,11 +609,18 @@ namespace DLL.nav
                     if (ctr is DateTimePicker)
                     {
                         ctr.Enabled = true;
+                        ((DateTimePicker)ctr).Value = DateTime.Now;
                     }
 
                     if (ctr is RadioButton)
                     {
                         ctr.Enabled = true;
+                        ((RadioButton)ctr).Checked = false;
+                    }
+
+                    if (ctr is DataGridView)
+                    {
+                        ctr.Enabled = false;
                     }
                 }
             }
