@@ -23,6 +23,7 @@ namespace DLL.nav
         public string tablaAyuda = "";
         public string idAyuda = "";
         public string campoAyuda = "";
+        DataGridView dataE;
         ClaseControlador control = new ClaseControlador();
         Control controles;
         ArrayList referencia0 = new ArrayList();
@@ -79,6 +80,7 @@ namespace DLL.nav
 
         public void funSeleccionarDTVista(DataGridView data)
         {
+            dataE = data;
             control.funSeleccionarDTControl(data);
         }
 
@@ -335,12 +337,12 @@ namespace DLL.nav
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            //control.funEliminarControl(campos, tablas, campoEstado);
-
+            control.funEliminarControl(campos, tablas, campoEstado);
+            //control.funSeleccionarDTControl(dataE);
             estado = 3;
-            desactivarBotones(1);
-            manipularTextboxs(1);
-            cargaData();
+            desactivarBotones(0);
+            manipularTextboxs(0);
+            llenaTabla();
         }
 
         //boton de verificacion para navegacion sin registros

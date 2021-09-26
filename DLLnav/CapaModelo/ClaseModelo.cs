@@ -520,9 +520,10 @@ namespace CapaModelo
                 if (arreglo[i].Tag.ToString() == campoEstado)
                 {
                     
-                    if (arreglo[i].Text =="I")
-                    {
-                        string sql = "UPDATE" + " " + tabla + " " + "SET" + " " + campoEstado + " ="+"'"+arreglo[i].Text+"'"+ " "+"WHERE" + " " + arreglo[0].Tag.ToString() + " = " + arreglo[0].Text;
+                    //if (arreglo[i].Text =="I")
+                    //{
+                        //string sql = "UPDATE" + " " + tabla + " " + "SET" + " " + campoEstado + " ="+"'"+arreglo[i].Text+"'"+ " "+"WHERE" + " " + arreglo[0].Tag.ToString() + " = " + arreglo[0].Text;
+                        string sql = "UPDATE" + " " + tabla + " " + "SET" + " " + campoEstado + " =" + "'" +'I'+ "'" + " " + "WHERE" + " " + arreglo[0].Tag.ToString() + " = " + arreglo[0].Text;
                         //MessageBox.Show(sql);
                         try
                         {
@@ -535,12 +536,12 @@ namespace CapaModelo
                         {
                             MessageBox.Show("Error al eliminar el registro " + error.Message);
                         }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Ingrese un estado válido I=Inactivo");
-                        break;
-                    }
+                    //}
+                    //else
+                    //{
+                    //    MessageBox.Show("Ingrese un estado válido I=Inactivo");
+                    //    break;
+                    //}
                     
                 }
             }
