@@ -92,7 +92,6 @@ C:\Users\Langas\Documents\navegador_proyecto\DLLnav\CapaModelo\bin\Debug\System.
 C:\Users\Langas\Documents\navegador_proyecto\DLLnav\CapaModelo\bin\Debug\System.Buffers.dll
 C:\Users\Langas\Documents\navegador_proyecto\DLLnav\CapaModelo\bin\Debug\K4os.Compression.LZ4.dll
 C:\Users\Langas\Documents\navegador_proyecto\DLLnav\CapaModelo\bin\Debug\K4os.Hash.xxHash.dll
-C:\Users\Langas\Documents\navegador_proyecto\DLLnav\CapaModelo\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\Langas\Documents\navegador_proyecto\DLLnav\CapaModelo\bin\Debug\MySql.Data.xml
 C:\Users\Langas\Documents\navegador_proyecto\DLLnav\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyReference.cache
 C:\Users\Langas\Documents\navegador_proyecto\DLLnav\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
