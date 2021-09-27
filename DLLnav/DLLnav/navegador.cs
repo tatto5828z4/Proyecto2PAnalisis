@@ -23,6 +23,9 @@ namespace DLL.nav
         public string tablaAyuda = "";
         public string idAyuda = "";
         public string campoAyuda = "";
+        public Form formReporte;
+        public string idReporte = "";
+
         DataGridView dataE;
         ClaseControlador control = new ClaseControlador();
         Control controles;
@@ -309,6 +312,7 @@ namespace DLL.nav
             {
                 if (dvgConsulta.RowCount - 1 > 0)
                 {
+                    manipularTextboxs(1);
                     int cuenta = campos.Length;
                     string referencia = campos[0].Tag.ToString();//Nos sirve para obtener el campo para hacer la consulta
                     string id = dvgConsulta.CurrentRow.Cells[0].Value.ToString();
@@ -319,7 +323,6 @@ namespace DLL.nav
                     }
                     estado = 2;
                     desactivarBotones(1);
-                    manipularTextboxs(1);
                 }
                 else
                 {
@@ -653,6 +656,28 @@ namespace DLL.nav
             }
             //dvgConsulta.CurrentRow();
             //dvgConsulta.CurrentCellChanged
+        }
+
+        public string funReportesVista(string campoRuta, string campoB, string tablaR)
+        {
+            string rutaVista = control.funReportesControl(idReporte, campoRuta, campoB, tablaR);
+            return rutaVista;
+        }
+
+        public void funMostrarFormR(Form reporteF)
+        {
+            formReporte = reporteF;
+            reporteF.Show();
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            funMostrarFormR(formReporte);
+        }
+
+        private void btnReporte_Click_1(object sender, EventArgs e)
+        {
+            funMostrarFormR(formReporte);
         }
     }
 }
