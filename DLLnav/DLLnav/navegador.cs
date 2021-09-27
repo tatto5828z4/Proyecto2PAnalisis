@@ -23,6 +23,10 @@ namespace DLL.nav
         public string tablaAyuda = "";
         public string idAyuda = "";
         public string campoAyuda = "";
+        public Form formReporte;
+        public string idReporte = "";
+
+        DataGridView dataE;
         ClaseControlador control = new ClaseControlador();
         Control controles;
         ArrayList referencia0 = new ArrayList();
@@ -79,6 +83,7 @@ namespace DLL.nav
 
         public void funSeleccionarDTVista(DataGridView data)
         {
+            dataE = data;
             control.funSeleccionarDTControl(data);
         }
 
@@ -102,6 +107,16 @@ namespace DLL.nav
         public void funTextboxComboVista(ComboBox combo, TextBox combotexto)
         {
             control.funTextboxComboControl(combo, combotexto);
+        }
+
+        public void funDPTextBoxVista(DateTimePicker date, TextBox textoDate)
+        {
+            control.funDPTextBoxControl(date, textoDate);
+        }
+
+        public void funTextBoxDPTVista(DateTimePicker date, TextBox textoDate)
+        {
+            control.funTextBoxDPTControl(date,textoDate);
         }
 
         private void actualizarCombo()
@@ -297,6 +312,7 @@ namespace DLL.nav
             {
                 if (dvgConsulta.RowCount - 1 > 0)
                 {
+                    manipularTextboxs(1);
                     int cuenta = campos.Length;
                     string referencia = campos[0].Tag.ToString();//Nos sirve para obtener el campo para hacer la consulta
                     string id = dvgConsulta.CurrentRow.Cells[0].Value.ToString();
@@ -307,7 +323,6 @@ namespace DLL.nav
                     }
                     estado = 2;
                     desactivarBotones(1);
-                    manipularTextboxs(1);
                 }
                 else
                 {
@@ -325,12 +340,12 @@ namespace DLL.nav
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            //control.funEliminarControl(campos, tablas, campoEstado);
-
+            control.funEliminarControl(campos, tablas, campoEstado);
+            //control.funSeleccionarDTControl(dataE);
             estado = 3;
-            desactivarBotones(1);
-            manipularTextboxs(1);
-            cargaData();
+            desactivarBotones(0);
+            manipularTextboxs(0);
+            llenaTabla();
         }
 
         //boton de verificacion para navegacion sin registros
@@ -569,12 +584,17 @@ namespace DLL.nav
                     if (ctr is DateTimePicker)
                     {
                         ctr.Enabled = false;
-                        ctr.Text = DateTime.Today.ToString();
+                        //((DateTimePicker)ctr).Value = DateTime.Now;
                     }
 
                     if (ctr is RadioButton)
                     {
                         ctr.Enabled = false;
+                    }
+
+                    if (ctr is DataGridView)
+                    {
+                        ctr.Enabled = true;
                     }
                 }
             }
@@ -592,6 +612,7 @@ namespace DLL.nav
                         else
                         {
                             ctr.Enabled = true;
+                            ctr.Text = "";
                         }
                     }
 
@@ -603,11 +624,18 @@ namespace DLL.nav
                     if (ctr is DateTimePicker)
                     {
                         ctr.Enabled = true;
+                        ((DateTimePicker)ctr).Value = DateTime.Now;
                     }
 
                     if (ctr is RadioButton)
                     {
                         ctr.Enabled = true;
+                        ((RadioButton)ctr).Checked = false;
+                    }
+
+                    if (ctr is DataGridView)
+                    {
+                        ctr.Enabled = false;
                     }
                 }
             }
@@ -628,6 +656,28 @@ namespace DLL.nav
             }
             //dvgConsulta.CurrentRow();
             //dvgConsulta.CurrentCellChanged
+        }
+
+        public string funReportesVista(string campoRuta, string campoB, string tablaR)
+        {
+            string rutaVista = control.funReportesControl(idReporte, campoRuta, campoB, tablaR);
+            return rutaVista;
+        }
+
+        public void funMostrarFormR(Form reporteF)
+        {
+            formReporte = reporteF;
+            reporteF.Show();
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            funMostrarFormR(formReporte);
+        }
+
+        private void btnReporte_Click_1(object sender, EventArgs e)
+        {
+            funMostrarFormR(formReporte);
         }
     }
 }

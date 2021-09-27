@@ -32,6 +32,13 @@ namespace Navegador
             navegador1.idAyuda = "1";
             //fin de elementos para ejecutar la ayuda
 
+            // Inicio datos para ejecurar reportes
+            navegador1.idReporte = "1";
+            reporte formRep = new reporte();
+            navegador1.formReporte = formRep;
+            formRep.ruta = navegador1.funReportesVista("rutaReporte", "idReporte", "reporte");
+            // Final datos para ejecutar reportes
+
             navegador1.pideGrid(this.dvgConsulta);
             navegador1.llenaTabla();
             navegador1.pedirRef(this);
@@ -115,6 +122,16 @@ namespace Navegador
         private void txtCodigoMarca_TextChanged(object sender, EventArgs e)
         {
             navegador1.funTextboxComboVista(cbxCodMarca, txtCodigoMarca);
+        }
+
+        private void dtProducto_ValueChanged(object sender, EventArgs e)
+        {
+            navegador1.funDPTextBoxVista(dtProducto,txtFecha);
+        }
+
+        private void txtFecha_TextChanged(object sender, EventArgs e)
+        {
+            navegador1.funTextBoxDPTVista(dtProducto, txtFecha);
         }
     }
 }

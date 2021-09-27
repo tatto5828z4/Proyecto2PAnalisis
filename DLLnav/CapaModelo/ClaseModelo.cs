@@ -348,6 +348,65 @@ namespace CapaModelo
 
         }
 
+        public void funDPTextBox(DateTimePicker date, TextBox textoDate)
+        {
+            String dt = "";
+            dt = date.Value.ToString("yyyy-MM-dd");//lo pasa al formato necesitado por mysql
+            textoDate.Text = dt;
+
+        }
+
+        public void funTextBoxDPT(DateTimePicker date, TextBox textoDate)
+        {
+            if (textoDate.Text != "")
+            {
+                date.Value = Convert.ToDateTime(textoDate.Text.ToString());
+            }
+
+        }
+
+        public string funReportes(string idReporte, string campoRuta, string campoB, string tablaR)
+        {
+            string ruta = "";
+            OdbcDataReader leer = null;
+
+            string sql = "SELECT" + " " + campoRuta + " " + "FROM" + " " + tablaR + " " + "WHERE " + " " + campoB + "=" + idReporte;
+
+            OdbcConnection conect = conexion.conexion();
+
+            try
+            {
+
+                OdbcCommand comando = new OdbcCommand(sql, conect);
+                leer = comando.ExecuteReader();
+
+                while (leer.Read())
+                {
+                    ruta = leer.GetString(0);
+                }
+
+
+            }
+            catch (OdbcException ex)
+            {
+
+                MessageBox.Show("Error al cargar los datos" + ex.Message);
+
+            }
+
+            finally
+            {
+                conexion.desconexion(conect);
+
+            }
+
+
+            return ruta;
+
+        }
+
+
+
         public OdbcDataAdapter llenarTbl(string tabla)// metodo  que obtinene el contenio de una tabla
         {
             Conexion cn = new Conexion();
@@ -501,9 +560,10 @@ namespace CapaModelo
                 if (arreglo[i].Tag.ToString() == campoEstado)
                 {
                     
-                    if (arreglo[i].Text =="I")
-                    {
-                        string sql = "UPDATE" + " " + tabla + " " + "SET" + " " + campoEstado + " ="+"'"+arreglo[i].Text+"'"+ " "+"WHERE" + " " + arreglo[0].Tag.ToString() + " = " + arreglo[0].Text;
+                    //if (arreglo[i].Text =="I")
+                    //{
+                        //string sql = "UPDATE" + " " + tabla + " " + "SET" + " " + campoEstado + " ="+"'"+arreglo[i].Text+"'"+ " "+"WHERE" + " " + arreglo[0].Tag.ToString() + " = " + arreglo[0].Text;
+                        string sql = "UPDATE" + " " + tabla + " " + "SET" + " " + campoEstado + " =" + "'" +'I'+ "'" + " " + "WHERE" + " " + arreglo[0].Tag.ToString() + " = " + arreglo[0].Text;
                         //MessageBox.Show(sql);
                         try
                         {
@@ -516,12 +576,12 @@ namespace CapaModelo
                         {
                             MessageBox.Show("Error al eliminar el registro " + error.Message);
                         }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Ingrese un estado válido I=Inactivo");
-                        break;
-                    }
+                    //}
+                    //else
+                    //{
+                    //    MessageBox.Show("Ingrese un estado válido I=Inactivo");
+                    //    break;
+                    //}
                     
                 }
             }
