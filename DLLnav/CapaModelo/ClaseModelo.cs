@@ -365,6 +365,46 @@ namespace CapaModelo
 
         }
 
+        public string funReportes(string idReporte, string campoRuta, string campoB, string tablaR)
+        {
+            string ruta = "";
+            OdbcDataReader leer = null;
+
+            string sql = "SELECT" + " " + campoRuta + " " + "FROM" + " " + tablaR + " " + "WHERE " + " " + campoB + "=" + idReporte;
+
+            OdbcConnection conect = conexion.conexion();
+
+            try
+            {
+
+                OdbcCommand comando = new OdbcCommand(sql, conect);
+                leer = comando.ExecuteReader();
+
+                while (leer.Read())
+                {
+                    ruta = leer.GetString(0);
+                }
+
+
+            }
+            catch (OdbcException ex)
+            {
+
+                MessageBox.Show("Error al cargar los datos" + ex.Message);
+
+            }
+
+            finally
+            {
+                conexion.desconexion(conect);
+
+            }
+
+
+            return ruta;
+
+        }
+
 
 
         public OdbcDataAdapter llenarTbl(string tabla)// metodo  que obtinene el contenio de una tabla
