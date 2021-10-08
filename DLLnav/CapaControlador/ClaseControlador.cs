@@ -118,8 +118,8 @@ namespace CapaControlador
             var arList = modelo.consIndividual(id, tablas, cuenta, referencia);
             return arList;
         }
-
         
+
         public DataTable llenarTbl(string tablaDB)//Jaime López 0901-18-735
         {
             OdbcDataAdapter dt = modelo.llenarTbl(tablaDB);

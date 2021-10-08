@@ -82,7 +82,7 @@ namespace CapaModelo
             int enteroSumado = 0;
             OdbcDataReader leer = null;
 
-            string sql = "SELECT" + " " + campoB + " " + "FROM" + " " + tabla + " " + "ORDER BY" + " " + campoB + " " + "DESC LIMIT 1";
+            string sql = "SELECT" + " " + campoB + " " + "FROM" + " " + tabla + " " + "ORDER BY length(" + " " + campoB + ")" + " " + "DESC LIMIT 1";
             OdbcConnection conect = conexion.conexion();
 
             try
@@ -406,13 +406,14 @@ namespace CapaModelo
         }
 
 
-        //Jaime López 0901-18-735
+        //Jaime López 0901-18-735 y Modificada por Wilmer Torres 9959-18-9131
         public OdbcDataAdapter llenarTbl(string tabla)// metodo  que obtinene el contenio de una tabla
         {
             Conexion cn = new Conexion();
 
             //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
-            string sql = "select * from " + tabla + ";";
+            //string sql = "select * from " + tabla + ";";
+            string sql = "select * from " + tabla + " " + "ORDER BY" + " " + "length(" + arreglo[0].Tag.ToString() + ")ASC";
             OdbcConnection conn = cn.conexion();
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, conn);
             cn.desconexion(conn);
