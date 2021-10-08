@@ -406,7 +406,7 @@ namespace CapaModelo
         }
 
 
-
+        //Jaime López 0901-18-735
         public OdbcDataAdapter llenarTbl(string tabla)// metodo  que obtinene el contenio de una tabla
         {
             Conexion cn = new Conexion();
@@ -419,6 +419,7 @@ namespace CapaModelo
 
             return dataTable;
         }
+        //Wilber Segura 0901-18-13952
         public ArrayList consIndividual(string id, string tablas, int cuenta, string referencia)
         {
             Conexion cn = new Conexion();
@@ -445,7 +446,8 @@ namespace CapaModelo
             return arList;
         }
 
-        public bool modificar(TextBox[] campos, string tablas)
+
+        public bool modificar(TextBox[] campos, string tablas)//Modificar de Wilber Enrique Segura Ramirez 0901-18-13952
         {
             int resultado = 0;
             Conexion cn = new Conexion();
@@ -490,7 +492,7 @@ namespace CapaModelo
             }
         }
 
-
+        //Melissa Aldana
         public bool insertar(TextBox[] campos, string tablas)
         {
             int resultado = 0;

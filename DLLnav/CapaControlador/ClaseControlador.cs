@@ -112,21 +112,22 @@ namespace CapaControlador
             return ruta;
         }
 
+        //Wilber Segura 0901-18-13952
         public ArrayList consIndividual(string id, string tablas, int cuenta, string referencia)//Metodo necesario para la actualizacion
         {
             var arList = modelo.consIndividual(id, tablas, cuenta, referencia);
             return arList;
         }
 
-
-        public DataTable llenarTbl(string tablaDB)
+        
+        public DataTable llenarTbl(string tablaDB)//Jaime López 0901-18-735
         {
             OdbcDataAdapter dt = modelo.llenarTbl(tablaDB);
             DataTable table = new DataTable();
             dt.Fill(table);
             return table;
         }
-        public bool modificar(TextBox[] campos, string tablas)
+        public bool modificar(TextBox[] campos, string tablas)//Modificar de Wilber Enrique Segura Ramirez 0901-18-13952
         {
           return modelo.modificar(campos, tablas); 
         }
