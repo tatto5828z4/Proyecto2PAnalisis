@@ -58,10 +58,9 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(485, 372);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton2.Location = new System.Drawing.Point(364, 302);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(77, 21);
+            this.radioButton2.Size = new System.Drawing.Size(63, 17);
             this.radioButton2.TabIndex = 45;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Inactivo";
@@ -71,10 +70,9 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(485, 350);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton1.Location = new System.Drawing.Point(364, 284);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(67, 21);
+            this.radioButton1.Size = new System.Drawing.Size(55, 17);
             this.radioButton1.TabIndex = 43;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Activo";
@@ -84,10 +82,9 @@
             // dtProducto
             // 
             this.dtProducto.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtProducto.Location = new System.Drawing.Point(65, 396);
-            this.dtProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtProducto.Location = new System.Drawing.Point(49, 322);
             this.dtProducto.Name = "dtProducto";
-            this.dtProducto.Size = new System.Drawing.Size(160, 22);
+            this.dtProducto.Size = new System.Drawing.Size(121, 20);
             this.dtProducto.TabIndex = 42;
             this.dtProducto.Value = new System.DateTime(2021, 9, 11, 0, 0, 0, 0);
             this.dtProducto.ValueChanged += new System.EventHandler(this.dtProducto_ValueChanged);
@@ -96,122 +93,110 @@
             // 
             this.cbxCodMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxCodMarca.FormattingEnabled = true;
-            this.cbxCodMarca.Location = new System.Drawing.Point(61, 281);
-            this.cbxCodMarca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxCodMarca.Location = new System.Drawing.Point(46, 228);
             this.cbxCodMarca.Name = "cbxCodMarca";
-            this.cbxCodMarca.Size = new System.Drawing.Size(160, 24);
+            this.cbxCodMarca.Size = new System.Drawing.Size(121, 21);
             this.cbxCodMarca.TabIndex = 41;
             this.cbxCodMarca.SelectedIndexChanged += new System.EventHandler(this.cbxCodMarca_SelectedIndexChanged);
             // 
             // lblStock
             // 
             this.lblStock.AutoSize = true;
-            this.lblStock.Location = new System.Drawing.Point(460, 183);
-            this.lblStock.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblStock.Location = new System.Drawing.Point(345, 149);
             this.lblStock.Name = "lblStock";
-            this.lblStock.Size = new System.Drawing.Size(104, 17);
+            this.lblStock.Size = new System.Drawing.Size(81, 13);
             this.lblStock.TabIndex = 35;
             this.lblStock.Text = "Stock Producto";
             // 
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(460, 261);
-            this.lblPrecio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPrecio.Location = new System.Drawing.Point(345, 212);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(109, 17);
+            this.lblPrecio.Size = new System.Drawing.Size(83, 13);
             this.lblPrecio.TabIndex = 34;
             this.lblPrecio.Text = "Precio Producto";
             // 
             // lblEstatus
             // 
             this.lblEstatus.AutoSize = true;
-            this.lblEstatus.Location = new System.Drawing.Point(460, 326);
-            this.lblEstatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEstatus.Location = new System.Drawing.Point(345, 265);
             this.lblEstatus.Name = "lblEstatus";
-            this.lblEstatus.Size = new System.Drawing.Size(116, 17);
+            this.lblEstatus.Size = new System.Drawing.Size(88, 13);
             this.lblEstatus.TabIndex = 33;
             this.lblEstatus.Text = "Estatus Producto";
             // 
             // lblNP
             // 
             this.lblNP.AutoSize = true;
-            this.lblNP.Location = new System.Drawing.Point(57, 326);
-            this.lblNP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNP.Location = new System.Drawing.Point(43, 265);
             this.lblNP.Name = "lblNP";
-            this.lblNP.Size = new System.Drawing.Size(119, 17);
+            this.lblNP.Size = new System.Drawing.Size(90, 13);
             this.lblNP.TabIndex = 32;
             this.lblNP.Text = "Nombre Producto";
             // 
             // lblFechaP
             // 
             this.lblFechaP.AutoSize = true;
-            this.lblFechaP.Location = new System.Drawing.Point(57, 377);
-            this.lblFechaP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFechaP.Location = new System.Drawing.Point(43, 306);
             this.lblFechaP.Name = "lblFechaP";
-            this.lblFechaP.Size = new System.Drawing.Size(108, 17);
+            this.lblFechaP.Size = new System.Drawing.Size(83, 13);
             this.lblFechaP.TabIndex = 31;
             this.lblFechaP.Text = "Fecha Producto";
             // 
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(57, 432);
-            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDescripcion.Location = new System.Drawing.Point(43, 351);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(143, 17);
+            this.lblDescripcion.Size = new System.Drawing.Size(109, 13);
             this.lblDescripcion.TabIndex = 30;
             this.lblDescripcion.Text = "Descripcion Producto";
             // 
             // lblCM
             // 
             this.lblCM.AutoSize = true;
-            this.lblCM.Location = new System.Drawing.Point(61, 261);
-            this.lblCM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCM.Location = new System.Drawing.Point(46, 212);
             this.lblCM.Name = "lblCM";
-            this.lblCM.Size = new System.Drawing.Size(117, 17);
+            this.lblCM.Size = new System.Drawing.Size(90, 13);
             this.lblCM.TabIndex = 29;
             this.lblCM.Text = "Codigo De Marca";
             // 
             // lblCP
             // 
             this.lblCP.AutoSize = true;
-            this.lblCP.Location = new System.Drawing.Point(61, 183);
-            this.lblCP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCP.Location = new System.Drawing.Point(46, 149);
             this.lblCP.Name = "lblCP";
-            this.lblCP.Size = new System.Drawing.Size(113, 17);
+            this.lblCP.Size = new System.Drawing.Size(86, 13);
             this.lblCP.TabIndex = 28;
             this.lblCP.Text = "Codigo Producto";
             // 
             // dvgConsulta
             // 
             this.dvgConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgConsulta.Location = new System.Drawing.Point(681, 144);
-            this.dvgConsulta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dvgConsulta.Location = new System.Drawing.Point(511, 117);
             this.dvgConsulta.Name = "dvgConsulta";
             this.dvgConsulta.ReadOnly = true;
             this.dvgConsulta.RowHeadersWidth = 47;
             this.dvgConsulta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dvgConsulta.Size = new System.Drawing.Size(867, 421);
+            this.dvgConsulta.Size = new System.Drawing.Size(650, 342);
             this.dvgConsulta.TabIndex = 48;
             this.dvgConsulta.CurrentCellChanged += new System.EventHandler(this.dvgConsulta_CurrentCellChanged);
             this.dvgConsulta.SelectionChanged += new System.EventHandler(this.dvgConsulta_SelectionChanged);
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(61, 209);
-            this.txtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtID.Location = new System.Drawing.Point(46, 170);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(160, 22);
+            this.txtID.Size = new System.Drawing.Size(121, 20);
             this.txtID.TabIndex = 50;
             this.txtID.Tag = "idProducto";
             // 
             // txtCodigoMarca
             // 
-            this.txtCodigoMarca.Location = new System.Drawing.Point(237, 281);
-            this.txtCodigoMarca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigoMarca.Location = new System.Drawing.Point(178, 228);
             this.txtCodigoMarca.Name = "txtCodigoMarca";
-            this.txtCodigoMarca.Size = new System.Drawing.Size(52, 22);
+            this.txtCodigoMarca.Size = new System.Drawing.Size(40, 20);
             this.txtCodigoMarca.TabIndex = 51;
             this.txtCodigoMarca.Tag = "idMarca";
             this.txtCodigoMarca.Visible = false;
@@ -219,56 +204,50 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(65, 348);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Location = new System.Drawing.Point(49, 283);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(160, 22);
+            this.txtNombre.Size = new System.Drawing.Size(121, 20);
             this.txtNombre.TabIndex = 52;
             this.txtNombre.Tag = "nombre";
             // 
             // txtFecha
             // 
-            this.txtFecha.Location = new System.Drawing.Point(237, 396);
-            this.txtFecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFecha.Location = new System.Drawing.Point(178, 322);
             this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(131, 22);
+            this.txtFecha.Size = new System.Drawing.Size(99, 20);
             this.txtFecha.TabIndex = 53;
             this.txtFecha.Tag = "fecha";
             this.txtFecha.TextChanged += new System.EventHandler(this.txtFecha_TextChanged);
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(61, 454);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescripcion.Location = new System.Drawing.Point(46, 369);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(160, 22);
+            this.txtDescripcion.Size = new System.Drawing.Size(121, 20);
             this.txtDescripcion.TabIndex = 54;
             this.txtDescripcion.Tag = "descripcion";
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(464, 209);
-            this.txtStock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtStock.Location = new System.Drawing.Point(348, 170);
             this.txtStock.Name = "txtStock";
-            this.txtStock.Size = new System.Drawing.Size(160, 22);
+            this.txtStock.Size = new System.Drawing.Size(121, 20);
             this.txtStock.TabIndex = 55;
             this.txtStock.Tag = "stock";
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(464, 283);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrecio.Location = new System.Drawing.Point(348, 230);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(160, 22);
+            this.txtPrecio.Size = new System.Drawing.Size(121, 20);
             this.txtPrecio.TabIndex = 56;
             this.txtPrecio.Tag = "precio";
             // 
             // txtEstatus
             // 
-            this.txtEstatus.Location = new System.Drawing.Point(580, 370);
-            this.txtEstatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEstatus.Location = new System.Drawing.Point(435, 301);
             this.txtEstatus.Name = "txtEstatus";
-            this.txtEstatus.Size = new System.Drawing.Size(44, 22);
+            this.txtEstatus.Size = new System.Drawing.Size(34, 20);
             this.txtEstatus.TabIndex = 57;
             this.txtEstatus.Tag = "estado";
             this.txtEstatus.Visible = false;
@@ -284,18 +263,18 @@
             // 
             this.navegador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.navegador1.Location = new System.Drawing.Point(-1, -2);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
             this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1585, 107);
+            this.navegador1.Size = new System.Drawing.Size(1189, 87);
             this.navegador1.TabIndex = 49;
             this.navegador1.Load += new System.EventHandler(this.navegador1_Load_2);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(199)))), ((int)(((byte)(153)))));
-            this.ClientSize = new System.Drawing.Size(1585, 615);
+            this.ClientSize = new System.Drawing.Size(1208, 500);
             this.Controls.Add(this.txtEstatus);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtStock);
@@ -319,7 +298,6 @@
             this.Controls.Add(this.lblCM);
             this.Controls.Add(this.lblCP);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Pruebas";
             this.Load += new System.EventHandler(this.Form1_Load);

@@ -29,7 +29,9 @@ namespace DLL.nav
         DataGridView dataE;
         ClaseControlador control = new ClaseControlador();
         Control controles;
-        ArrayList referencia0 = new ArrayList();
+        //Gabriel Coyoy
+        //Estas variables permiten actualizar los datos de las combobox
+        ArrayList referencia0 = new ArrayList(); 
         ArrayList referencia1 = new ArrayList();
         ArrayList referencia2 = new ArrayList();
         ArrayList referencia3 = new ArrayList();
@@ -123,6 +125,7 @@ namespace DLL.nav
         {
             for (int i=0; i < referencia0.Count; i++)
             {
+                //Gabriel Coyoy
                 //ComboBox temporal = (ComboBox)referencia0[i];
                 //MessageBox.Show(temporal.Text + (string)referencia1[i] + (string)referencia2[i] + (string)referencia3[i] + (string)referencia4[i]);
                 control.funLlenarComboControl((ComboBox)referencia0[i], (string)referencia1[i], (string)referencia2[i], (string)referencia3[i], (string)referencia4[i]);
@@ -154,9 +157,10 @@ namespace DLL.nav
         {
             MessageBox.Show("La cadena es: " + cadena);
         }
-
-        private void desactivarBotones(int tipo)
+        
+        private void desactivarBotones(int tipo) //Jaime López 0901-18-735
         {
+
             //desactivarBotones cambiara los .Enabled de los botones
             //indicados
             /*
@@ -195,7 +199,7 @@ namespace DLL.nav
             }
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)//Jaime López 0901-18-735
         {
             estado = 0;
             desactivarBotones(0);
@@ -204,7 +208,7 @@ namespace DLL.nav
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-
+            //Metodos de ingresar y eliminar adaptados por Melissa Aldana, al boton guardar
             switch (estado)
             {
                 case 1://Ingresar
@@ -236,6 +240,8 @@ namespace DLL.nav
 
 
                 case 3://Eliminar
+                    
+
                     //string resultadoE;
                     control.funEliminarControl(campos, tablas, campoEstado);
                     //resultadoE = control.ToString();
@@ -350,8 +356,8 @@ namespace DLL.nav
         }
 
         //boton de verificacion para navegacion sin registros
-        public Boolean veriNavegar(){
-
+        public Boolean veriNavegar(){//Kevin Rolando González Ramírez 0901-18-1387
+            
             if (dvgConsulta.RowCount-1 > 0)
                
                 return true;
@@ -362,20 +368,23 @@ namespace DLL.nav
 
         DataGridView dvgConsulta;
         //funcion para pedir datagridView
-        public void pideGrid(DataGridView tabla)
+
+        
+        public void pideGrid(DataGridView tabla)//Kevin Rolando González Ramírez 0901-18-1387
         {
             dvgConsulta = tabla;
         }
 
-
-        public void llenaTabla()
+       
+        public void llenaTabla() //Jaime López 0901-18-735
         {
             DataTable dt = control.llenarTbl(tablas);
             dvgConsulta.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dvgConsulta.DataSource = dt;
         }
 
-        private void btnSiguiente_Click(object sender, EventArgs e)
+
+        private void btnSiguiente_Click(object sender, EventArgs e)//Kevin Rolando González Ramírez 0901-18-1387
         {
 
             //verificacion de la existencia de registros
@@ -415,7 +424,7 @@ namespace DLL.nav
             cargaData();
         }
 
-        private void btnAnterior_Click(object sender, EventArgs e)
+        private void btnAnterior_Click(object sender, EventArgs e)//Kevin Rolando González Ramírez 0901-18-1387
         {
             //verificacion de la existencia de registros
             if (veriNavegar() == false)
@@ -465,7 +474,7 @@ namespace DLL.nav
             cargaData();
         }
 
-        private void btnInicio_Click(object sender, EventArgs e)
+        private void btnInicio_Click(object sender, EventArgs e)//Kevin Rolando González Ramírez 0901-18-1387
         {
 
             //verificacion de la existencia de registros
@@ -491,7 +500,7 @@ namespace DLL.nav
             cargaData();
         }
 
-        private void btnFinal_Click(object sender, EventArgs e)
+        private void btnFinal_Click(object sender, EventArgs e)//Kevin Rolando González Ramírez 0901-18-1387
         {
             //verificacion de la existencia de registros
             if (veriNavegar() == false)
@@ -521,7 +530,7 @@ namespace DLL.nav
 
         }
 
-        private void btnActualizar_Click(object sender, EventArgs e)
+        private void btnActualizar_Click(object sender, EventArgs e)//Daniel Navas
         {
             llenaTabla();
             //falta actu de combos
@@ -536,12 +545,12 @@ namespace DLL.nav
 
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
+        private void btnSalir_Click(object sender, EventArgs e)//Jaime López 0901-18-735
         {
             generic.Close();
         }
         Form generic;
-        public void pedirRef(Form generico)
+        public void pedirRef(Form generico)//Jaime López 0901-18-735
         {
             generic = generico;
         }
@@ -555,7 +564,7 @@ namespace DLL.nav
 
         }
 
-        private void manipularTextboxs(int modo)
+        private void manipularTextboxs(int modo)//Jaime López 0901-18-735 y Josue Zapata
         {
             /*
              * 0 desactiva todos los controles de entrada del usuario y limpia los campos
@@ -654,10 +663,10 @@ namespace DLL.nav
             }
 
         }
-        public void cargaData()
+        public void cargaData()//Kevin Rolando González Ramírez 0901-18-1387
         {
             int cantidadCampos = dvgConsulta.Columns.Count;
-            /*
+            /* //Liam Patrick
             if (cantidadCampos == 0)
             {
                 return;

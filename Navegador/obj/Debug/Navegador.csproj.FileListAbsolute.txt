@@ -364,3 +364,41 @@ C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\Navegador\obj\Debug\Navegador.cspr
 C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\Navegador\obj\Debug\Navegador.csproj.CopyComplete
 C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\Navegador\obj\Debug\Navegador.exe
 C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\Navegador\obj\Debug\Navegador.pdb
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\Navegador.exe.config
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\Navegador.exe
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\Navegador.pdb
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\DLLnav.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CapaControlador.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\stdole.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CapaModelo.dll
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\DLLnav.pdb
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CapaControlador.pdb
+C:\Users\USUARIO\Documents\comentar\Navegador\bin\Debug\CapaModelo.pdb
+C:\Users\USUARIO\Documents\comentar\Navegador\obj\Debug\Navegador.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Documents\comentar\Navegador\obj\Debug\Navegador.Form1.resources
+C:\Users\USUARIO\Documents\comentar\Navegador\obj\Debug\Navegador.MDI.resources
+C:\Users\USUARIO\Documents\comentar\Navegador\obj\Debug\Navegador.Properties.Resources.resources
+C:\Users\USUARIO\Documents\comentar\Navegador\obj\Debug\Navegador.reporte.resources
+C:\Users\USUARIO\Documents\comentar\Navegador\obj\Debug\Navegador.csproj.GenerateResource.cache
+C:\Users\USUARIO\Documents\comentar\Navegador\obj\Debug\Navegador.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Documents\comentar\Navegador\obj\Debug\Navegador.csproj.CopyComplete
+C:\Users\USUARIO\Documents\comentar\Navegador\obj\Debug\Navegador.exe
+C:\Users\USUARIO\Documents\comentar\Navegador\obj\Debug\Navegador.pdb
