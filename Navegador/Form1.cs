@@ -67,6 +67,7 @@ namespace Navegador
             String dt = "";
             dt = dtProducto.Value.ToString("yyyy-MM-dd");//lo pasa al formato necesitado por mysql
             txtFecha.Text = dt;
+            MessageBox.Show(txtFecha.Text);
         }
 
         private void navegador1_Load(object sender, EventArgs e)
