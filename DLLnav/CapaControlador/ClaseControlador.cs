@@ -126,7 +126,7 @@ namespace CapaControlador
             dt.Fill(table);
             return table;
         }
-        public bool modificar(TextBox[] campos, string tablas)
+        public bool modificar(TextBox[] campos, string tablas)//Modificar de Wilber Enrique Segura Ramirez 0901-18-13952
         {
           return modelo.modificar(campos, tablas); 
         }

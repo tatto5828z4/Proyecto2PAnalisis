@@ -445,7 +445,7 @@ namespace CapaModelo
             return arList;
         }
 
-        public bool modificar(TextBox[] campos, string tablas)
+        public bool modificar(TextBox[] campos, string tablas)//Modificar de Wilber Enrique Segura Ramirez 0901-18-13952
         {
             int resultado = 0;
             Conexion cn = new Conexion();

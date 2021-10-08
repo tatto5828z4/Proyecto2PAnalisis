@@ -268,3 +268,20 @@ C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\CapaModelo\obj\Debug\Cap
 C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\CapaModelo\obj\Debug\CapaModelo.dll
 C:\Users\user\Desktop\Proyecto HSC Visual Studio\DLLnav\CapaModelo\obj\Debug\CapaModelo.pdb
 J:\uni\NavegadorReDo\DLLnav\CapaModelo\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\DLLnav\CapaModelo\bin\Debug\CapaModelo.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\DLLnav\CapaModelo\bin\Debug\CapaModelo.pdb
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\DLLnav\CapaModelo\bin\Debug\Zstandard.Net.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\DLLnav\CapaModelo\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\DLLnav\CapaModelo\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\DLLnav\CapaModelo\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\DLLnav\CapaModelo\bin\Debug\System.Memory.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\DLLnav\CapaModelo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\DLLnav\CapaModelo\bin\Debug\System.Buffers.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\DLLnav\CapaModelo\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\DLLnav\CapaModelo\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\DLLnav\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyReference.cache
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\DLLnav\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\DLLnav\CapaModelo\obj\Debug\CapaModelo.csproj.CopyComplete
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\DLLnav\CapaModelo\obj\Debug\CapaModelo.dll
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\DLLnav\CapaModelo\obj\Debug\CapaModelo.pdb
+C:\Users\wilbe\OneDrive\Escritorio\Pruebas V4\DLLnav\CapaModelo\bin\Debug\System.Numerics.Vectors.dll

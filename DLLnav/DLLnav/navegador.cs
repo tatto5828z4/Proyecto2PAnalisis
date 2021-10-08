@@ -221,8 +221,8 @@ namespace DLL.nav
 
                     break;
 
-                case 2://Modificar
-                    bool resultado;
+                case 2://Modificar de Wilber Enrique Segura Ramirez 0901-18-13952
+                    bool resultado;//Varaible para saber si se ejecutó con éxito la sentencia SQL
                     resultado = control.modificar(campos, tablas);
                     if(resultado == true)
                     {
@@ -306,6 +306,7 @@ namespace DLL.nav
             manipularTextboxs(1);
         }
 
+        //Lo hizo Wilber Enrique Segura Ramirez 0901-18-13952
         private void btnModificar_Click(object sender, EventArgs e)//Boton de modificar campos dinámico
         {
             if (dvgConsulta != null)
@@ -313,14 +314,14 @@ namespace DLL.nav
                 if (dvgConsulta.RowCount - 1 > 0)
                 {
                     manipularTextboxs(1);
-                    int cuenta = campos.Length;
+                   /* int cuenta = campos.Length;
                     string referencia = campos[0].Tag.ToString();//Nos sirve para obtener el campo para hacer la consulta
                     string id = dvgConsulta.CurrentRow.Cells[0].Value.ToString();
                     var arList = control.consIndividual(id, tablas, cuenta, referencia);
                     for(int i=0; i<cuenta; i++)
                     {
                         campos[i].Text = (string)arList[i];
-                    }
+                    }*/
                     estado = 2;
                     desactivarBotones(1);
                 }
