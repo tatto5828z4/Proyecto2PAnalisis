@@ -32,6 +32,13 @@ namespace Navegador
             navegador1.idAyuda = "1";
             //fin de elementos para ejecutar la ayuda
 
+            // Inicio datos para ejecurar reportes
+            navegador1.idReporte = "1";
+            reporte formRep = new reporte();
+            navegador1.formReporte = formRep;
+            formRep.ruta = navegador1.funReportesVista("rutaReporte", "idReporte", "reporte");
+            // Final datos para ejecutar reportes
+
             navegador1.pideGrid(this.dvgConsulta);
             navegador1.llenaTabla();
             navegador1.pedirRef(this);
@@ -60,6 +67,7 @@ namespace Navegador
             String dt = "";
             dt = dtProducto.Value.ToString("yyyy-MM-dd");//lo pasa al formato necesitado por mysql
             txtFecha.Text = dt;
+            MessageBox.Show(txtFecha.Text);
         }
 
         private void navegador1_Load(object sender, EventArgs e)
@@ -125,6 +133,7 @@ namespace Navegador
         private void txtFecha_TextChanged(object sender, EventArgs e)
         {
             navegador1.funTextBoxDPTVista(dtProducto, txtFecha);
+            navegador1.funDPTextBoxVista(dtProducto, txtFecha);
         }
     }
 }

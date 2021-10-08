@@ -82,7 +82,7 @@ namespace CapaModelo
             int enteroSumado = 0;
             OdbcDataReader leer = null;
 
-            string sql = "SELECT" + " " + campoB + " " + "FROM" + " " + tabla + " " + "ORDER BY" + " " + campoB + " " + "DESC LIMIT 1";
+            string sql = "SELECT" + " " + campoB + " " + "FROM" + " " + tabla + " " + "ORDER BY length(" + " " + campoB + ")" + " " + "DESC LIMIT 1";
             OdbcConnection conect = conexion.conexion();
 
             try
@@ -365,20 +365,62 @@ namespace CapaModelo
 
         }
 
+        public string funReportes(string idReporte, string campoRuta, string campoB, string tablaR)
+        {
+            string ruta = "";
+            OdbcDataReader leer = null;
+
+            string sql = "SELECT" + " " + campoRuta + " " + "FROM" + " " + tablaR + " " + "WHERE " + " " + campoB + "=" + idReporte;
+
+            OdbcConnection conect = conexion.conexion();
+
+            try
+            {
+
+                OdbcCommand comando = new OdbcCommand(sql, conect);
+                leer = comando.ExecuteReader();
+
+                while (leer.Read())
+                {
+                    ruta = leer.GetString(0);
+                }
 
 
+            }
+            catch (OdbcException ex)
+            {
+
+                MessageBox.Show("Error al cargar los datos" + ex.Message);
+
+            }
+
+            finally
+            {
+                conexion.desconexion(conect);
+
+            }
+
+
+            return ruta;
+
+        }
+
+
+        //Jaime López 0901-18-735 y Modificada por Wilmer Torres 9959-18-9131
         public OdbcDataAdapter llenarTbl(string tabla)// metodo  que obtinene el contenio de una tabla
         {
             Conexion cn = new Conexion();
 
             //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
-            string sql = "select * from " + tabla + ";";
+            //string sql = "select * from " + tabla + ";";
+            string sql = "select * from " + tabla + " " + "ORDER BY" + " " + "length(" + arreglo[0].Tag.ToString() + ")ASC";
             OdbcConnection conn = cn.conexion();
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, conn);
             cn.desconexion(conn);
 
             return dataTable;
         }
+        //Wilber Segura 0901-18-13952
         public ArrayList consIndividual(string id, string tablas, int cuenta, string referencia)
         {
             Conexion cn = new Conexion();
@@ -405,7 +447,8 @@ namespace CapaModelo
             return arList;
         }
 
-        public bool modificar(TextBox[] campos, string tablas)
+
+        public bool modificar(TextBox[] campos, string tablas)//Modificar de Wilber Enrique Segura Ramirez 0901-18-13952
         {
             int resultado = 0;
             Conexion cn = new Conexion();
@@ -450,7 +493,7 @@ namespace CapaModelo
             }
         }
 
-
+        //Melissa Aldana
         public bool insertar(TextBox[] campos, string tablas)
         {
             int resultado = 0;

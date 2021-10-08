@@ -126,6 +126,7 @@ namespace DLL.nav
             this.btnReporte.Text = "Reporteador";
             this.btnReporte.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnReporte.UseVisualStyleBackColor = false;
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click_1);
             // 
             // btnActualizar
             // 
