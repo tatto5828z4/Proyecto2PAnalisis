@@ -313,7 +313,7 @@ namespace DLL.nav
             {
                 if (dvgConsulta.RowCount - 1 > 0)
                 {
-                    manipularTextboxs(1);
+                    manipularTextboxs(3);
                    /* int cuenta = campos.Length;
                     string referencia = campos[0].Tag.ToString();//Nos sirve para obtener el campo para hacer la consulta
                     string id = dvgConsulta.CurrentRow.Cells[0].Value.ToString();
@@ -600,7 +600,7 @@ namespace DLL.nav
                 }
             }
 
-            if (modo == 1)
+            if (modo == 1 || modo == 3)
             {
                 foreach (Control ctr in controles.Controls)
                 {
@@ -613,7 +613,11 @@ namespace DLL.nav
                         else
                         {
                             ctr.Enabled = true;
-                            ctr.Text = "";
+                            if(modo == 1)
+                            {
+                                ctr.Text = "";
+                            }
+                            
                         }
                     }
 
@@ -625,13 +629,21 @@ namespace DLL.nav
                     if (ctr is DateTimePicker)
                     {
                         ctr.Enabled = true;
-                        ((DateTimePicker)ctr).Value = DateTime.Now;
+                        if(modo == 1)
+                        {
+                            ((DateTimePicker)ctr).Value = DateTime.Now;
+                        }
+                        
                     }
 
                     if (ctr is RadioButton)
                     {
                         ctr.Enabled = true;
-                        ((RadioButton)ctr).Checked = false;
+                        if(modo == 1)
+                        {
+                            ((RadioButton)ctr).Checked = false;
+                        }
+                        
                     }
 
                     if (ctr is DataGridView)
