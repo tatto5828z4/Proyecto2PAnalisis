@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
+/*Elaborado por grupo #3*/
 namespace CapaModelo
 {
     class Conexion
@@ -40,3 +41,5 @@ namespace CapaModelo
         }
     }
 }
+
+

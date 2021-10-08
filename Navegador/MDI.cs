@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace Navegador
 {
+    /*Brayan Mauricio Cifuentes López - 9959-18-11113 - Creacion de MDI*/
     public partial class MDI : Form
     {
         public MDI()
