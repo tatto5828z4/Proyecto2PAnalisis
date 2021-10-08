@@ -133,6 +133,7 @@ namespace Navegador
         private void txtFecha_TextChanged(object sender, EventArgs e)
         {
             navegador1.funTextBoxDPTVista(dtProducto, txtFecha);
+            navegador1.funDPTextBoxVista(dtProducto, txtFecha);
         }
     }
 }
