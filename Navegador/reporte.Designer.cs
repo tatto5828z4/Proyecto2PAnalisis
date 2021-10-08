@@ -53,6 +53,7 @@ namespace Navegador
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "reporte";
             this.Text = "reporte";
+            this.Load += new System.EventHandler(this.reporte_Load);
             this.ResumeLayout(false);
 
         }

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace Navegador
 {
+    /*Josue Daniel Zapata Azañon - 9959-18-4829 - Creacion de form Reporte*/
     public partial class reporte : Form
     {
         public string ruta = "";
@@ -24,6 +25,11 @@ namespace Navegador
             CrystalDecisions.CrystalReports.Engine.ReportDocument reporte = new CrystalDecisions.CrystalReports.Engine.ReportDocument();
             reporte.Load(@"" + ruta);
             crystalReportViewer1.ReportSource = reporte;
+        }
+
+        private void reporte_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
