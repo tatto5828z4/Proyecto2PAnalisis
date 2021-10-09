@@ -85,7 +85,7 @@ namespace CapaModelo
             int enteroSumado = 0;
             OdbcDataReader leer = null;
 
-            string sql = "SELECT" + " " + campoB + " " + "FROM" + " " + tabla + " " + "ORDER BY length(" + " " + campoB + ")" + " " + "DESC LIMIT 1";
+            string sql = "SELECT" + " " + campoB + " " + "FROM" + " " + tabla + " " + "ORDER BY length(" + campoB + ")," + campoB + " " + "DESC LIMIT 1";
             OdbcConnection conect = conexion.conexion();
 
             try
@@ -641,7 +641,7 @@ namespace CapaModelo
 
             if (String.IsNullOrEmpty(rutaAyudaCHM) || String.IsNullOrEmpty(rutaAyudaHTML))
             {
-                MessageBox.Show("La ruta ingresa CHM o Referencia HTML es incorrecta!");
+                MessageBox.Show("La ruta ingresa CHM o Referencia HTML es incorrecta, verifique Aplicacion!");
 
             }
             else

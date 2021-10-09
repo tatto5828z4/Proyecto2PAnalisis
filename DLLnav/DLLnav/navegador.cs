@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControlador;
+using CapaVista;
 
 namespace DLL.nav
 {
@@ -713,13 +714,33 @@ namespace DLL.nav
         /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         private void btnReporte_Click(object sender, EventArgs e)
         {
-            funMostrarFormR();
+            if (String.IsNullOrEmpty(formReporte.ruta))
+            {
+                MessageBox.Show("Error con la ruta del reporte, verifique que la Aplicacion existe y que la ruta sea la correcta!");
+            }
+            else
+            {
+                funMostrarFormR();
+            }
         }
 
         /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         private void btnReporte_Click_1(object sender, EventArgs e)
         {
-            funMostrarFormR();
+            if (String.IsNullOrEmpty(formReporte.ruta))
+            {
+                MessageBox.Show("Error con la ruta del reporte, verifique que la Aplicacion existe y que la ruta sea la correcta!");
+            }
+            else
+            {
+                funMostrarFormR();
+            }
+        }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            ConsultasInteligentes CI = new ConsultasInteligentes();
+            CI.Show();
         }
     }
 }
