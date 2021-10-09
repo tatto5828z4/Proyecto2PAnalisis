@@ -21,10 +21,9 @@ namespace DLL.nav
         int estado = 0;
         public string campoEstado = "";
         public string tablaAyuda = "";
-        public string idAyuda = "";
         public string campoAyuda = "";
         public Form formReporte;
-        public string idReporte = "";
+        public string idAplicacion = "";
 
         DataGridView dataE;
         ClaseControlador control = new ClaseControlador();
@@ -576,8 +575,8 @@ namespace DLL.nav
         /*Geovani Fernando Mendoza - 9959-18-15407*/
         private void btnAyuda_Click(object sender, EventArgs e)
         {
-            control.funAyudaControl(idAyuda,campoAyuda, tablaAyuda);
-         //   Help.ShowHelp(parent, rutaAyudaCHM, rutaAyudaHTML);
+            control.funAyudaControl(idAplicacion, campoAyuda, tablaAyuda);
+            //   Help.ShowHelp(parent, rutaAyudaCHM, rutaAyudaHTML);
 
             //Help.ShowHelp(this, "Ayudas/AyudasSistemaReparto.chm", "ManualSistemaReparto.html");
 
@@ -702,7 +701,7 @@ namespace DLL.nav
         /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         public string funReportesVista(string campoRuta, string campoB, string tablaR)
         {
-            string rutaVista = control.funReportesControl(idReporte, campoRuta, campoB, tablaR);
+            string rutaVista = control.funReportesControl(idAplicacion, campoRuta, campoB, tablaR);
             return rutaVista;
         }
 

@@ -115,10 +115,10 @@ namespace CapaControlador
             modelo.funTextBoxDPT(date, textoDate);
         }
 
-        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
-        public string funReportesControl(string idReporte, string campoRuta, string campoB, string tablaR)
+        /*Wilmer Alexander Torres Lemus - 9959-18-9131*/
+        public string funReportesControl(string idAplicacion, string campoRuta, string campoB, string tablaR)
         {
-            string ruta = modelo.funReportes(idReporte, campoRuta, campoB, tablaR);
+            string ruta = modelo.funReportes(idAplicacion, campoRuta, campoB, tablaR);
             return ruta;
         }
 
@@ -155,13 +155,11 @@ namespace CapaControlador
         }
 
         /*Geovani Fernando Mendoza - 9959-18-15407*/
-        public void funAyudaControl(string idAyuda, string nombreCampo, string tablaA)
+        public void funAyudaControl(string idAplicacion, string nombreCampo, string tablaA)
         {
-            modelo.funAyuda(idAyuda,nombreCampo,tablaA,control);
+            modelo.funAyuda(idAplicacion, nombreCampo, tablaA, control);
 
             //MessageBox.Show(tablaA);
-
-            
 
         }
 
