@@ -411,3 +411,4 @@ C:\Users\wilbe\OneDrive\Escritorio\PruebasV5\DLLnav\DLLnav\obj\Debug\CapaVista.c
 C:\Users\wilbe\OneDrive\Escritorio\PruebasV5\DLLnav\DLLnav\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\wilbe\OneDrive\Escritorio\PruebasV5\DLLnav\DLLnav\obj\Debug\DLLnav.dll
 C:\Users\wilbe\OneDrive\Escritorio\PruebasV5\DLLnav\DLLnav\obj\Debug\DLLnav.pdb
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\obj\Debug\DLL.nav.reporte.resources
