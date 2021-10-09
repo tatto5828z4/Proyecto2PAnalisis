@@ -520,3 +520,9 @@ C:\Users\Langas\Documents\navegador_proyecto\Navegador\bin\Debug\CapaModeloCI.dl
 C:\Users\Langas\Documents\navegador_proyecto\Navegador\bin\Debug\CapaVistaCI.pdb
 C:\Users\Langas\Documents\navegador_proyecto\Navegador\bin\Debug\CapaControladorCI.pdb
 C:\Users\Langas\Documents\navegador_proyecto\Navegador\bin\Debug\CapaModeloCI.pdb
+D:\Proyectos_Git_Analisis\ERP\Navegador\bin\Debug\CapaVistaCI.dll
+D:\Proyectos_Git_Analisis\ERP\Navegador\bin\Debug\CapaControladorCI.dll
+D:\Proyectos_Git_Analisis\ERP\Navegador\bin\Debug\CapaModeloCI.dll
+D:\Proyectos_Git_Analisis\ERP\Navegador\bin\Debug\CapaVistaCI.pdb
+D:\Proyectos_Git_Analisis\ERP\Navegador\bin\Debug\CapaControladorCI.pdb
+D:\Proyectos_Git_Analisis\ERP\Navegador\bin\Debug\CapaModeloCI.pdb

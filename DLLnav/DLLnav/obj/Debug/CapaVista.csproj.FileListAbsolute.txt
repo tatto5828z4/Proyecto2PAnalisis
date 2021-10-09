@@ -445,3 +445,8 @@ C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\bin\Debug\CapaVistaCI
 C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\bin\Debug\CapaControladorCI.pdb
 C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\bin\Debug\CapaModeloCI.pdb
 C:\Users\Langas\Documents\navegador_proyecto\DLLnav\DLLnav\obj\Debug\DLL.nav.reporte.resources
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\bin\Debug\CapaControladorCI.dll
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\bin\Debug\CapaModeloCI.dll
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\bin\Debug\CapaVistaCI.pdb
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\bin\Debug\CapaControladorCI.pdb
+D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\bin\Debug\CapaModeloCI.pdb

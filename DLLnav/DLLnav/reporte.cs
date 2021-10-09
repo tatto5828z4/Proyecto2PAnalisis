@@ -57,5 +57,17 @@ namespace DLL.nav
         {
 
         }
+
+        private void reporte_FormClosing_1(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            this.Parent = null;
+            e.Cancel = true;
+
+            CrystalDecisions.CrystalReports.Engine.ReportDocument reporte = new CrystalDecisions.CrystalReports.Engine.ReportDocument();
+            reporte.Load(@"" + ruta);
+            crystalReportViewer1.ReportSource = reporte;
+
+        }
     }
 }

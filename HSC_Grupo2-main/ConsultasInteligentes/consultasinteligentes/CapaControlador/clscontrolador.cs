@@ -23,7 +23,7 @@ namespace CapaControlador
 
         public OdbcDataReader llenarcbo()
         {
-            string sql = "show full tables from prototipo_area_compras;";
+            string sql = "show full tables from hotelSanCarlos;";
             return sn.llenarcbotabla(sql);
         }
 
