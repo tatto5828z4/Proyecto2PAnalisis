@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControlador;
+using CapaVista;
 
 namespace DLL.nav
 {
@@ -21,10 +22,9 @@ namespace DLL.nav
         int estado = 0;
         public string campoEstado = "";
         public string tablaAyuda = "";
-        public string idAyuda = "";
         public string campoAyuda = "";
-        public Form formReporte;
-        public string idReporte = "";
+        public reporte formReporte = new reporte();
+        public string idAplicacion = "";
 
         DataGridView dataE;
         ClaseControlador control = new ClaseControlador();
@@ -53,12 +53,14 @@ namespace DLL.nav
             //MessageBox.Show("Hola");
         }*/
 
+        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         public TextBox[] funAsignandoTexts(Control parent)
         {
             controles = parent;
             return control.ordenandoTextos(parent);
         }
 
+        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         public void funAsignarAliasVista(TextBox[] alias, string tabla, string BD)
         {
             control.funAsignarAliasControl(alias, tabla, BD);
@@ -67,11 +69,13 @@ namespace DLL.nav
             DB = BD;
         }
 
+        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         public void funAsignarSalidadVista(Form menu)
         {
             control.funAsignarSalidadControl(menu);
         }
 
+        /*Jorge Lizandro Castañeda Choy - 9959-18-4964*/
         public void funLlenarComboControl(ComboBox cbx, string tabla, string value, string display, string estatus)
         {
             referencia1.Add(tabla);
@@ -83,43 +87,49 @@ namespace DLL.nav
 
         }
 
+        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         public void funSeleccionarDTVista(DataGridView data)
         {
             dataE = data;
             control.funSeleccionarDTControl(data);
         }
 
-
+        /*Brayan Mauricio Cifuentes López - 9959-18-11113*/
         public void funSetearRBVista(RadioButton activo, RadioButton inactivo, TextBox estatus)
         {
             control.funSetearRBControl(activo, inactivo, estatus);
         }
 
-
+        /*Brayan Mauricio Cifuentes López - 9959-18-11113*/
         public void funCambioEstatusRBVista(TextBox estado, RadioButton AI, string cadenaEstado)
         {
             control.funCambioEstatusRBControl(estado, AI, cadenaEstado);
         }
 
+        /*Wilmer Alexander Torres Lemus - 9959-18-9131*/
         public void funComboTextboxVista(ComboBox combo, TextBox combotexto)
         {
             control.funComboTextboxControl(combo, combotexto);
         }
 
+        /*Wilmer Alexander Torres Lemus - 9959-18-9131*/
         public void funTextboxComboVista(ComboBox combo, TextBox combotexto)
         {
             control.funTextboxComboControl(combo, combotexto);
         }
 
+        /*Jorge Lizandro Castañeda Choy - 9959-18-4964*/
         public void funDPTextBoxVista(DateTimePicker date, TextBox textoDate)
         {
             control.funDPTextBoxControl(date, textoDate);
         }
 
+        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         public void funTextBoxDPTVista(DateTimePicker date, TextBox textoDate)
         {
             control.funTextBoxDPTControl(date,textoDate);
         }
+
 
         private void actualizarCombo()
         {
@@ -133,6 +143,7 @@ namespace DLL.nav
             
         }
 
+        /*Brayan Mauricio Cifuentes López - 9959-18-11113*/
         public void mensaje()
         {
             MessageBox.Show("Prueba de Funcion #2");
@@ -153,6 +164,8 @@ namespace DLL.nav
             mensaje2();
         }
         */
+
+        /*Brayan Mauricio Cifuentes López - 9959-18-11113*/
         public void pruebaMensaje(string cadena)
         {
             MessageBox.Show("La cadena es: " + cadena);
@@ -240,7 +253,7 @@ namespace DLL.nav
 
 
                 case 3://Eliminar
-                    
+                    /*Brayan Mauricio Cifuentes López - 9959-18-11113*/
 
                     //string resultadoE;
                     control.funEliminarControl(campos, tablas, campoEstado);
@@ -268,6 +281,7 @@ namespace DLL.nav
             llenaTabla();//recarga los datos de la tabla
         }
 
+        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             int entero = control.funUltimoEnteroControl(tablas);
@@ -345,6 +359,7 @@ namespace DLL.nav
             }          
         }
 
+        /*Brayan Mauricio Cifuentes López - 9959-18-11113*/
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             control.funEliminarControl(campos, tablas, campoEstado);
@@ -354,6 +369,7 @@ namespace DLL.nav
             manipularTextboxs(0);
             llenaTabla();
         }
+
 
         //boton de verificacion para navegacion sin registros
         public Boolean veriNavegar(){//Kevin Rolando González Ramírez 0901-18-1387
@@ -545,26 +561,29 @@ namespace DLL.nav
 
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)//Jaime López 0901-18-735
+        /*Jorge Lizandro Castañeda Choy - 9959-18-4964*/
+        private void btnSalir_Click(object sender, EventArgs e)
         {
             generic.Close();
         }
         Form generic;
+
         public void pedirRef(Form generico)//Jaime López 0901-18-735
         {
             generic = generico;
         }
 
+        /*Geovani Fernando Mendoza - 9959-18-15407*/
         private void btnAyuda_Click(object sender, EventArgs e)
         {
-            control.funAyudaControl(idAyuda,campoAyuda, tablaAyuda);
-         //   Help.ShowHelp(parent, rutaAyudaCHM, rutaAyudaHTML);
+            control.funAyudaControl(idAplicacion, campoAyuda, tablaAyuda);
+            //   Help.ShowHelp(parent, rutaAyudaCHM, rutaAyudaHTML);
 
             //Help.ShowHelp(this, "Ayudas/AyudasSistemaReparto.chm", "ManualSistemaReparto.html");
 
         }
 
-        private void manipularTextboxs(int modo)//Jaime López 0901-18-735 y Josue Zapata
+        private void manipularTextboxs(int modo)//Josue Zapata 9959-18-4829 y Jaime López 0901-18-735
         {
             /*
              * 0 desactiva todos los controles de entrada del usuario y limpia los campos
@@ -680,26 +699,48 @@ namespace DLL.nav
             //dvgConsulta.CurrentCellChanged
         }
 
-        public string funReportesVista(string campoRuta, string campoB, string tablaR)
+        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
+        public void funReportesVista(string campoRuta, string campoB, string tablaR)
         {
-            string rutaVista = control.funReportesControl(idReporte, campoRuta, campoB, tablaR);
-            return rutaVista;
+            formReporte.ruta = control.funReportesControl(idAplicacion, campoRuta, campoB, tablaR);
         }
 
-        public void funMostrarFormR(Form reporteF)
+        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
+        public void funMostrarFormR()
         {
-            formReporte = reporteF;
-            reporteF.Show();
+            formReporte.Show();
         }
 
+        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         private void btnReporte_Click(object sender, EventArgs e)
         {
-            funMostrarFormR(formReporte);
+            if (String.IsNullOrEmpty(formReporte.ruta))
+            {
+                MessageBox.Show("Error con la ruta del reporte, verifique que la Aplicacion existe y que la ruta sea la correcta!");
+            }
+            else
+            {
+                funMostrarFormR();
+            }
         }
 
+        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         private void btnReporte_Click_1(object sender, EventArgs e)
         {
-            funMostrarFormR(formReporte);
+            if (String.IsNullOrEmpty(formReporte.ruta))
+            {
+                MessageBox.Show("Error con la ruta del reporte, verifique que la Aplicacion existe y que la ruta sea la correcta!");
+            }
+            else
+            {
+                funMostrarFormR();
+            }
+        }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            ConsultasInteligentes CI = new ConsultasInteligentes();
+            CI.Show();
         }
     }
 }

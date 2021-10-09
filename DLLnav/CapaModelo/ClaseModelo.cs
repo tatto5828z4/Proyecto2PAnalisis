@@ -13,6 +13,7 @@ namespace CapaModelo
 {
     public class ClaseModelo
     {
+        /*Grupo #3*/
         Conexion conexion = new Conexion();
         string tablaBD = "";
         TextBox[] arreglo;
@@ -20,7 +21,7 @@ namespace CapaModelo
         string rutaAyudaHTML = "";
 
 
-
+        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         public TextBox[] funTexts(Control parent)
         {
             int contador = 0;
@@ -50,6 +51,7 @@ namespace CapaModelo
             return alias;
         }
 
+        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         public void funDeshabilitarTexts(Control parent)
         {
             foreach (Control ctr in parent.Controls)
@@ -76,13 +78,14 @@ namespace CapaModelo
             }
         }
 
+        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         public int funUltimoEntero(string tabla, string campoB)
         {
             string ultimoEntero = "";
             int enteroSumado = 0;
             OdbcDataReader leer = null;
 
-            string sql = "SELECT" + " " + campoB + " " + "FROM" + " " + tabla + " " + "ORDER BY" + " " + campoB + " " + "DESC LIMIT 1";
+            string sql = "SELECT" + " " + campoB + " " + "FROM" + " " + tabla + " " + "ORDER BY length(" + " " + campoB + ")" + " " + "DESC LIMIT 1";
             OdbcConnection conect = conexion.conexion();
 
             try
@@ -116,7 +119,7 @@ namespace CapaModelo
             return enteroSumado;
         }
 
-
+        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         public string funAsignarAlias(TextBox[] alias, string tabla, string BD)
         {
             /* Inicio para busqueda de tabla en BD */
@@ -246,11 +249,14 @@ namespace CapaModelo
             /* Final de busqueda de columnas en la BD */
             return errores;
         }
+
+        /*Jorge Lizandro Castañeda Choy - 9959-18-4964*/
         public void funSalida(Form menu)
         {
             menu.Show();
         }
 
+        /*Jorge Lizandro Castañeda Choy - 9959-18-4964*/
         public void funLlenarCombo(ComboBox cbx, string tabla, string value, string display, string estatus)
         {
             cbx.DataSource = null;
@@ -294,6 +300,7 @@ namespace CapaModelo
             }
         }
 
+        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         public void funSeleccionarDT(DataGridView data)
         {
             var filaSeleccionada = data.CurrentRow;
@@ -309,7 +316,7 @@ namespace CapaModelo
             }
         }
 
-
+        /*Brayan Mauricio Cifuentes López - 9959-18-11113*/
         public void funSetearRB(RadioButton activo, RadioButton inactivo, TextBox estatus)
         {
             if (estatus.Text == "A")
@@ -321,8 +328,10 @@ namespace CapaModelo
                 inactivo.Checked = true;
             }
 
-        } 
+        }
 
+
+        /*Brayan Mauricio Cifuentes López - 9959-18-11113*/
         public void funCambioEstatusRB(TextBox estado, RadioButton AI, string cadenaEstado)
         {
             if (AI.Checked == true)
@@ -331,6 +340,7 @@ namespace CapaModelo
             }
         }
 
+        /*Wilmer Alexander Torres Lemus - 9959-18-9131*/
         public void funComboTextbox(ComboBox combo, TextBox combotexto)
         {
             if (combo.SelectedValue == null)
@@ -342,12 +352,14 @@ namespace CapaModelo
 
         }
 
+        /*Wilmer Alexander Torres Lemus - 9959-18-9131*/
         public void funTextboxCombo(ComboBox combo, TextBox combotexto)
         {
             combo.SelectedValue = combotexto.Text.ToString();
 
         }
 
+        /*Jorge Lizandro Castañeda Choy - 9959-18-4964*/
         public void funDPTextBox(DateTimePicker date, TextBox textoDate)
         {
             String dt = "";
@@ -356,6 +368,7 @@ namespace CapaModelo
 
         }
 
+        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         public void funTextBoxDPT(DateTimePicker date, TextBox textoDate)
         {
             if (textoDate.Text != "")
@@ -365,12 +378,13 @@ namespace CapaModelo
 
         }
 
-        public string funReportes(string idReporte, string campoRuta, string campoB, string tablaR)
+        /*Wilmer Alexander Torres Lemus - 9959-18-9131*/
+        public string funReportes(string idAplicacion, string campoRuta, string campoB, string tablaR)
         {
             string ruta = "";
             OdbcDataReader leer = null;
 
-            string sql = "SELECT" + " " + campoRuta + " " + "FROM" + " " + tablaR + " " + "WHERE " + " " + campoB + "=" + idReporte;
+            string sql = "SELECT" + " " + campoRuta + " " + "FROM" + " " + tablaR + " " + "WHERE " + " " + campoB + "=" + idAplicacion;
 
             OdbcConnection conect = conexion.conexion();
 
@@ -397,7 +411,6 @@ namespace CapaModelo
             finally
             {
                 conexion.desconexion(conect);
-
             }
 
 
@@ -406,13 +419,14 @@ namespace CapaModelo
         }
 
 
-        //Jaime López 0901-18-735
+        //Jaime López 0901-18-735 y Modificada por Wilmer Torres 9959-18-9131
         public OdbcDataAdapter llenarTbl(string tabla)// metodo  que obtinene el contenio de una tabla
         {
             Conexion cn = new Conexion();
 
             //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
-            string sql = "select * from " + tabla + ";";
+            //string sql = "select * from " + tabla + ";";
+            string sql = "select * from " + tabla + " " + "ORDER BY" + " " + "length(" + arreglo[0].Tag.ToString() + ")ASC";
             OdbcConnection conn = cn.conexion();
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, conn);
             cn.desconexion(conn);
@@ -548,10 +562,8 @@ namespace CapaModelo
 
 
 
-
-
-
-            public void eliminar(TextBox[] arreglo, string tabla, string campoEstado)
+        /*Brayan Mauricio Cifuentes López - 9959-18-11113*/
+        public void eliminar(TextBox[] arreglo, string tabla, string campoEstado)
         {
             Conexion cn = new Conexion();
             OdbcConnection conexion = cn.conexion();
@@ -589,30 +601,33 @@ namespace CapaModelo
             }
 
         }
-        
-        public void funAyuda(string idAyuda, string nombreCampo ,string tablaA, Control parent)
+
+        /*Geovani Fernando Mendoza Funcion Ayuda  - 9959-18-15407*/
+        public void funAyuda(string idAplicacion, string nombreCampo, string tablaA, Control parent)
         {
             OdbcDataReader leer = null;
 
-            string sql = "SELECT * FROM " + " " + tablaA + " " + "WHERE " + " " + nombreCampo +  "=" + idAyuda;
+            string sql = "SELECT * FROM " + " " + tablaA + " " + "WHERE " + " " + nombreCampo + "=" + idAplicacion;
 
             OdbcConnection conect = conexion.conexion();
 
-            try{
+            try
+            {
 
                 OdbcCommand comando = new OdbcCommand(sql, conect);
                 leer = comando.ExecuteReader();
 
                 while (leer.Read())
                 {
-                    rutaAyudaCHM = leer.GetString(1);
-                    
-                    rutaAyudaHTML = leer.GetString(2);
+                    rutaAyudaCHM = leer.GetString(4);
+
+                    rutaAyudaHTML = leer.GetString(5);
                 }
 
-                
+
             }
-            catch (OdbcException ex) { 
+            catch (OdbcException ex)
+            {
 
                 MessageBox.Show("Error al cargar los datos" + ex.Message);
 
@@ -624,9 +639,19 @@ namespace CapaModelo
 
             }
 
-          
-            Help.ShowHelp(parent, rutaAyudaCHM,rutaAyudaHTML);
-          
+            if (String.IsNullOrEmpty(rutaAyudaCHM) || String.IsNullOrEmpty(rutaAyudaHTML))
+            {
+                MessageBox.Show("La ruta ingresa CHM o Referencia HTML es incorrecta, verifique Aplicacion!");
+
+            }
+            else
+            {
+                Help.ShowHelp(parent, rutaAyudaCHM, rutaAyudaHTML);
+            }
+
+
+
+
         }
 
 
