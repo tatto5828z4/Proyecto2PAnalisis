@@ -22,7 +22,7 @@ namespace DLL.nav
         public string campoEstado = "";
         public string tablaAyuda = "";
         public string campoAyuda = "";
-        public Form formReporte;
+        public reporte formReporte = new reporte();
         public string idAplicacion = "";
 
         DataGridView dataE;
@@ -699,29 +699,27 @@ namespace DLL.nav
         }
 
         /*Josue Daniel Zapata Azañon - 9959-18-4829*/
-        public string funReportesVista(string campoRuta, string campoB, string tablaR)
+        public void funReportesVista(string campoRuta, string campoB, string tablaR)
         {
-            string rutaVista = control.funReportesControl(idAplicacion, campoRuta, campoB, tablaR);
-            return rutaVista;
+            formReporte.ruta = control.funReportesControl(idAplicacion, campoRuta, campoB, tablaR);
         }
 
         /*Josue Daniel Zapata Azañon - 9959-18-4829*/
-        public void funMostrarFormR(Form reporteF)
+        public void funMostrarFormR()
         {
-            formReporte = reporteF;
-            reporteF.Show();
+            formReporte.Show();
         }
 
         /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         private void btnReporte_Click(object sender, EventArgs e)
         {
-            funMostrarFormR(formReporte);
+            funMostrarFormR();
         }
 
         /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         private void btnReporte_Click_1(object sender, EventArgs e)
         {
-            funMostrarFormR(formReporte);
+            funMostrarFormR();
         }
     }
 }

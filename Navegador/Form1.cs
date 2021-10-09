@@ -19,9 +19,9 @@ namespace Navegador
 
             //TextBox[] alias = { txtID, txtCodigoMarca, txtNombre, txtFecha, txtDescripcion, txtStock, txtPrecio, txtEstatus};
             TextBox[] alias = navegador1.funAsignandoTexts(this);
-            navegador1.funAsignarAliasVista(alias, "producto", "pruebas");
+            navegador1.funAsignarAliasVista(alias, "producto", "hotelSanCarlos");
             navegador1.funAsignarSalidadVista(this);
-            navegador1.funLlenarComboControl(cbxCodMarca, "marca", "idMarca", "nombre","estatus");
+            navegador1.funLlenarComboControl(cbxCodMarca, "marcaP", "idMarca", "nombre","estatus");
             
             //inicio de elementos para dar de baja
             navegador1.campoEstado = "estado";
