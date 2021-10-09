@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControlador;
+using CapaVista;
 
 namespace DLL.nav
 {
@@ -734,6 +735,12 @@ namespace DLL.nav
             {
                 funMostrarFormR();
             }
+        }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            ConsultasInteligentes CI = new ConsultasInteligentes();
+            CI.Show();
         }
     }
 }
