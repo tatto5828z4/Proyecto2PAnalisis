@@ -85,7 +85,7 @@ namespace CapaModelo
             int enteroSumado = 0;
             OdbcDataReader leer = null;
 
-            string sql = "SELECT" + " " + campoB + " " + "FROM" + " " + tabla + " " + "ORDER BY length(" + " " + campoB + ")" + " " + "DESC LIMIT 1";
+            string sql = "SELECT" + " " + campoB + " " + "FROM" + " " + tabla + " " + "ORDER BY length(" + campoB + ")," + campoB + " " + "DESC LIMIT 1";
             OdbcConnection conect = conexion.conexion();
 
             try
