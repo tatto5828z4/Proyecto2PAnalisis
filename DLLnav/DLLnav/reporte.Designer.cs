@@ -1,5 +1,4 @@
-﻿
-namespace Navegador
+﻿namespace DLL.nav
 {
     partial class reporte
     {
@@ -42,8 +41,6 @@ namespace Navegador
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
             this.crystalReportViewer1.TabIndex = 0;
-            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
-            this.crystalReportViewer1.Load += new System.EventHandler(this.crystalReportViewer1_Load);
             // 
             // reporte
             // 
@@ -60,6 +57,6 @@ namespace Navegador
 
         #endregion
 
-        public CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
     }
 }
