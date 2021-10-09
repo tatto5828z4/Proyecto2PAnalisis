@@ -27,17 +27,18 @@ namespace Navegador
             navegador1.campoEstado = "estado";
             //fin de elementos para dar de baja
 
+            /* Inicio ID Aplicacion usada para reportes y ayudas */
+            navegador1.idAplicacion = "1";
+            /* Inicio ID Aplicacion usada para reportes y ayudas */
+
             //inicio de elementos para ejecutar la ayuda
-            navegador1.tablaAyuda = "ayuda";
-            navegador1.campoAyuda = "idAyuda";
-            navegador1.idAyuda = "1";
+            navegador1.tablaAyuda = "Aplicacion";
+            navegador1.campoAyuda = "pkId";
             //fin de elementos para ejecutar la ayuda
 
+
             // Inicio datos para ejecurar reportes
-            navegador1.idAplicacion = "1";
-            reporte formRep = new reporte();
-            navegador1.formReporte = formRep;
-            formRep.ruta = navegador1.funReportesVista("ruta", "idAplicacion", "Reporte");
+            navegador1.funReportesVista("ruta", "idAplicacion", "Reporte");
             // Final datos para ejecutar reportes
 
             navegador1.pideGrid(this.dvgConsulta);

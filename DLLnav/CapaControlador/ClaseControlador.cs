@@ -155,13 +155,11 @@ namespace CapaControlador
         }
 
         /*Geovani Fernando Mendoza - 9959-18-15407*/
-        public void funAyudaControl(string idAyuda, string nombreCampo, string tablaA)
+        public void funAyudaControl(string idAplicacion, string nombreCampo, string tablaA)
         {
-            modelo.funAyuda(idAyuda,nombreCampo,tablaA,control);
+            modelo.funAyuda(idAplicacion, nombreCampo, tablaA, control);
 
             //MessageBox.Show(tablaA);
-
-            
 
         }
 

@@ -21,7 +21,6 @@ namespace DLL.nav
         int estado = 0;
         public string campoEstado = "";
         public string tablaAyuda = "";
-        public string idAyuda = "";
         public string campoAyuda = "";
         public Form formReporte;
         public string idAplicacion = "";
@@ -576,8 +575,8 @@ namespace DLL.nav
         /*Geovani Fernando Mendoza - 9959-18-15407*/
         private void btnAyuda_Click(object sender, EventArgs e)
         {
-            control.funAyudaControl(idAyuda,campoAyuda, tablaAyuda);
-         //   Help.ShowHelp(parent, rutaAyudaCHM, rutaAyudaHTML);
+            control.funAyudaControl(idAplicacion, campoAyuda, tablaAyuda);
+            //   Help.ShowHelp(parent, rutaAyudaCHM, rutaAyudaHTML);
 
             //Help.ShowHelp(this, "Ayudas/AyudasSistemaReparto.chm", "ManualSistemaReparto.html");
 
