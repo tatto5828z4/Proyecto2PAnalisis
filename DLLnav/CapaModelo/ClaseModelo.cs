@@ -602,30 +602,32 @@ namespace CapaModelo
 
         }
 
-        /*Geovani Fernando Mendoza - 9959-18-15407*/
-        public void funAyuda(string idAyuda, string nombreCampo ,string tablaA, Control parent)
+        /*Geovani Fernando Mendoza Funcion Ayuda  - 9959-18-15407*/
+        public void funAyuda(string idAplicacion, string nombreCampo, string tablaA, Control parent)
         {
             OdbcDataReader leer = null;
 
-            string sql = "SELECT * FROM " + " " + tablaA + " " + "WHERE " + " " + nombreCampo +  "=" + idAyuda;
+            string sql = "SELECT * FROM " + " " + tablaA + " " + "WHERE " + " " + nombreCampo + "=" + idAplicacion;
 
             OdbcConnection conect = conexion.conexion();
 
-            try{
+            try
+            {
 
                 OdbcCommand comando = new OdbcCommand(sql, conect);
                 leer = comando.ExecuteReader();
 
                 while (leer.Read())
                 {
-                    rutaAyudaCHM = leer.GetString(1);
-                    
-                    rutaAyudaHTML = leer.GetString(2);
+                    rutaAyudaCHM = leer.GetString(4);
+
+                    rutaAyudaHTML = leer.GetString(5);
                 }
 
-                
+
             }
-            catch (OdbcException ex) { 
+            catch (OdbcException ex)
+            {
 
                 MessageBox.Show("Error al cargar los datos" + ex.Message);
 
@@ -637,9 +639,19 @@ namespace CapaModelo
 
             }
 
-          
-            Help.ShowHelp(parent, rutaAyudaCHM,rutaAyudaHTML);
-          
+            if (String.IsNullOrEmpty(rutaAyudaCHM) || String.IsNullOrEmpty(rutaAyudaHTML))
+            {
+                MessageBox.Show("La ruta ingresa CHM o Referencia HTML es incorrecta!");
+
+            }
+            else
+            {
+                Help.ShowHelp(parent, rutaAyudaCHM, rutaAyudaHTML);
+            }
+
+
+
+
         }
 
 
