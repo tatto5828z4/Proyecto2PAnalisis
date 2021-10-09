@@ -641,7 +641,7 @@ namespace CapaModelo
 
             if (String.IsNullOrEmpty(rutaAyudaCHM) || String.IsNullOrEmpty(rutaAyudaHTML))
             {
-                MessageBox.Show("La ruta ingresa CHM o Referencia HTML es incorrecta!");
+                MessageBox.Show("La ruta ingresa CHM o Referencia HTML es incorrecta, verifique Aplicacion!");
 
             }
             else

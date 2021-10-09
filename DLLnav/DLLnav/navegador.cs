@@ -713,13 +713,27 @@ namespace DLL.nav
         /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         private void btnReporte_Click(object sender, EventArgs e)
         {
-            funMostrarFormR();
+            if (String.IsNullOrEmpty(formReporte.ruta))
+            {
+                MessageBox.Show("Error con la ruta del reporte, verifique que la Aplicacion existe y que la ruta sea la correcta!");
+            }
+            else
+            {
+                funMostrarFormR();
+            }
         }
 
         /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         private void btnReporte_Click_1(object sender, EventArgs e)
         {
-            funMostrarFormR();
+            if (String.IsNullOrEmpty(formReporte.ruta))
+            {
+                MessageBox.Show("Error con la ruta del reporte, verifique que la Aplicacion existe y que la ruta sea la correcta!");
+            }
+            else
+            {
+                funMostrarFormR();
+            }
         }
     }
 }

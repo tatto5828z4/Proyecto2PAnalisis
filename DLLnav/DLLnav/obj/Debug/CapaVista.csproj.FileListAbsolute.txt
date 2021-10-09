@@ -412,3 +412,4 @@ C:\Users\wilbe\OneDrive\Escritorio\PruebasV5\DLLnav\DLLnav\obj\Debug\CapaVista.c
 C:\Users\wilbe\OneDrive\Escritorio\PruebasV5\DLLnav\DLLnav\obj\Debug\DLLnav.dll
 C:\Users\wilbe\OneDrive\Escritorio\PruebasV5\DLLnav\DLLnav\obj\Debug\DLLnav.pdb
 D:\Proyectos_Git_Analisis\ERP\DLLnav\DLLnav\obj\Debug\DLL.nav.reporte.resources
+C:\Users\geova\Documents\Octavo_Semestre\Analisis2\NAVEGADOR_AYUDA\DLLnav\DLLnav\obj\Debug\DLL.nav.reporte.resources
