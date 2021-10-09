@@ -24,7 +24,7 @@ namespace DLL.nav
         public string idAyuda = "";
         public string campoAyuda = "";
         public Form formReporte;
-        public string idReporte = "";
+        public string idAplicacion = "";
 
         DataGridView dataE;
         ClaseControlador control = new ClaseControlador();
@@ -702,7 +702,7 @@ namespace DLL.nav
         /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         public string funReportesVista(string campoRuta, string campoB, string tablaR)
         {
-            string rutaVista = control.funReportesControl(idReporte, campoRuta, campoB, tablaR);
+            string rutaVista = control.funReportesControl(idAplicacion, campoRuta, campoB, tablaR);
             return rutaVista;
         }
 

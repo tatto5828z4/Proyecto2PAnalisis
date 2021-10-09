@@ -34,10 +34,10 @@ namespace Navegador
             //fin de elementos para ejecutar la ayuda
 
             // Inicio datos para ejecurar reportes
-            navegador1.idReporte = "1";
+            navegador1.idAplicacion = "1";
             reporte formRep = new reporte();
             navegador1.formReporte = formRep;
-            formRep.ruta = navegador1.funReportesVista("rutaReporte", "idReporte", "reporte");
+            formRep.ruta = navegador1.funReportesVista("ruta", "idAplicacion", "Reporte");
             // Final datos para ejecutar reportes
 
             navegador1.pideGrid(this.dvgConsulta);
