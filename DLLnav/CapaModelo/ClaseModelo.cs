@@ -378,13 +378,13 @@ namespace CapaModelo
 
         }
 
-        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
-        public string funReportes(string idReporte, string campoRuta, string campoB, string tablaR)
+        /*Wilmer Alexander Torres Lemus - 9959-18-9131*/
+        public string funReportes(string idAplicacion, string campoRuta, string campoB, string tablaR)
         {
             string ruta = "";
             OdbcDataReader leer = null;
 
-            string sql = "SELECT" + " " + campoRuta + " " + "FROM" + " " + tablaR + " " + "WHERE " + " " + campoB + "=" + idReporte;
+            string sql = "SELECT" + " " + campoRuta + " " + "FROM" + " " + tablaR + " " + "WHERE " + " " + campoB + "=" + idAplicacion;
 
             OdbcConnection conect = conexion.conexion();
 
@@ -411,7 +411,6 @@ namespace CapaModelo
             finally
             {
                 conexion.desconexion(conect);
-
             }
 
 
